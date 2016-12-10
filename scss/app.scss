@@ -44,7 +44,13 @@
 // @include foundation-top-bar;
 // @include foundation-visibility-classes;
 // @include foundation-float-classes;
-// @include foundation-flex-classes;
+@include foundation-flex-classes;
 
 // @include motion-ui-transitions;
 // @include motion-ui-animations;
+
+@import 'includes/layout';
+@import 'includes/head';
+@import 'includes/nav';
+@import 'includes/banner';
+@import 'includes/card';

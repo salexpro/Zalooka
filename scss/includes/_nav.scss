@@ -1,0 +1,20 @@
+.nav{
+    position: relative;
+    height: 40px;
+    background-color: #f2f2f2;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    text-align: right;
+    &_inner{
+        justify-content: flex-end;
+    }
+    .menu a{
+        color: #263238;
+        border-bottom: 3px solid transparent;
+        padding-bottom: 10px;
+        transition: 200ms;
+        margin-left: 25px;
+        &:hover{
+            border-color: map-get($foundation-palette, primary);
+        }
+    }
+}

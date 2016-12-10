@@ -1,0 +1,37 @@
+.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 445px;
+    background: url(/img/banner.jpg) center;
+    background-size: cover;
+    text-align: center;
+    &_header{
+        margin: 0;
+        color: $white;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 28px;
+        margin-bottom: 140px;
+    }
+    &_selplace{
+        form{
+            display: flex;
+            max-width: 690px;
+            margin: auto;
+        }
+        input{
+            margin: 0;
+            &[type="text"]{
+                background-color: transparent;
+                color: $white;
+                border-color: $white;
+                height: 30px;
+                margin-right: 30px;
+                &::placeholder{
+                    color: $white;
+                }
+            }
+        }
+    }
+}

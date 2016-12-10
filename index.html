@@ -2,26 +2,25 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Project</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400&amp;amp;subset=cyrillic">
+    <title>Zalooka</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;amp;subset=cyrillic">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="/css/app.css">
   </head>
   <body>
     <main class="wrap">
       <header class="head">
-        <div class="row column header_inner">
+        <div class="row column align-middle align-justify head_inner">
           <div class="head_left">
             <div class="head_logo"><a href="/"><img src="/img/logo.svg" alt="Zalooka"></a></div>
             <div class="head_place">Место: <a href="#">Паттайя, Тайланд</a></div>
             <div class="head_currency">Валюта: <a href="#">Тайский бат</a></div>
           </div>
           <div class="head_right">
-            <div class="head_support">
-              <div class="head_search"></div><a href="#" class="head_support_button"> <img src="" alt=""></a>
+            <div class="head_support"><a data-open="search" class="head_support_search"><i class="material-icons">search</i></a><a data-open="support" class="head_support_button"> <i class="material-icons">headset_mic</i></a>
               <p>24/7 Обслуживание клиентов в Таиланде +666 000 35666</p>
-            </div>
-            <div class="head_account is_new"><img src="" alt="Аватар"></div>
+            </div><a href="#" class="head_account is_new"><img src="/img/user.svg" alt="Аватар"></a>
           </div>
         </div>
       </header>
@@ -40,62 +39,70 @@
         <p class="banner_header">НАЧНИ  ПУТЕШЕСТВИЕ С  ВЫБОРА  МЕСТА</p>
         <div class="banner_selplace">
           <form action="">
-            <input type="text" placeholer="Таиланд">
-            <input type="text" placeholer="Паттайя">
-            <input type="text" placeholer="Услуга">
+            <input type="text" placeholder="Таиланд">
+            <input type="text" placeholder="Паттайя">
+            <input type="text" placeholder="Услуга">
             <input type="submit" value="Перейти" class="button">
           </form>
         </div>
       </section>
-      <section class="row about">
-        <p class="small-12 column header">О сервисе Zalooka</p>
-        <p class="small-12 column about_text">Мы компания Zalooka. Мы делаем всё возможное для того, чтобы ваш отдых в Паттайе (Таиланд) был еще более комфортным, интересным и безопасным. Наша особенность в том, что мы предлагаем возможность заказать любые туристические услуги в городе Паттайя через интернет или по телефону. Самые выгодные цены на отдых в Паттайе в сезоне 2016/2017 при высоком качестве услуг. Все услуги и предложения можно заказать без регистрации прямо на сайте. Просто делайте заказ и наслаждайтесь отдыхом, компания Online-Pattaya.ru позаботится обо всем.</p>
+      <section class="row column">
+        <div class="card about">
+          <p class="header">О сервисе Zalooka</p>
+          <p class="about_text">Мы компания Zalooka. Мы делаем всё возможное для того, чтобы ваш отдых в Паттайе (Таиланд) был еще более комфортным, интересным и безопасным. Наша особенность в том, что мы предлагаем возможность заказать любые туристические услуги в городе Паттайя через интернет или по телефону. Самые выгодные цены на отдых в Паттайе в сезоне 2016/2017 при высоком качестве услуг. Все услуги и предложения можно заказать без регистрации прямо на сайте. Просто делайте заказ и наслаждайтесь отдыхом, компания Online-Pattaya.ru позаботится обо всем.</p>
+        </div>
       </section>
       <section class="row excursion">
         <p class="small-12 column header">Экскурсии</p>
         <div class="small-12 column row excursion_content">
-          <div class="large-4 column card">
-            <div class="card_top">
-              <div class="card_flag"><img src="//placehold.it/20x20" alt=""></div>
-              <div class="card_name"><a href="#" class="card_name_link">Тропический парк Нонг Нуч</a><a href="#" class="card_name_location">Тайланд, Паттайя</a></div>
-            </div>
-            <div class="card_image"><img src="//placehold.it/345x190" alt=""></div>
-            <div class="card_brief">Тропический сад мадам Нонг Нуч - это оранжереи орхидей, кактусов, и мини зоопарк.</div>
-            <div class="card_bottom">
-              <div class="card_bottom_price"><a href="#" class="card_bottom_more">Узнать больше</a><br>Взрослый <b>549</b>бат<br> Детский <b>449</b>бат</div>
-              <div class="card_bottom_add">
-                <div class="card_bottom_rating">2.8</div>
-                <button class="card_add"></button>
+          <div class="large-4 column">
+            <div class="card">
+              <div class="card_top">
+                <div class="card_flag"><img src="//placehold.it/20x20" alt=""></div>
+                <div class="card_name"><a href="#" class="card_name_link">Тропический парк Нонг Нуч</a><a href="#" class="card_name_location">Тайланд, Паттайя</a></div>
+              </div>
+              <div class="card_image"><img src="//placehold.it/345x190" alt=""></div>
+              <div class="card_brief">Тропический сад мадам Нонг Нуч - это оранжереи орхидей, кактусов, и мини зоопарк.</div>
+              <div class="card_bottom">
+                <div class="card_bottom_price"><a href="#" class="card_bottom_more">Узнать больше</a><br>Взрослый <b>549</b>бат<br> Детский <b>449</b>бат</div>
+                <div class="card_bottom_add">
+                  <div class="card_bottom_rating">2.8</div>
+                  <button class="card_add"></button>
+                </div>
               </div>
             </div>
           </div>
-          <div class="large-4 column card">
-            <div class="card_top">
-              <div class="card_flag"><img src="//placehold.it/20x20" alt=""></div>
-              <div class="card_name"><a href="#" class="card_name_link">Тропический парк Нонг Нуч</a><a href="#" class="card_name_location">Тайланд, Паттайя</a></div>
-            </div>
-            <div class="card_image"><img src="//placehold.it/345x190" alt=""></div>
-            <div class="card_brief">Тропический сад мадам Нонг Нуч - это оранжереи орхидей, кактусов, и мини зоопарк.</div>
-            <div class="card_bottom">
-              <div class="card_bottom_price"><a href="#" class="card_bottom_more">Узнать больше</a><br>Взрослый <b>549</b>бат<br> Детский <b>449</b>бат</div>
-              <div class="card_bottom_add">
-                <div class="card_bottom_rating">2.8</div>
-                <button class="card_add"></button>
+          <div class="large-4 column">
+            <div class="card">
+              <div class="card_top">
+                <div class="card_flag"><img src="//placehold.it/20x20" alt=""></div>
+                <div class="card_name"><a href="#" class="card_name_link">Тропический парк Нонг Нуч</a><a href="#" class="card_name_location">Тайланд, Паттайя</a></div>
+              </div>
+              <div class="card_image"><img src="//placehold.it/345x190" alt=""></div>
+              <div class="card_brief">Тропический сад мадам Нонг Нуч - это оранжереи орхидей, кактусов, и мини зоопарк.</div>
+              <div class="card_bottom">
+                <div class="card_bottom_price"><a href="#" class="card_bottom_more">Узнать больше</a><br>Взрослый <b>549</b>бат<br> Детский <b>449</b>бат</div>
+                <div class="card_bottom_add">
+                  <div class="card_bottom_rating">2.8</div>
+                  <button class="card_add"></button>
+                </div>
               </div>
             </div>
           </div>
-          <div class="large-4 column card">
-            <div class="card_top">
-              <div class="card_flag"><img src="//placehold.it/20x20" alt=""></div>
-              <div class="card_name"><a href="#" class="card_name_link">Тропический парк Нонг Нуч</a><a href="#" class="card_name_location">Тайланд, Паттайя</a></div>
-            </div>
-            <div class="card_image"><img src="//placehold.it/345x190" alt=""></div>
-            <div class="card_brief">Тропический сад мадам Нонг Нуч - это оранжереи орхидей, кактусов, и мини зоопарк.</div>
-            <div class="card_bottom">
-              <div class="card_bottom_price"><a href="#" class="card_bottom_more">Узнать больше</a><br>Взрослый <b>549</b>бат<br> Детский <b>449</b>бат</div>
-              <div class="card_bottom_add">
-                <div class="card_bottom_rating">2.8</div>
-                <button class="card_add"></button>
+          <div class="large-4 column">
+            <div class="card">
+              <div class="card_top">
+                <div class="card_flag"><img src="//placehold.it/20x20" alt=""></div>
+                <div class="card_name"><a href="#" class="card_name_link">Тропический парк Нонг Нуч</a><a href="#" class="card_name_location">Тайланд, Паттайя</a></div>
+              </div>
+              <div class="card_image"><img src="//placehold.it/345x190" alt=""></div>
+              <div class="card_brief">Тропический сад мадам Нонг Нуч - это оранжереи орхидей, кактусов, и мини зоопарк.</div>
+              <div class="card_bottom">
+                <div class="card_bottom_price"><a href="#" class="card_bottom_more">Узнать больше</a><br>Взрослый <b>549</b>бат<br> Детский <b>449</b>бат</div>
+                <div class="card_bottom_add">
+                  <div class="card_bottom_rating">2.8</div>
+                  <button class="card_add"></button>
+                </div>
               </div>
             </div>
           </div>
@@ -104,48 +111,54 @@
       <section class="row shopping">
         <p class="small-12 column header">Шоппинг</p>
         <div class="small-12 column row shopping_content">
-          <div class="large-4 column card">
-            <div class="card_top">
-              <div class="card_flag"><img src="//placehold.it/20x20" alt=""></div>
-              <div class="card_name"><a href="#" class="card_name_link">Тропический парк Нонг Нуч</a><a href="#" class="card_name_location">Тайланд, Паттайя</a></div>
-            </div>
-            <div class="card_image"><img src="//placehold.it/345x190" alt=""></div>
-            <div class="card_brief">Тропический сад мадам Нонг Нуч - это оранжереи орхидей, кактусов, и мини зоопарк.</div>
-            <div class="card_bottom">
-              <div class="card_bottom_price"><a href="#" class="card_bottom_more">Узнать больше</a><br>Взрослый <b>549</b>бат<br> Детский <b>449</b>бат</div>
-              <div class="card_bottom_add">
-                <div class="card_bottom_rating">2.8</div>
-                <button class="card_add"></button>
+          <div class="large-4 column">
+            <div class="card">
+              <div class="card_top">
+                <div class="card_flag"><img src="//placehold.it/20x20" alt=""></div>
+                <div class="card_name"><a href="#" class="card_name_link">Тропический парк Нонг Нуч</a><a href="#" class="card_name_location">Тайланд, Паттайя</a></div>
+              </div>
+              <div class="card_image"><img src="//placehold.it/345x190" alt=""></div>
+              <div class="card_brief">Тропический сад мадам Нонг Нуч - это оранжереи орхидей, кактусов, и мини зоопарк.</div>
+              <div class="card_bottom">
+                <div class="card_bottom_price"><a href="#" class="card_bottom_more">Узнать больше</a><br>Взрослый <b>549</b>бат<br> Детский <b>449</b>бат</div>
+                <div class="card_bottom_add">
+                  <div class="card_bottom_rating">2.8</div>
+                  <button class="card_add"></button>
+                </div>
               </div>
             </div>
           </div>
-          <div class="large-4 column card">
-            <div class="card_top">
-              <div class="card_flag"><img src="//placehold.it/20x20" alt=""></div>
-              <div class="card_name"><a href="#" class="card_name_link">Тропический парк Нонг Нуч</a><a href="#" class="card_name_location">Тайланд, Паттайя</a></div>
-            </div>
-            <div class="card_image"><img src="//placehold.it/345x190" alt=""></div>
-            <div class="card_brief">Тропический сад мадам Нонг Нуч - это оранжереи орхидей, кактусов, и мини зоопарк.</div>
-            <div class="card_bottom">
-              <div class="card_bottom_price"><a href="#" class="card_bottom_more">Узнать больше</a><br>Взрослый <b>549</b>бат<br> Детский <b>449</b>бат</div>
-              <div class="card_bottom_add">
-                <div class="card_bottom_rating">2.8</div>
-                <button class="card_add"></button>
+          <div class="large-4 column">
+            <div class="card">
+              <div class="card_top">
+                <div class="card_flag"><img src="//placehold.it/20x20" alt=""></div>
+                <div class="card_name"><a href="#" class="card_name_link">Тропический парк Нонг Нуч</a><a href="#" class="card_name_location">Тайланд, Паттайя</a></div>
+              </div>
+              <div class="card_image"><img src="//placehold.it/345x190" alt=""></div>
+              <div class="card_brief">Тропический сад мадам Нонг Нуч - это оранжереи орхидей, кактусов, и мини зоопарк.</div>
+              <div class="card_bottom">
+                <div class="card_bottom_price"><a href="#" class="card_bottom_more">Узнать больше</a><br>Взрослый <b>549</b>бат<br> Детский <b>449</b>бат</div>
+                <div class="card_bottom_add">
+                  <div class="card_bottom_rating">2.8</div>
+                  <button class="card_add"></button>
+                </div>
               </div>
             </div>
           </div>
-          <div class="large-4 column card">
-            <div class="card_top">
-              <div class="card_flag"><img src="//placehold.it/20x20" alt=""></div>
-              <div class="card_name"><a href="#" class="card_name_link">Тропический парк Нонг Нуч</a><a href="#" class="card_name_location">Тайланд, Паттайя</a></div>
-            </div>
-            <div class="card_image"><img src="//placehold.it/345x190" alt=""></div>
-            <div class="card_brief">Тропический сад мадам Нонг Нуч - это оранжереи орхидей, кактусов, и мини зоопарк.</div>
-            <div class="card_bottom">
-              <div class="card_bottom_price"><a href="#" class="card_bottom_more">Узнать больше</a><br>Взрослый <b>549</b>бат<br> Детский <b>449</b>бат</div>
-              <div class="card_bottom_add">
-                <div class="card_bottom_rating">2.8</div>
-                <button class="card_add"></button>
+          <div class="large-4 column">
+            <div class="card">
+              <div class="card_top">
+                <div class="card_flag"><img src="//placehold.it/20x20" alt=""></div>
+                <div class="card_name"><a href="#" class="card_name_link">Тропический парк Нонг Нуч</a><a href="#" class="card_name_location">Тайланд, Паттайя</a></div>
+              </div>
+              <div class="card_image"><img src="//placehold.it/345x190" alt=""></div>
+              <div class="card_brief">Тропический сад мадам Нонг Нуч - это оранжереи орхидей, кактусов, и мини зоопарк.</div>
+              <div class="card_bottom">
+                <div class="card_bottom_price"><a href="#" class="card_bottom_more">Узнать больше</a><br>Взрослый <b>549</b>бат<br> Детский <b>449</b>бат</div>
+                <div class="card_bottom_add">
+                  <div class="card_bottom_rating">2.8</div>
+                  <button class="card_add"></button>
+                </div>
               </div>
             </div>
           </div>
@@ -154,48 +167,54 @@
       <section class="row spa">
         <p class="small-12 column header">SPA</p>
         <div class="small-12 column row spa_content">
-          <div class="large-4 column card">
-            <div class="card_top">
-              <div class="card_flag"><img src="//placehold.it/20x20" alt=""></div>
-              <div class="card_name"><a href="#" class="card_name_link">Тропический парк Нонг Нуч</a><a href="#" class="card_name_location">Тайланд, Паттайя</a></div>
-            </div>
-            <div class="card_image"><img src="//placehold.it/345x190" alt=""></div>
-            <div class="card_brief">Тропический сад мадам Нонг Нуч - это оранжереи орхидей, кактусов, и мини зоопарк.</div>
-            <div class="card_bottom">
-              <div class="card_bottom_price"><a href="#" class="card_bottom_more">Узнать больше</a><br>Взрослый <b>549</b>бат<br> Детский <b>449</b>бат</div>
-              <div class="card_bottom_add">
-                <div class="card_bottom_rating">2.8</div>
-                <button class="card_add"></button>
+          <div class="large-4 column">
+            <div class="card">
+              <div class="card_top">
+                <div class="card_flag"><img src="//placehold.it/20x20" alt=""></div>
+                <div class="card_name"><a href="#" class="card_name_link">Тропический парк Нонг Нуч</a><a href="#" class="card_name_location">Тайланд, Паттайя</a></div>
+              </div>
+              <div class="card_image"><img src="//placehold.it/345x190" alt=""></div>
+              <div class="card_brief">Тропический сад мадам Нонг Нуч - это оранжереи орхидей, кактусов, и мини зоопарк.</div>
+              <div class="card_bottom">
+                <div class="card_bottom_price"><a href="#" class="card_bottom_more">Узнать больше</a><br>Взрослый <b>549</b>бат<br> Детский <b>449</b>бат</div>
+                <div class="card_bottom_add">
+                  <div class="card_bottom_rating">2.8</div>
+                  <button class="card_add"></button>
+                </div>
               </div>
             </div>
           </div>
-          <div class="large-4 column card">
-            <div class="card_top">
-              <div class="card_flag"><img src="//placehold.it/20x20" alt=""></div>
-              <div class="card_name"><a href="#" class="card_name_link">Тропический парк Нонг Нуч</a><a href="#" class="card_name_location">Тайланд, Паттайя</a></div>
-            </div>
-            <div class="card_image"><img src="//placehold.it/345x190" alt=""></div>
-            <div class="card_brief">Тропический сад мадам Нонг Нуч - это оранжереи орхидей, кактусов, и мини зоопарк.</div>
-            <div class="card_bottom">
-              <div class="card_bottom_price"><a href="#" class="card_bottom_more">Узнать больше</a><br>Взрослый <b>549</b>бат<br> Детский <b>449</b>бат</div>
-              <div class="card_bottom_add">
-                <div class="card_bottom_rating">2.8</div>
-                <button class="card_add"></button>
+          <div class="large-4 column">
+            <div class="card">
+              <div class="card_top">
+                <div class="card_flag"><img src="//placehold.it/20x20" alt=""></div>
+                <div class="card_name"><a href="#" class="card_name_link">Тропический парк Нонг Нуч</a><a href="#" class="card_name_location">Тайланд, Паттайя</a></div>
+              </div>
+              <div class="card_image"><img src="//placehold.it/345x190" alt=""></div>
+              <div class="card_brief">Тропический сад мадам Нонг Нуч - это оранжереи орхидей, кактусов, и мини зоопарк.</div>
+              <div class="card_bottom">
+                <div class="card_bottom_price"><a href="#" class="card_bottom_more">Узнать больше</a><br>Взрослый <b>549</b>бат<br> Детский <b>449</b>бат</div>
+                <div class="card_bottom_add">
+                  <div class="card_bottom_rating">2.8</div>
+                  <button class="card_add"></button>
+                </div>
               </div>
             </div>
           </div>
-          <div class="large-4 column card">
-            <div class="card_top">
-              <div class="card_flag"><img src="//placehold.it/20x20" alt=""></div>
-              <div class="card_name"><a href="#" class="card_name_link">Тропический парк Нонг Нуч</a><a href="#" class="card_name_location">Тайланд, Паттайя</a></div>
-            </div>
-            <div class="card_image"><img src="//placehold.it/345x190" alt=""></div>
-            <div class="card_brief">Тропический сад мадам Нонг Нуч - это оранжереи орхидей, кактусов, и мини зоопарк.</div>
-            <div class="card_bottom">
-              <div class="card_bottom_price"><a href="#" class="card_bottom_more">Узнать больше</a><br>Взрослый <b>549</b>бат<br> Детский <b>449</b>бат</div>
-              <div class="card_bottom_add">
-                <div class="card_bottom_rating">2.8</div>
-                <button class="card_add"></button>
+          <div class="large-4 column">
+            <div class="card">
+              <div class="card_top">
+                <div class="card_flag"><img src="//placehold.it/20x20" alt=""></div>
+                <div class="card_name"><a href="#" class="card_name_link">Тропический парк Нонг Нуч</a><a href="#" class="card_name_location">Тайланд, Паттайя</a></div>
+              </div>
+              <div class="card_image"><img src="//placehold.it/345x190" alt=""></div>
+              <div class="card_brief">Тропический сад мадам Нонг Нуч - это оранжереи орхидей, кактусов, и мини зоопарк.</div>
+              <div class="card_bottom">
+                <div class="card_bottom_price"><a href="#" class="card_bottom_more">Узнать больше</a><br>Взрослый <b>549</b>бат<br> Детский <b>449</b>бат</div>
+                <div class="card_bottom_add">
+                  <div class="card_bottom_rating">2.8</div>
+                  <button class="card_add"></button>
+                </div>
               </div>
             </div>
           </div>
@@ -204,34 +223,44 @@
       <section class="row benefits">
         <p class="small-12 column header">Наши преимущества</p>
         <div class="small-12 column row align-center benefits_content">
-          <div class="large-4 column card card_small">
-            <div class="card_small_image"><img src="" alt=""></div>
-            <div class="card_small_content">
-              <p class="card_small_header">Онлайн заказ</p>Заказывайте туристические услуги и оплачивайте их безопасно прямо на сайте.
+          <div class="large-4 column">
+            <div class="card card_small">
+              <div class="card_small_image"><img src="" alt=""></div>
+              <div class="card_small_content">
+                <p class="card_small_header">Онлайн заказ</p>Заказывайте туристические услуги и оплачивайте их безопасно прямо на сайте.
+              </div>
             </div>
           </div>
-          <div class="large-4 column card card_small">
-            <div class="card_small_image"><img src="" alt=""></div>
-            <div class="card_small_content">
-              <p class="card_small_header">Без предоплаты</p>Многие услуги можно заказывать не внося предоплату.
+          <div class="large-4 column">
+            <div class="card card_small">
+              <div class="card_small_image"><img src="" alt=""></div>
+              <div class="card_small_content">
+                <p class="card_small_header">Без предоплаты</p>Многие услуги можно заказывать не внося предоплату.
+              </div>
             </div>
           </div>
-          <div class="large-4 column card card_small">
-            <div class="card_small_image"><img src="" alt=""></div>
-            <div class="card_small_content">
-              <p class="card_small_header">Поддержка клиентов 24/7</p>Используйте удобный для себя способ связи (тел., чат, звонок с сайта и т.д.)
+          <div class="large-4 column">
+            <div class="card card_small">
+              <div class="card_small_image"><img src="" alt=""></div>
+              <div class="card_small_content">
+                <p class="card_small_header">Поддержка клиентов 24/7</p>Используйте удобный для себя способ связи (тел., чат, звонок с сайта и т.д.)
+              </div>
             </div>
           </div>
-          <div class="large-4 column card card_small">
-            <div class="card_small_image"><img src="" alt=""></div>
-            <div class="card_small_content">
-              <p class="card_small_header">Легко поменять заказ</p>В любое время вы можете изменить или отменить заказ
+          <div class="large-4 column">
+            <div class="card card_small">
+              <div class="card_small_image"><img src="" alt=""></div>
+              <div class="card_small_content">
+                <p class="card_small_header">Легко поменять заказ</p>В любое время вы можете изменить или отменить заказ
+              </div>
             </div>
           </div>
-          <div class="large-4 column card card_small">
-            <div class="card_small_image"><img src="" alt=""></div>
-            <div class="card_small_content">
-              <p class="card_small_header">Лучшие цены на все</p>Мы гарантируем лучшие цены на услуги, а также специальные предложения.
+          <div class="large-4 column">
+            <div class="card card_small">
+              <div class="card_small_image"><img src="" alt=""></div>
+              <div class="card_small_content">
+                <p class="card_small_header">Лучшие цены на все</p>Мы гарантируем лучшие цены на услуги, а также специальные предложения.
+              </div>
             </div>
           </div>
         </div>
