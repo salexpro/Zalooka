@@ -15,6 +15,28 @@
 		"oAP": "\/build\/.gitignore",
 		"oF": 0
 		},
+	"\/android-chrome-144x144.png": {
+		"ft": 32768,
+		"iS": 7460,
+		"oA": 0,
+		"oAP": "\/build\/android-chrome-144x144.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/apple-touch-icon.png": {
+		"ft": 32768,
+		"iS": 6740,
+		"oA": 0,
+		"oAP": "\/build\/apple-touch-icon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/bower.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -4009,6 +4031,65 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/browserconfig.xml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/browserconfig.xml",
+		"oF": 0
+		},
+	"\/build": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "\/build\/build",
+		"oF": 0
+		},
+	"\/favicon-16x16.png": {
+		"ft": 32768,
+		"iS": 1360,
+		"oA": 0,
+		"oAP": "\/build\/favicon-16x16.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/favicon-32x32.png": {
+		"ft": 32768,
+		"iS": 2080,
+		"oA": 0,
+		"oAP": "\/build\/favicon-32x32.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/favicon.ico": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/favicon.ico",
+		"oF": 0
+		},
+	"\/manifest.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/build\/manifest-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/mstile-150x150.png": {
+		"ft": 32768,
+		"iS": 6986,
+		"oA": 0,
+		"oAP": "\/build\/mstile-150x150.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/package.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -4017,23 +4098,15 @@
 		"oO": 0,
 		"oS": 1
 		},
-	"\/README.md": {
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"eLB": 0,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
+	"\/safari-pinned-tab.svg": {
+		"ft": 2097152,
+		"miP": 0,
 		"oA": 0,
-		"oAP": "\/build\/README.html",
+		"oAP": "\/build\/safari-pinned-tab.svg",
 		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
+		"opt": 1,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/source\/img\/add.svg": {
 		"ft": 2097152,
@@ -4217,7 +4290,8 @@
 	"creationDate": 503077683,
 	"displayValue": "Zalooka",
 	"displayValueWasSetByUser": 1,
-	"iconImageName": "meme-cocaine"
+	"iconImageName": "meme-cocaine",
+	"lastBuiltDate": 526519192
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -4470,7 +4544,7 @@
 	"bowerInstallDevDependencies": 0,
 	"bowerSaveDependencies": 1,
 	"bowerSaveDevDependencies": 0,
-	"bowerUseExactVersion": 0,
+	"bowerUseExactVersion": 1,
 	"browserRefreshDelay": 0,
 	"buildFolderActive": 1,
 	"buildFolderName": "build",
