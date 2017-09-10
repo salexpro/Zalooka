@@ -1,3 +1,59 @@
+mixin item(title, descr, prepay, price)
+    .large-4.column
+        .card
+            .card_content
+                .card_top
+                    .card_flag
+                        img(src="//placehold.it/20x20", alt="")
+                    .card_name
+                        a.card_name_link(href="#")
+                            =title
+                        a.card_name_location(href="#") Тайланд, Паттайя
+                .card_image(class=prepay ? "card_image--prepay" : "")
+                    img(src="//placehold.it/345x190", alt=title)
+                .card_brief
+                    =descr
+            .card_bottom(class=!price ? "card_bottom--wo" : "")
+                .card_bottom_add
+                    .card_bottom--left
+                        a.card_bottom_more(href="#") Узнать больше
+                    .card_bottom--right
+                        .rating
+                            .rating_stars
+                                i.material-icons.active star_border
+                                i.material-icons.active star_border
+                                i.material-icons.active star_border
+                                i.material-icons star_border
+                                i.material-icons star_border
+                            | 2.8
+                .card_bottom_price
+                    .card_bottom--left
+                        if price
+                            | Взрослый 
+                            b 549
+                            | 
+                            span бат
+                            br
+                            | Детский 
+                            b 449
+                            | 
+                            span бат
+                        else
+                            | Бесплатный трансфер
+                    if price
+                        .card_bottom--right
+                            button.button.card_add
+
+mixin benefit(type, title, descr)
+    .large-4.column
+        .card.card--small
+            .card_top
+                .card_flag(class="card_flag--" + type)
+                .card_content
+                    p.card_header
+                        =title
+                    =descr
+
 doctype html
 html(lang="ru")
     include includes/head
@@ -7,306 +63,28 @@ html(lang="ru")
             section.row.column
                 .card.card--about
                     p.header О сервисе Zalooka
-                    p.card_text
+                    .card_content
                         | Мы компания Zalooka. Мы делаем всё возможное для того, чтобы ваш отдых в Паттайе (Таиланд) был еще более комфортным, интересным и безопасным. Наша особенность в том, что мы предлагаем возможность заказать любые туристические услуги в городе Паттайя через интернет или по телефону. Самые выгодные цены на отдых в Паттайе в сезоне 2016/2017 при высоком качестве услуг. Все услуги и предложения можно заказать без регистрации прямо на сайте. Просто делайте заказ и наслаждайтесь отдыхом, компания Online-Pattaya.ru позаботится обо всем.
             section.row.excursion
                 p.small-12.column.header Экскурсии
-                .small-12.column.row.excursion_content
-                    .large-4.column
-                        .card
-                            .card_top
-                                .card_flag
-                                    img(src="//placehold.it/20x20", alt="")
-                                .card_name
-                                    a.card_name_link(href="#") Тропический парк Нонг Нуч
-                                    a.card_name_location(href="#") Тайланд, Паттайя
-                            .card_image
-                                img(src="//placehold.it/345x190", alt="")
-                            .card_brief
-                                | Тропический сад мадам Нонг Нуч - это оранжереи орхидей, кактусов, и мини зоопарк.
-                            .card_bottom
-                                .card_bottom_price
-                                    a.card_bottom_more(href="#") Узнать больше
-                                    br
-                                    | Взрослый 
-                                    b 549
-                                    | бат
-                                    br
-                                    |  Детский 
-                                    b 449
-                                    | бат
-                                .card_bottom_add
-                                    .card_bottom_rating
-                                        
-                                        | 2.8
-                                    button.card_add
-                    .large-4.column
-                        .card
-                            .card_top
-                                .card_flag
-                                    img(src="//placehold.it/20x20", alt="")
-                                .card_name
-                                    a.card_name_link(href="#") Тропический парк Нонг Нуч
-                                    a.card_name_location(href="#") Тайланд, Паттайя
-                            .card_image
-                                img(src="//placehold.it/345x190", alt="")
-                            .card_brief
-                                | Тропический сад мадам Нонг Нуч - это оранжереи орхидей, кактусов, и мини зоопарк.
-                            .card_bottom
-                                .card_bottom_price
-                                    a.card_bottom_more(href="#") Узнать больше
-                                    br
-                                    | Взрослый 
-                                    b 549
-                                    | бат
-                                    br
-                                    |  Детский 
-                                    b 449
-                                    | бат
-                                .card_bottom_add
-                                    .card_bottom_rating
-                                        
-                                        | 2.8
-                                    button.card_add
-                    .large-4.column
-                        .card
-                            .card_top
-                                .card_flag
-                                    img(src="//placehold.it/20x20", alt="")
-                                .card_name
-                                    a.card_name_link(href="#") Тропический парк Нонг Нуч
-                                    a.card_name_location(href="#") Тайланд, Паттайя
-                            .card_image
-                                img(src="//placehold.it/345x190", alt="")
-                            .card_brief
-                                | Тропический сад мадам Нонг Нуч - это оранжереи орхидей, кактусов, и мини зоопарк.
-                            .card_bottom
-                                .card_bottom_price
-                                    a.card_bottom_more(href="#") Узнать больше
-                                    br
-                                    | Взрослый 
-                                    b 549
-                                    | бат
-                                    br
-                                    |  Детский 
-                                    b 449
-                                    | бат
-                                .card_bottom_add
-                                    .card_bottom_rating
-                                        
-                                        | 2.8
-                                    button.card_add
+                +item('Тропический парк Нонг Нуч', 'Тропический сад мадам Нонг Нуч - это оранжереи орхидей, кактусов, и мини зоопарк.', false, true)
+                +item('Река Квай и водопад Эраван', 'Красивейший национальный парк с 7-ми уровневым водопадом.', false, true)
+                +item('Мадагаскар', 'Морская прогулка, проходящая по программе all inclusive.', true, true)
             section.row.shopping
                 p.small-12.column.header Шоппинг
-                .small-12.column.row.shopping_content
-                    .large-4.column
-                        .card
-                            .card_top
-                                .card_flag
-                                    img(src="//placehold.it/20x20", alt="")
-                                .card_name
-                                    a.card_name_link(href="#") Тропический парк Нонг Нуч
-                                    a.card_name_location(href="#") Тайланд, Паттайя
-                            .card_image
-                                img(src="//placehold.it/345x190", alt="")
-                            .card_brief
-                                | Тропический сад мадам Нонг Нуч - это оранжереи орхидей, кактусов, и мини зоопарк.
-                            .card_bottom
-                                .card_bottom_price
-                                    a.card_bottom_more(href="#") Узнать больше
-                                    br
-                                    | Взрослый 
-                                    b 549
-                                    | бат
-                                    br
-                                    |  Детский 
-                                    b 449
-                                    | бат
-                                .card_bottom_add
-                                    .card_bottom_rating
-                                        
-                                        | 2.8
-                                    button.card_add
-                    .large-4.column
-                        .card
-                            .card_top
-                                .card_flag
-                                    img(src="//placehold.it/20x20", alt="")
-                                .card_name
-                                    a.card_name_link(href="#") Тропический парк Нонг Нуч
-                                    a.card_name_location(href="#") Тайланд, Паттайя
-                            .card_image
-                                img(src="//placehold.it/345x190", alt="")
-                            .card_brief
-                                | Тропический сад мадам Нонг Нуч - это оранжереи орхидей, кактусов, и мини зоопарк.
-                            .card_bottom
-                                .card_bottom_price
-                                    a.card_bottom_more(href="#") Узнать больше
-                                    br
-                                    | Взрослый 
-                                    b 549
-                                    | бат
-                                    br
-                                    |  Детский 
-                                    b 449
-                                    | бат
-                                .card_bottom_add
-                                    .card_bottom_rating
-                                        
-                                        | 2.8
-                                    button.card_add
-                    .large-4.column
-                        .card
-                            .card_top
-                                .card_flag
-                                    img(src="//placehold.it/20x20", alt="")
-                                .card_name
-                                    a.card_name_link(href="#") Тропический парк Нонг Нуч
-                                    a.card_name_location(href="#") Тайланд, Паттайя
-                            .card_image
-                                img(src="//placehold.it/345x190", alt="")
-                            .card_brief
-                                | Тропический сад мадам Нонг Нуч - это оранжереи орхидей, кактусов, и мини зоопарк.
-                            .card_bottom
-                                .card_bottom_price
-                                    a.card_bottom_more(href="#") Узнать больше
-                                    br
-                                    | Взрослый 
-                                    b 549
-                                    | бат
-                                    br
-                                    |  Детский 
-                                    b 449
-                                    | бат
-                                .card_bottom_add
-                                    .card_bottom_rating
-                                        
-                                        | 2.8
-                                    button.card_add
+                +item('Центр косметологии VitaMax', 'Все препараты изготовлены на натуральной основе.')
+                +item('Ювелирная фабрика Gems Gallery', 'Добро пожаловать - на фабрику "Джемс Галлери".')
+                +item('Duty Free King Power Pattaya', 'Единственный в Паттайе центр беспошлинной торговли Duty Free.')
             section.row.spa
                 p.small-12.column.header SPA
-                .small-12.column.row.spa_content
-                    .large-4.column
-                        .card
-                            .card_top
-                                .card_flag
-                                    img(src="//placehold.it/20x20", alt="")
-                                .card_name
-                                    a.card_name_link(href="#") Тропический парк Нонг Нуч
-                                    a.card_name_location(href="#") Тайланд, Паттайя
-                            .card_image
-                                img(src="//placehold.it/345x190", alt="")
-                            .card_brief
-                                | Тропический сад мадам Нонг Нуч - это оранжереи орхидей, кактусов, и мини зоопарк.
-                            .card_bottom
-                                .card_bottom_price
-                                    a.card_bottom_more(href="#") Узнать больше
-                                    br
-                                    | Взрослый 
-                                    b 549
-                                    | бат
-                                    br
-                                    |  Детский 
-                                    b 449
-                                    | бат
-                                .card_bottom_add
-                                    .card_bottom_rating
-                                        
-                                        | 2.8
-                                    button.card_add
-                    .large-4.column
-                        .card
-                            .card_top
-                                .card_flag
-                                    img(src="//placehold.it/20x20", alt="")
-                                .card_name
-                                    a.card_name_link(href="#") Тропический парк Нонг Нуч
-                                    a.card_name_location(href="#") Тайланд, Паттайя
-                            .card_image
-                                img(src="//placehold.it/345x190", alt="")
-                            .card_brief
-                                | Тропический сад мадам Нонг Нуч - это оранжереи орхидей, кактусов, и мини зоопарк.
-                            .card_bottom
-                                .card_bottom_price
-                                    a.card_bottom_more(href="#") Узнать больше
-                                    br
-                                    | Взрослый 
-                                    b 549
-                                    | бат
-                                    br
-                                    |  Детский 
-                                    b 449
-                                    | бат
-                                .card_bottom_add
-                                    .card_bottom_rating
-                                        
-                                        | 2.8
-                                    button.card_add
-                    .large-4.column
-                        .card
-                            .card_top
-                                .card_flag
-                                    img(src="//placehold.it/20x20", alt="")
-                                .card_name
-                                    a.card_name_link(href="#") Тропический парк Нонг Нуч
-                                    a.card_name_location(href="#") Тайланд, Паттайя
-                            .card_image
-                                img(src="//placehold.it/345x190", alt="")
-                            .card_brief
-                                | Тропический сад мадам Нонг Нуч - это оранжереи орхидей, кактусов, и мини зоопарк.
-                            .card_bottom
-                                .card_bottom_price
-                                    a.card_bottom_more(href="#") Узнать больше
-                                    br
-                                    | Взрослый 
-                                    b 549
-                                    | бат
-                                    br
-                                    |  Детский 
-                                    b 449
-                                    | бат
-                                .card_bottom_add
-                                    .card_bottom_rating
-                                        
-                                        | 2.8
-                                    button.card_add
-            section.row.benefits
+                +item('7 Spa', 'Оригинальные программы для обретения внутренней гармонии и пополнения сил для больших планов.')
+                +item('СПА салон Кита Кито', 'Отправляйтесь в эксклюзивное Спа-путешествие от Кита Кито и просто наслаждайтесь отдыхом.')
+                +item('Oasis Spa Pattaya', 'Побалуйте себя в оазисе наслаждения и красоты!')
+            section.row.align-center.benefits
                 p.small-12.column.header Наши преимущества
-                .small-12.column.row.align-center.benefits_content
-                    .large-4.column
-                        .card.card_small
-                            .card_small_image
-                                img(src="", alt="")
-                            .card_small_content
-                                p.card_small_header Онлайн заказ
-                                | Заказывайте туристические услуги и оплачивайте их безопасно прямо на сайте.
-                    .large-4.column
-                        .card.card_small
-                            .card_small_image
-                                img(src="", alt="")
-                            .card_small_content
-                                p.card_small_header Без предоплаты
-                                | Многие услуги можно заказывать не внося предоплату.
-                    .large-4.column
-                        .card.card_small
-                            .card_small_image
-                                img(src="", alt="")
-                            .card_small_content
-                                p.card_small_header Поддержка клиентов 24/7
-                                | Используйте удобный для себя способ связи (тел., чат, звонок с сайта и т.д.)
-                    .large-4.column
-                        .card.card_small
-                            .card_small_image
-                                img(src="", alt="")
-                            .card_small_content
-                                p.card_small_header Легко поменять заказ
-                                | В любое время вы можете изменить или отменить заказ
-                    .large-4.column
-                        .card.card_small
-                            .card_small_image
-                                img(src="", alt="")
-                            .card_small_content
-                                p.card_small_header Лучшие цены на все
-                                | Мы гарантируем лучшие цены на услуги, а также специальные предложения.
+                +benefit('order', 'Онлайн заказ', 'Заказывайте туристические услуги и оплачивайте их безопасно прямо на сайте.')
+                +benefit('prepay', 'Без предоплаты', 'Многие услуги можно заказывать не внося предоплату.')
+                +benefit('support', 'Поддержка клиентов 24/7', 'Используйте удобный для себя способ связи (тел., чат, звонок с сайта и т.д.)')
+                +benefit('change', 'Легко поменять заказ', 'В любое время вы можете изменить или отменить заказ')
+                +benefit('prices', 'Лучшие цены на все', 'Мы гарантируем лучшие цены на услуги, а также специальные предложения.')
             include includes/footer
-        script(src="/js/min/app-min.js")

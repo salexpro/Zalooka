@@ -16,8 +16,15 @@ textarea {
     padding: 0 10px;
 }
 
-button, html input[type="button"], input[type="reset"], input[type="submit"]{
+button, [type="button"], [type="reset"], [type="submit"]{
     outline: none;
+}
+
+a{
+    transition: 300ms;
+    &:hover{
+        text-decoration: underline;
+    }
 }
 
 .header{
@@ -25,5 +32,6 @@ button, html input[type="button"], input[type="reset"], input[type="submit"]{
     font-weight: 500;
     line-height: 32px;
     text-align: center;
+    margin-top: 20px;
     margin-bottom: 25px;
 }

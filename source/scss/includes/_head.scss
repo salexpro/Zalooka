@@ -1,6 +1,9 @@
 .head{
     height: 60px;
     background: $white;
+    a{
+        text-decoration: none;
+    }
     &_inner{
         height: 100%;
     }
@@ -10,6 +13,7 @@
     }
     &_right{
         @extend .head_left;
+        justify-content: flex-end;
     }
     &_place{
         font-size: 12px;

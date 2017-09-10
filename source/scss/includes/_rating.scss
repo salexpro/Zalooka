@@ -1,0 +1,20 @@
+.rating{
+    display: flex;
+    align-items: center;
+    color: $primary-color;
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 1;
+    &_stars{
+        user-select: none;
+        margin-right: 3px;
+        i{
+            font-size: 14px;
+            color: $secondary-color;
+            cursor: pointer;
+            &.active{
+                color: $primary-color;
+            }
+        }
+    }
+}

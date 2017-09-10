@@ -48,37 +48,43 @@ footer.footer
                     a(href="#") Смотреть все города
         .column.footer_paymeth
             h6.footer_header Способы оплаты
-            img(src="", alt="PayPal")
-            img(src="", alt="Яндекс Деньги")
-            img(src="", alt="WebMoney")
-            img(src="", alt="MasterCard")
-            img(src="", alt="VISA")
+            img(src="./img/payments/paypal.svg", alt="PayPal")
+            img(src="./img/payments/yandex.svg", alt="Яндекс Деньги")
+            img(src="./img/payments/webmoney.svg", alt="WebMoney")
+            img(src="./img/payments/mastercard.svg", alt="MasterCard")
+            img(src="./img/payments/visa.svg", alt="VISA")
         .column.footer_contacts
             h6.footer_header Контакты
             ul.menu.vertical
                 li
-                    | Звонки из Тайланда
-                    a(href="tel:+66 848 73 7570") +66 848 73 7570
+                    span Звонки из Тайланда
+                    a(href="tel:+66848737570") +66 848 73 7570
                 li
-                    | Бесплатно из России
-                    a(href="tel:8 800 100 6618") 8 800 100 6618
+                    span Бесплатно из России
+                    a(href="tel:+78001006618") 8 800 100 6618
                 li
-                    | Из других стран
-                    a(href="#") +7 495 677 6077
+                    span Из других стран
+                    a(href="tel:+74956776077") +7 495 677 6077
                 li
                     a(href="#") Звонок с сайта
                 li
                     a(href="#") Обратная связь
                 li
                     a(href="#") Онлайн поддержка
-                li
-                    a(href="#") 
-                    a(href="#") 
-                    a(href="#") 
-                    a(href="#") 
-                    a(href="#") 
-                    a(href="#") 
-        .column.footer_about
+                li.footer_social
+                    a.footer_social--vk(href="#")
+                        i.fa.fa-vk
+                    a.footer_social--fb(href="#")
+                        i.fa.fa-facebook
+                    a.footer_social--ok(href="#")
+                        i.fa.fa-odnoklassniki
+                    a.footer_social--yt(href="#")
+                        i.fa.fa-youtube
+                    a.footer_social--gp(href="#")
+                        i.fa.fa-google-plus
+                    a.footer_social--ig(href="#")
+                        i.fa.fa-instagram
+        .column.large-3.footer_about
             ul.menu.vertical
                 li
                     a(href="#") О нас
@@ -89,7 +95,8 @@ footer.footer
                 li
                     a(href="#") Нужна помощь?
     .row.footer_bottom
-        | © Zalooka, 2016. Все права на публикуемые материалы защищены.
+        | © Zalooka, 2017. Все права на публикуемые материалы защищены.
         .footer_lang
             | RU | 
             a(href="#") EN
+script(src="/js/app.min.js")
