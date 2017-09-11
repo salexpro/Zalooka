@@ -1,9 +1,6 @@
 .head{
     height: 60px;
     background: $white;
-    a{
-        text-decoration: none;
-    }
     &_inner{
         height: 100%;
     }
@@ -29,6 +26,7 @@
         cursor: pointer;
         color: $medium-gray;
         border-bottom: 1px dashed;
+        user-select: none;
     }
     &_support{
         display: flex;

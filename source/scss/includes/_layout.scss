@@ -25,9 +25,6 @@ button, [type="button"], [type="reset"], [type="submit"]{
 
 a{
     transition: 300ms;
-    &:hover{
-        text-decoration: underline;
-    }
 }
 
 .header{

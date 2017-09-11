@@ -22,8 +22,9 @@
         }
         a{
             padding: 7px 0;
-            &:not(.active){
-                color: #cacaca;
+            color: #cacaca;
+            &:hover, &.active{
+                color: $primary-color;
             }
         }
     }
@@ -47,6 +48,9 @@
                         color: $white;
                         width: 90px;
                         margin-left: -5px;
+                        &:hover{
+                            color: $primary-color;
+                        }
                     }
                     span{
                         color: $primary-color
@@ -69,6 +73,9 @@
                 padding: 2px 0px;
                 padding-bottom: 9px;
                 color: $white;
+                &:hover{
+                    color: $primary-color;
+                }
             }
         }
         a{
