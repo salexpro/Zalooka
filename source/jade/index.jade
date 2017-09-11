@@ -4,13 +4,13 @@ mixin item(title, descr, prepay, price)
             .card_content
                 .card_top
                     .card_flag
-                        img(src="//placehold.it/20x20", alt="")
+                        img(src="https://unsplash.it/20?random", alt="")
                     .card_name
                         a.card_name_link(href="#")
                             =title
                         a.card_name_location(href="#") Тайланд, Паттайя
                 .card_image(class=prepay ? "card_image--prepay" : "")
-                    img(src="//placehold.it/345x190", alt=title)
+                    img(src="https://unsplash.it/345/190/?random", alt=title)
                 .card_brief
                     =descr
             .card_bottom(class=!price ? "card_bottom--wo" : "")
@@ -42,24 +42,15 @@ mixin item(title, descr, prepay, price)
                             | Бесплатный трансфер
                     if price
                         .card_bottom--right
-                            button.button.card_add
-
-mixin benefit(type, title, descr)
-    .large-4.column
-        .card.card--small
-            .card_top
-                .card_flag(class="card_flag--" + type)
-                .card_content
-                    p.card_header
-                        =title
-                    =descr
+                            button.card_add
+                                i.fa.fa-plus-circle
 
 doctype html
 html(lang="ru")
-    include includes/head
+    include includes/_head
     body
         main.wrap
-            include includes/header
+            include includes/_header
             section.row.column
                 .card.card--about
                     p.header О сервисе Zalooka
@@ -80,11 +71,5 @@ html(lang="ru")
                 +item('7 Spa', 'Оригинальные программы для обретения внутренней гармонии и пополнения сил для больших планов.')
                 +item('СПА салон Кита Кито', 'Отправляйтесь в эксклюзивное Спа-путешествие от Кита Кито и просто наслаждайтесь отдыхом.')
                 +item('Oasis Spa Pattaya', 'Побалуйте себя в оазисе наслаждения и красоты!')
-            section.row.align-center.benefits
-                p.small-12.column.header Наши преимущества
-                +benefit('order', 'Онлайн заказ', 'Заказывайте туристические услуги и оплачивайте их безопасно прямо на сайте.')
-                +benefit('prepay', 'Без предоплаты', 'Многие услуги можно заказывать не внося предоплату.')
-                +benefit('support', 'Поддержка клиентов 24/7', 'Используйте удобный для себя способ связи (тел., чат, звонок с сайта и т.д.)')
-                +benefit('change', 'Легко поменять заказ', 'В любое время вы можете изменить или отменить заказ')
-                +benefit('prices', 'Лучшие цены на все', 'Мы гарантируем лучшие цены на услуги, а также специальные предложения.')
-            include includes/footer
+            include includes/_benefits
+            include includes/_footer

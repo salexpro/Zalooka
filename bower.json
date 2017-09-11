@@ -23,8 +23,7 @@
   "devDependencies": {
     "font-awesome": "fontawesome#^4.7.0",
     "foundation-sites": "^6.4.3",
-    "what-input": "^5.0.1",
-    "material-icons": "^0.1.0"
+    "what-input": "^5.0.1"
   },
   "resolutions": {
     "what-input": "^5.0.1",

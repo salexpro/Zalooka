@@ -20,13 +20,15 @@
         line-height: 14px;
         color: $medium-gray;
         margin-left: 54px;
-        a{
-            color: $medium-gray;
-            border-bottom: 1px dashed;
-        }
     }
     &_currency{
         @extend .head_place;
+    }
+    &_link{
+        display: inline-block;
+        cursor: pointer;
+        color: $medium-gray;
+        border-bottom: 1px dashed;
     }
     &_support{
         display: flex;
@@ -37,14 +39,13 @@
             width: 20px;
             height: 20px;
             margin-right: 15px;
-            a{
-                
+            color: $primary-color;
+            i{
+                font-size: 20px;
             }
         }
         &_button{
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            display: block;
             text-align: center;
             min-width: 30px;
             width: 30px;
@@ -52,9 +53,8 @@
             border: 1px solid #f7f7f7;
             border-radius: 50%;
             margin-right: 17px;
-        }
-        i{
-            font-size: 20px;
+            color: $primary-color;
+            font-size: 18px;
         }
         p{
             text-align: right;
@@ -65,10 +65,21 @@
     &_account{
         width: 40px;
         height: 40px;
+        &_inner{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f2f2f2;
+            overflow: hidden;
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+            color: #cacaca;
+            font-size: 20px;
+        }
         img{
             width: 100%;
             height: 100%;
-            border-radius: 50%;
         }
         &.is_new{
             position: relative;
