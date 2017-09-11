@@ -14,10 +14,13 @@
 [type='color'],
 textarea {
     padding: 0 10px;
+    font-weight: 300;
 }
 
 button, [type="button"], [type="reset"], [type="submit"]{
     outline: none;
+    cursor: pointer;
+    font-weight: 300;
 }
 
 a{

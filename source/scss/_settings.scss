@@ -89,7 +89,7 @@ $global-padding: 1rem;
 $global-position: 1rem;
 $global-weight-normal: normal;
 $global-weight-bold: bold;
-$global-radius: 0;
+$global-radius: 2px;
 $global-menu-padding: 0.7rem 1rem;
 $global-menu-nested-margin: 1rem;
 $global-text-direction: ltr;
@@ -171,8 +171,8 @@ $anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
 $hr-width: $global-width;
-$hr-border: 1px solid $medium-gray;
-$hr-margin: rem-calc(20) auto;
+$hr-border: 1px solid #304047;
+$hr-margin: rem-calc(7) auto;
 $list-lineheight: $paragraph-lineheight;
 $list-margin-bottom: $paragraph-margin-bottom;
 $list-style-type: disc;
@@ -290,7 +290,7 @@ $button-radius: $global-radius;
 $button-hollow-border-width: 1px;
 $button-sizes: (
   tiny: 0.6rem,
-  small: 0.75rem,
+  small: 13px,
   default: 1rem,
   large: 1.25rem,
 );
@@ -371,15 +371,15 @@ $drilldown-arrow-size: 6px;
 // 17. Dropdown
 // ------------
 
-$dropdown-padding: 1rem;
-$dropdown-background: $body-background;
-$dropdown-border: 1px solid $medium-gray;
+$dropdown-padding: 16px;
+$dropdown-background: #263238;
+$dropdown-border: 0;
 $dropdown-font-size: 1rem;
-$dropdown-width: 300px;
+$dropdown-width: 255px;
 $dropdown-radius: $global-radius;
 $dropdown-sizes: (
-  tiny: 100px,
-  small: 200px,
+  tiny: 90px,
+  small: 130px,
   large: 400px,
 );
 
