@@ -1,7 +1,8 @@
 footer.footer
     .row.footer_inner
         .column
-            h6.footer_header Популярные страны
+            h6.footer_header
+                a(href="#") Популярные страны
             ul.menu.vertical
                 li
                     a(href="#") Тайланд
@@ -24,7 +25,8 @@ footer.footer
                 li
                     a(href="#") Смотреть все страны
         .column
-            h6.footer_header Популярные города
+            h6.footer_header
+                a(href="#") Популярные города
             ul.menu.vertical
                 li
                     a(href="#") Паттайя
@@ -54,7 +56,8 @@ footer.footer
             img(src="./img/payments/mastercard.svg", alt="MasterCard")
             img(src="./img/payments/visa.svg", alt="VISA")
         .column.footer_contacts
-            h6.footer_header Контакты
+            h6.footer_header
+                a(href="#") Контакты
             ul.menu.vertical
                 li
                     span Звонки из Тайланда
@@ -99,4 +102,6 @@ footer.footer
         .footer_lang
             | RU | 
             a(href="#") EN
+include _dropdown
 script(src="/js/app.min.js")
+script(src="https://use.fontawesome.com/5d9df53e16.js")

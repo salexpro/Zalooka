@@ -1,0 +1,21 @@
+mixin benefit(type, title, descr)
+    .large-4.column
+        .card.card--small
+            .card_top
+                .card_flag(class="card_flag--" + type)
+                    if type=='prepay'
+                        i.material-icons money_off
+                    else
+                        i(class="icon-" + type)
+                .card_content
+                    p.card_header
+                        =title
+                    =descr
+                    
+section.row.align-center.benefits
+    p.small-12.column.header Наши преимущества
+    +benefit('globe', 'Онлайн заказ', 'Заказывайте туристические услуги и оплачивайте их безопасно прямо на сайте.')
+    +benefit('prepay', 'Без предоплаты', 'Многие услуги можно заказывать не внося предоплату.')
+    +benefit('earphones-alt', 'Поддержка клиентов 24/7', 'Используйте удобный для себя способ связи (тел., чат, звонок с сайта и т.д.)')
+    +benefit('shuffle', 'Легко поменять заказ', 'В любое время вы можете изменить или отменить заказ')
+    +benefit('arrow-down-circle', 'Лучшие цены на все', 'Мы гарантируем лучшие цены на услуги, а также специальные предложения.')

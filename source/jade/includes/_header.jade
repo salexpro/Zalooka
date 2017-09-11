@@ -6,19 +6,25 @@ header.head
                     img(src="/img/logo.svg", alt="Zalooka")
             .head_place
                 | Место: 
-                a(href="#") Паттайя, Тайланд
+                .head_link(data-open="search")
+                    | Паттайя, Тайланд
             .head_currency
                 | Валюта: 
-                a(href="#") Тайский бат
+                .head_link(data-toggle="currencies")
+                    | Тайский бат
         .column.large-4.head_right
             .head_support
-                a.head_support_search(data-open="search")
+                button.head_support_search(data-open="search")
                     i.material-icons search
-                a.head_support_button(data-open="support") 
-                    i.material-icons headset_mic
+                button.head_support_button(data-toggle="support")
+                    i.icon-earphones-alt
                 p 24/7 Обслуживание клиентов в Таиланде +666 000 35666
-            a.head_account.is_new(href="#")
-                img(src="/img/user.svg", alt="Аватар")
+            button.head_account.is_new(data-toggle="unlogged")
+                span.head_account_inner
+                    if logged
+                        img(src="https://unsplash.it/40", alt="Аватар")
+                    else
+                        i.icon-user
 nav.nav
     .row.nav_inner
         ul.menu
@@ -36,7 +42,7 @@ section.banner
     p.banner_header НАЧНИ  ПУТЕШЕСТВИЕ С  ВЫБОРА  МЕСТА
     .banner_selplace
         form(action="")
-            input(type="text" placeholder="Таиланд")
-            input(type="text" placeholder="Паттайя")
-            input(type="text" placeholder="Услуга")
+            input(type="text" placeholder="Таиланд" value="Таиланд" name="country" readonly)
+            input(type="text" placeholder="Паттайя" name="city")
+            input(type="text" placeholder="Услуга" name="service")
             input.button(type="submit" value="Перейти")
