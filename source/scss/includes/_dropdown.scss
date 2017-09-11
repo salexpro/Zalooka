@@ -1,0 +1,125 @@
+.dropdown-pane{
+    color: #cacaca;
+    font-size: 11px;
+    font-weight: 300;
+    &::before{
+        content: '';
+        position: absolute;
+        top: -6px;
+        border: 6px solid #263238;
+        border-top: 0;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-bottom-width: 6px
+    }
+    &.tiny, &.small{
+        padding: 10px;
+        
+    }
+    &--currencies{
+        &::before{
+            right: 17px;
+        }
+        a{
+            padding: 7px 0;
+            &:not(.active){
+                color: #cacaca;
+            }
+        }
+    }
+    &--support{
+        &::before{
+            right: 79px;
+        }
+        table{
+            tr{
+                &:first-child{
+                    td{
+                        padding: 0;
+                    }
+                }
+                &:last-child{
+                    td:last-child{
+                        font-weight: 400;
+                        text-align: right;
+                    }
+                    a{
+                        color: $white;
+                        width: 90px;
+                        margin-left: -5px;
+                    }
+                    span{
+                        color: $primary-color
+                    }
+                }
+                td{
+                    vertical-align: top;
+                    padding-top: 6px;
+                    &:first-child{
+                        color: #828588;
+                    }
+                    &:last-child{
+                        width: 50%;
+                    }
+                }
+            }
+        }
+        .menu{
+            a{
+                padding: 2px 0px;
+                padding-bottom: 9px;
+                color: $white;
+            }
+        }
+        a{
+            display: block;
+        }
+    }
+    &--unlogged{
+        &::before{
+            right: 58px;
+        }
+        .dropdown-pane{
+            &_inner{
+                display: flex;
+            }
+            &_avatar{
+                flex: 0 0 60px;
+                width: 60px;
+                height: 60px;
+                background-color: #f2f2f2;
+                border-radius: 50%;
+                margin-right: 15px;
+                font-size: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        .button{
+            font-weight: 400;
+            padding: 5px 21px;
+            margin: 0;
+            margin-top: 10px;
+        }
+    }
+    &--logged{
+        font-size: 14px;
+        &::before{
+            right: 37px;
+        }
+        .menu{
+            a{
+                color: $white;
+                padding: 8px 0;
+                &:hover, &.active{
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+    &_header{
+        font-size: 14px;
+        color: $primary-color;
+    }  
+}

@@ -1104,7 +1104,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/build\/bower_components\/foundation-sites\/dist\/js\/plugins\/foundation.core.min.js",
 		"oF": 0,
 		"sC": 1,
@@ -1144,7 +1144,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/build\/bower_components\/foundation-sites\/dist\/js\/plugins\/foundation.dropdown.min.js",
 		"oF": 0,
 		"sC": 1,
@@ -1484,7 +1484,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/build\/bower_components\/foundation-sites\/dist\/js\/plugins\/foundation.util.box.min.js",
 		"oF": 0,
 		"sC": 1,
@@ -1524,7 +1524,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/build\/bower_components\/foundation-sites\/dist\/js\/plugins\/foundation.util.keyboard.min.js",
 		"oF": 0,
 		"sC": 1,
@@ -1664,7 +1664,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/build\/bower_components\/foundation-sites\/dist\/js\/plugins\/foundation.util.triggers.min.js",
 		"oF": 0,
 		"sC": 1,
@@ -3819,7 +3819,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/build\/bower_components\/jquery\/dist\/jquery.min.js",
 		"oF": 0,
 		"sC": 1,
@@ -5824,16 +5824,6 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/source\/img\/add.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/img\/add.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
 	"\/source\/img\/banner.jpg": {
 		"ft": 16384,
 		"iS": 730790,
@@ -5914,27 +5904,51 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/source\/jade\/includes\/footer.jade": {
+	"\/source\/jade\/includes\/_benefits.jade": {
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "\/build\/footer.html",
+		"oAP": "\/build\/_benefits.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/source\/jade\/includes\/head.jade": {
+	"\/source\/jade\/includes\/_dropdown.jade": {
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "\/build\/head.html",
+		"oAP": "\/build\/_dropdown.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/source\/jade\/includes\/header.jade": {
+	"\/source\/jade\/includes\/_footer.jade": {
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "\/build\/header.html",
+		"oAP": "\/build\/_footer.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/source\/jade\/includes\/_head.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_head.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/source\/jade\/includes\/_header.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_header.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/source\/jade\/includes\/_left_menu.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_left_menu.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -5948,7 +5962,7 @@
 		},
 	"\/source\/js\/app.js": {
 		"ft": 64,
-		"ma": 0,
+		"ma": 1,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/js\/app.min.js",
@@ -6004,6 +6018,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/build\/scss\/css\/_card.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/source\/scss\/includes\/_dropdown.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/scss\/css\/_dropdown.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
