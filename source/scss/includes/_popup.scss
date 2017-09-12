@@ -1,0 +1,171 @@
+.reveal{
+    outline: none;
+    &.fade-in.mui-enter {
+        transform: translateY(-18px) perspective(435px) rotateX(8deg);
+        &.mui-enter-active {
+            transform: translateY(0) perspective(435px) rotateX(0);
+        }
+    }
+    &.fade-out.mui-leave {
+        transform: translateY(0) perspective(435px) rotateX(0);
+        &.mui-leave-active {
+            transform: translateY(-18px) perspective(435px) rotateX(8deg);
+        }
+    }
+    &_search{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        @include breakpoint(large) {
+            width: 600px;
+        }
+        &_field{
+            max-width: 230px;
+            display: flex;
+            align-items: center;
+            i{
+                display: block;
+                font-size: 21px;
+                color: $medium-gray;
+                margin-left: -33px;
+            }
+            input{
+                height: 42px;
+                font-size: 20px;
+                margin: 0;
+                margin-left: 12px;
+            }
+        }
+        &_content{
+            margin-top: 33px;
+        }
+        &_list{
+            max-height: 360px;
+            overflow: auto;
+            &:last-child{
+                margin-right: -30px;
+            }
+            &::-webkit-scrollbar {
+                width: 3px;
+                height: 5px;
+            }
+             
+            &::-webkit-scrollbar-track {
+                background: none;
+            }
+             
+            &::-webkit-scrollbar-thumb {
+                background: $primary-color;
+            }
+        }
+        .menu{
+            a{
+                color: #4a4a4a;
+                font-size: 18px;
+                font-weight: 300;
+                padding: 11px 0;
+                padding-right: 30px;
+                display: table;
+                position: relative;
+                &::after{
+                    content: "\e606";
+                    font-family: 'simple-line-icons';
+                    line-height: 1;
+                    font-size: 14px;
+                    margin-left: 17px;
+                    color: $primary-color;
+                    position: absolute;
+                    right: 0;
+                    top: calc(50% - 5.5px);
+                    transition: 300ms;
+                    opacity: 0;
+                    transform: translateX(-10px)
+                }
+                &:hover, &.active{
+                    color: $primary-color;
+                    &::after{
+                        opacity: 1;
+                        transform: translateX(0)
+                    }
+                }
+            }
+        }
+    }
+    &_header{
+        font-size: 20px;
+        color: $dark-gray;
+        text-align: center;
+        margin-bottom: 33px;
+    }
+    &_form{
+        margin-bottom: 22px;
+        .button{
+            display: block;
+            margin: auto;
+            margin-top: 52px;
+        }
+        &--register{
+            label{
+                margin-top: 40px;
+            }
+            .button{
+                margin-top: 32px;
+            }
+        }
+    }
+    &_social{
+        color: $medium-gray;
+        font-weight: 300;
+        text-align: center;
+        line-height: 2.8;
+        &_forgot{
+            display: table;
+            margin: auto;
+            color: #6aa0fa;
+        }
+    }
+    &_footer{
+        margin-top: 14px;
+        border-top: 1px solid $light-gray;
+        padding-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $medium-gray;
+        font-weight: 300;
+        .button{
+            margin: 0;
+        }
+    }
+}
+
+.fade-in.mui-enter {
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    opacity: 0;
+    transition-property: all;
+}
+
+.fade-in.mui-enter.mui-enter-active {
+    opacity: 1;
+}
+
+.fade-out.mui-leave {
+    transition-duration: 200ms;
+    transition-timing-function: ease-in;
+    opacity: 1;
+    transition-property: all;
+}
+
+.fade-out.mui-leave.mui-leave-active {
+    opacity: 0;
+}
+
+.close-button{
+    transition: 300ms;
+    span{
+        line-height: 0.2;
+        display: block;
+        overflow: hidden;
+        padding-bottom: 50%;
+    }
+}

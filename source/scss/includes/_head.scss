@@ -27,6 +27,8 @@
         color: $medium-gray;
         border-bottom: 1px dashed;
         user-select: none;
+        outline: none;
+        padding-bottom: 2px;
     }
     &_support{
         display: flex;

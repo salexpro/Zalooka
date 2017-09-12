@@ -1,0 +1,110 @@
+#search.reveal.reveal_search(data-reveal data-animation-in="fade-in" data-animation-out="fade-out")
+    .reveal_search_field
+        i.icon-magnifier
+        input(type="search" placeholder="Поиск")
+    .row.align-justify.reveal_search_content
+        .large-6.reveal_search_list
+            ul.menu.vertical
+                li
+                    a(href="#")
+                        | Словакия
+                li
+                    a(href="#")
+                        | США
+                li
+                    a(href="#")
+                        | Таиланд
+                li
+                    a(href="#")
+                        | Турция
+                li
+                    a(href="#")
+                        | Украина 
+                li
+                    a(href="#")
+                        | Уругвай 
+                li
+                    a(href="#")
+                        | Финляндия 
+                li
+                    a(href="#")
+                        | Франция
+                li
+                    a(href="#")
+                        | Чехия
+        .reveal_search_list
+            ul.menu.vertical
+                li
+                    a(href="#")
+                        | Бангкок
+                li
+                    a(href="#")
+                        | Паккрет   
+                li
+                    a(href="#")
+                        | Чиангмай  
+                li
+                    a(href="#")
+                        | Сураттхани    
+                li
+                    a(href="#")
+                        | Паттая    
+                li
+                    a(href="#")
+                        | Пхукет    
+    button.close-button(aria-label='Закрыть', type='button', data-close)
+        span(aria-hidden='true') ×
+
+#login.reveal.reveal_login(data-reveal data-animation-in="fade-in" data-animation-out="fade-out")
+    .reveal_header
+        | Вход
+    form.reveal_form(action="")
+        input(type="email" placeholder="Email")
+        input(type="password" placeholder="Пароль")
+        input.button(type="submit" value="Войти")
+    .reveal_social
+        | Или войдите с помощью 
+        a(href="#")
+            | Facebook
+        | , 
+        a(href="#")
+            | VK
+        | , 
+        a(href="#")
+            | Google
+        a.reveal_social_forgot(data-open="forgot")
+            | Забыли пароль?
+    .reveal_footer
+        | Еще не зарегестрированы?
+        button.button(data-open="register")
+            | Зарегистрироваться
+    button.close-button.small(aria-label='Закрыть', type='button', data-close)
+        span(aria-hidden='true') ×
+
+#register.reveal.reveal_register(data-reveal data-animation-in="fade-in" data-animation-out="fade-out")
+    .reveal_header
+        | Регистрация
+    form.reveal_form.reveal_form--register(action="")
+        input(type="text" placeholder="Имя")
+        input(type="tel" placeholder="Телефон")
+        input(type="email" placeholder="Email")
+        input(type="password" placeholder="Пароль")
+        input(type="checkbox" id="news" checked)
+        label(for="news") Я хочу получать Супер предложения и новостную рассылку 
+        input.button(type="submit" value="Зарегистрироваться")
+    .reveal_social
+        | Или зарегистрируйтесь с помощью 
+        a(href="#")
+            | Facebook
+        | , 
+        a(href="#")
+            | VK
+        | , 
+        a(href="#")
+            | Google
+    .reveal_footer
+        | У вас уже есть аккаунт на Zalooka?
+        button.button(data-open="login")
+            | Войти
+    button.close-button.small(aria-label='Закрыть', type='button', data-close)
+        span(aria-hidden='true') ×
