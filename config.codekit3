@@ -5830,11 +5830,21 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/source\/img\/banner.jpg": {
+	"\/source\/img\/banner_main.jpg": {
 		"ft": 16384,
 		"iS": 730790,
 		"oA": 0,
-		"oAP": "\/build\/img\/banner.jpg",
+		"oAP": "\/build\/img\/banner_main.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/source\/img\/banner_section.jpg": {
+		"ft": 16384,
+		"iS": 204168,
+		"oA": 0,
+		"oAP": "\/build\/img\/banner_section.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -5900,6 +5910,14 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/source\/jade\/includes\/_banner.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_banner.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/source\/jade\/includes\/_benefits.jade": {
 		"cOD": 1,
 		"ft": 512,
@@ -5913,6 +5931,14 @@
 		"ft": 512,
 		"oA": 1,
 		"oAP": "\/build\/_dropdown.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/source\/jade\/includes\/_filter.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_filter.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -5940,11 +5966,27 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"\/source\/jade\/includes\/_left_menu.jade": {
+	"\/source\/jade\/includes\/_item.jade": {
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "\/build\/_left_menu.html",
+		"oAP": "\/build\/_item.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/source\/jade\/includes\/_lmenu.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_lmenu.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/source\/jade\/includes\/_pager.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_pager.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -5961,6 +6003,14 @@
 		"ft": 512,
 		"oA": 0,
 		"oAP": "\/build\/index.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/source\/jade\/tours.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/build\/tours.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -6074,6 +6124,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/build\/scss\/css\/_layout.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/source\/scss\/includes\/_lmenu.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/scss\/css\/_lmenu.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

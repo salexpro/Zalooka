@@ -7,6 +7,19 @@
     transition: background-color 5000s ease-in-out 0s;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+::-webkit-scrollbar-track {
+    background: none;
+}
+::-webkit-scrollbar-thumb {
+    background: $primary-color;
+}
+
 html, body{
     width: 100%;
 }
@@ -69,6 +82,16 @@ button, [type="button"], [type="reset"], [type="submit"]{
 
 a{
     transition: 300ms;
+}
+
+.wrap{
+    &--lmenu{
+        padding-left: 80px;
+        box-shadow: inset 80px 0 #151d20;
+    }
+    .head, .nav{
+        margin-left: -80px;
+    }
 }
 
 .header{
