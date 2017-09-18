@@ -28,7 +28,7 @@
 		"oAP": "\/build\/android-chrome-144x144.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -39,7 +39,7 @@
 		"oAP": "\/build\/apple-touch-icon.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -5772,7 +5772,7 @@
 		"oAP": "\/build\/favicon-16x16.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -5783,7 +5783,7 @@
 		"oAP": "\/build\/favicon-32x32.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -5808,7 +5808,7 @@
 		"oAP": "\/build\/mstile-150x150.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -5829,26 +5829,6 @@
 		"opt": 1,
 		"plM": 3758088159,
 		"prP": 0
-		},
-	"\/source\/img\/banner_main.jpg": {
-		"ft": 16384,
-		"iS": 730790,
-		"oA": 0,
-		"oAP": "\/build\/img\/banner_main.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"\/source\/img\/banner_section.jpg": {
-		"ft": 16384,
-		"iS": 204168,
-		"oA": 0,
-		"oAP": "\/build\/img\/banner_section.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
 		},
 	"\/source\/img\/logo.svg": {
 		"ft": 2097152,
@@ -5876,7 +5856,7 @@
 		"oA": 0,
 		"oAP": "\/build\/img\/payments\/paypal.svg",
 		"oF": 0,
-		"opt": 0,
+		"opt": 1,
 		"plM": 3758088159,
 		"prP": 0
 		},
@@ -5909,6 +5889,36 @@
 		"opt": 1,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/source\/img\/promo\/banner_main.jpg": {
+		"ft": 16384,
+		"iS": 730790,
+		"oA": 0,
+		"oAP": "\/build\/img\/promo\/banner_main.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/source\/img\/promo\/banner_shopping.jpg": {
+		"ft": 16384,
+		"iS": 306194,
+		"oA": 0,
+		"oAP": "\/build\/img\/promo\/banner_shopping.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/source\/img\/promo\/banner_tours.jpg": {
+		"ft": 16384,
+		"iS": 204168,
+		"oA": 0,
+		"oAP": "\/build\/img\/promo\/banner_tours.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
 		},
 	"\/source\/jade\/includes\/_banner.jade": {
 		"cOD": 1,
@@ -6011,6 +6021,14 @@
 		"ft": 512,
 		"oA": 0,
 		"oAP": "\/build\/index.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/source\/jade\/shopping.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/build\/shopping.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -6237,7 +6255,7 @@
 	"displayValue": "Zalooka",
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "meme-cocaine",
-	"lastBuiltDate": 526519192
+	"lastBuiltDate": 527459058
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

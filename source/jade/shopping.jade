@@ -1,0 +1,50 @@
+-
+    var page = 'section';
+    var type = 'shopping';
+    var section_name = 'Шоппинг';
+    var logged = true;
+include includes/_item
+
+doctype html
+html(lang="ru")
+    include includes/_head
+    body
+        main.wrap.wrap--lmenu
+            include includes/_header
+            include includes/_lmenu
+            include includes/_banner
+            section.row.section
+                include includes/_path
+                .card.card--thin.card--description
+                    p.header
+                        =section_name
+                        |  в Паттайе
+                    p.header.primary
+                        | 123 места для шоппинга
+                    .card_content
+                        | Удивительная Паттайя, сколько здесь всего инетерсного? Наша компания предлагает вам бесплатные шоп-туры в городе Паттайя.
+                        br
+                        | Разнообразные сувениры, кожаные изделия, ювелирные фабрики, натуральная тайская косметика и многое другое. Более подробно ознакомится с шоп-турами Паттайи, а также заказать бесплатный транспорт можно в этом разделе.
+                include includes/_filter
+            section.row.items
+                include includes/_pager
+                .row.items_content
+                    +item('Центр косметологии VitaMax', 'Все препараты изготовлены на натуральной основе.', false, false)
+                    +item('Ювелирная фабрика Gems Gallery', 'Добро пожаловать - на фабрику "Джемс Галлери".', false, false)
+                    +item('Duty Free King Power Pattaya', 'Единственный в Паттайе центр беспошлинной торговли Duty Free.', false, false)
+                    +item('Салон кожи и меха Toscano', 'Изысканные модели от итальянских дизайнеров и профессиональное шоу-дефиле.', false, false)
+                    +item('Мир кожи', 'Модные изделия из кожи азиатского буйвола, крокодила, питона, змеи, акулы.', false, false)
+                    +item('Аптека Erawadee в Паттайе', 'Натуральная косметика, чаи, бальзамы, тайская народная медицина, аромотерапия.', false, false)
+                include includes/_pager
+                .card.card--thin.card--description
+                    p.header
+                        =section_name
+                        |  в Паттайе
+                    p.header.primary
+                        | 123 места для шоппинга
+                    .card_content
+                        | Удивительная Паттайя, сколько здесь всего инетерсного? Наша компания предлагает вам бесплатные шоп-туры в городе Паттайя.
+                        br
+                        | Разнообразные сувениры, кожаные изделия, ювелирные фабрики, натуральная тайская косметика и многое другое. Более подробно ознакомится с шоп-турами Паттайи, а также заказать бесплатный транспорт можно в этом разделе.
+            include includes/_benefits
+            include includes/_footer

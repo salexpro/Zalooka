@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     height: 445px;
-    background-image: url(../img/banner_main.jpg);
+    background-image: url(../img/promo/banner_main.jpg);
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -48,12 +48,18 @@
         }
     }
     &--section{
-        background-image: url(../img/banner_section.jpg);
+        background-image: url(../img/promo/banner_section.jpg);
         .banner_header{
             font-size: 30px;
             text-transform: none;
             font-weight: 300;
             margin-bottom: 70px;
         }
+    }
+    &--tours{
+        background-image: url(../img/promo/banner_tours.jpg);
+    }
+    &--shopping{
+        background-image: url(../img/promo/banner_shopping.jpg);
     }
 }
