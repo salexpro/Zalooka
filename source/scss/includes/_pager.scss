@@ -1,0 +1,30 @@
+.pagination{
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    font-weight: 300;
+    font-size: 0;
+    a{
+        font-weight: 300;
+        &:hover{
+            color: $white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
+        }
+    }
+    .current{
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
+    }
+    li.pagination-prev, li.pagination-next{
+        margin: 0;
+        a{
+            background: none;
+            color: $primary-color;
+            font-size: 14px;
+            box-shadow: none;
+            padding: 0;
+        }
+        i{
+            display: block;
+        }
+    }
+}

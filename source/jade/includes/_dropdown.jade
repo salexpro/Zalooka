@@ -51,28 +51,27 @@
                     | 495
                     span )
                     |  123 4567
-
-#unlogged.dropdown-pane.dropdown-pane--unlogged(data-dropdown data-v-offset="10" data-h-offset="-44" data-close-on-click="true" data-position="bottom" data-alignment="right")
-    .dropdown-pane_inner
-        .dropdown-pane_avatar
-            i.icon-user
-        .dropdown-pane_content
-            | Для удобства бронирования и внесения изменений войдите в личный кабинет
-            button.button.small(data-open="login")
-                | Войти
-
-#logged.dropdown-pane.small.dropdown-pane--logged(data-dropdown data-v-offset="10" data-h-offset="-23" data-close-on-click="true" data-position="bottom" data-alignment="right")
-    ul.menu.vertical
-        li
-            a(href="#")
-                | Мой профиль
-        li
-            a(href="#")
-                | Мои брони
-        li
-            a(href="#")
-                | Список желаний
-        li
-            a(href="#")
-                | Выйти
-
+if logged
+    #logged.dropdown-pane.small.dropdown-pane--logged(data-dropdown data-v-offset="10" data-h-offset="-23" data-close-on-click="true" data-position="bottom" data-alignment="right")
+        ul.menu.vertical
+            li
+                a(href="profile.html")
+                    | Мой профиль
+            li
+                a(href="profile.html#reservations")
+                    | Мои брони
+            li
+                a(href="wishlist.html")
+                    | Список желаний
+            li
+                a(href="/")
+                    | Выйти
+else
+    #unlogged.dropdown-pane.dropdown-pane--unlogged(data-dropdown data-v-offset="10" data-h-offset="-44" data-close-on-click="true" data-position="bottom" data-alignment="right")
+        .dropdown-pane_inner
+            .dropdown-pane_avatar
+                i.icon-user
+            .dropdown-pane_content
+                | Для удобства бронирования и внесения изменений войдите в личный кабинет
+                button.button.small(data-open="login")
+                    | Войти

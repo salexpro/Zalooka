@@ -19,30 +19,22 @@ header.head
                 button.head_support_button(data-toggle="support")
                     i.icon-earphones-alt
                 p 24/7 Обслуживание клиентов в Таиланде +666 000 35666
-            button.head_account.is_new(data-toggle="unlogged")
+            button(class=logged ? "head_account" : "head_account is_new" data-toggle=logged ? "logged" : "unlogged")
                 span.head_account_inner
                     if logged
-                        img(src="https://unsplash.it/40", alt="Аватар")
+                        img(src="https://unsplash.it/40?random", alt="Аватар")
                     else
                         i.icon-user
 nav.nav
     .row.nav_inner
         ul.menu
             li
-                a(href="#") ПРАЙС-ЛИСТ
+                a(href="price_list.html") ПРАЙС-ЛИСТ
             li
-                a(href="#") ЧАВО
+                a(href="faq.html") ЧАВО
             li
-                a(href="#") ОТЗЫВЫ
+                a(href="reviews.html") ОТЗЫВЫ
             li
-                a(href="#") СТАТЬИ
+                a(href="articles.html") СТАТЬИ
             li
-                a(href="#") КОНТАКТЫ
-section.banner
-    p.banner_header НАЧНИ  ПУТЕШЕСТВИЕ С  ВЫБОРА  МЕСТА
-    .banner_selplace
-        form(action="")
-            input(type="text" placeholder="Таиланд" value="Таиланд" name="country" readonly)
-            input(type="text" placeholder="Паттайя" name="city")
-            input(type="text" placeholder="Услуга" name="service")
-            input.button(type="submit" value="Перейти")
+                a(href="contacts.html") КОНТАКТЫ

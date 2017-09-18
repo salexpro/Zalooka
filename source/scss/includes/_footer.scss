@@ -10,10 +10,10 @@
     &_header{
         font-size: 14px;
         text-transform: uppercase;
-        color: #4a4a4a;
+        color: $secondary-color;
         margin-bottom: 14px;
         a{
-            color: #4a4a4a;
+            color: $secondary-color;
             &:hover{
                 text-decoration: underline;
             }
@@ -22,7 +22,7 @@
     .menu li{
         &:last-child{
             a{
-                color: #4a4a4a;
+                color: $secondary-color;
                 font-size: 13px;
             }
         }
@@ -38,7 +38,7 @@
         position: relative;
         text-align: center;
         justify-content: center;
-        color: #4a4a4a;
+        color: $secondary-color;
         font-weight: 300;
     }
     &_lang{
@@ -70,7 +70,7 @@
                 }
             }
             a{
-                color: #4a4a4a;
+                color: $secondary-color;
                 &:only-child{
                     color: #9b9b9b;
                 }

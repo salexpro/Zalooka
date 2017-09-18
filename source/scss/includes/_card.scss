@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 100%;
     height: calc(100% - 30px);
     background-color: $white;
     border-radius: $global-radius;
@@ -44,6 +45,43 @@
                 }
                 &--arrow-down-circle{
                     background-color: #4990e2;
+                }
+            }
+        }
+    }
+    &--thin{
+        padding: 20px 36px 30px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-weight: 300;
+        .header{
+            text-align: left;
+            font-weight: 300;
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        .card_content{
+            width: 100%;
+            flex: 0 0 100%;
+        }
+    }
+    &--description{
+        margin-bottom: 70px;
+    }
+    &--categories{
+        .menu{
+            margin-bottom: -20px;
+            li{
+                width: 25%;
+                margin-bottom: 20px;
+            }
+            a{
+                display: table;
+                padding: 0;
+                color: $secondary-color;
+                &:hover{
+                    color: $primary-color;
                 }
             }
         }
@@ -132,13 +170,13 @@
             justify-content: space-between;
             align-items: center;
             font-weight: 300;
-            color: #4a4a4a;
+            color: $secondary-color;
             b{
                 color: $primary-color;
                 font-weight: 300;
             }
             span{
-                color: $secondary-color;
+                color: $medium-gray;
             }
         }
         &_more{

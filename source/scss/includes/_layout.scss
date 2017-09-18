@@ -101,4 +101,10 @@ a{
     text-align: center;
     margin-top: 20px;
     margin-bottom: 25px;
+    &.primary{
+        color: $primary-color;
+    }
+    &.thin{
+        font-weight: 300;
+    }
 }

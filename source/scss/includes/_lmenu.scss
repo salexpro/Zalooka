@@ -8,6 +8,11 @@
     &.fixed{
         position: fixed;
         top: 0;
+        @media screen and (max-height: 510px) {
+            position: absolute;
+            top: 100px;
+            height: 400vh;
+        }
     }
     &_icon{
         svg{
@@ -90,14 +95,32 @@
                 min-width: 200px;
             }
             a{
+                display: flex;
+                align-items: center;
                 padding: 7.5px 30px;
                 font-weight: 300;
                 color: $white;
                 line-height: normal;
-                transition: 300ms;
+                transition: 300ms;  
                 &:hover, &.hover{
                     background-color: #283d45;
                     color: $primary-color;
+                    &::after{
+                        opacity: 1;
+                        transform: translateX(0);
+                    }
+                }
+                &::after{
+                    display: block;
+                    content: "\e606";
+                    font-size: 7px;
+                    font-family: 'simple-line-icons';
+                    color: $primary-color;
+                    line-height: 1;
+                    transition: 300ms;
+                    opacity: 0;
+                    transform: translateX(-10px);
+                    margin-left: 20px;
                 }
             }
         }

@@ -1,49 +1,5 @@
-mixin item(title, descr, prepay, price)
-    .large-4.column
-        .card
-            .card_content
-                .card_top
-                    .card_flag
-                        img(src="https://unsplash.it/20?random", alt="")
-                    .card_name
-                        a.card_name_link(href="#")
-                            =title
-                        a.card_name_location(href="#") Тайланд, Паттайя
-                .card_image(class=prepay ? "card_image--prepay" : "")
-                    img(src="https://unsplash.it/345/190/?random", alt=title)
-                .card_brief
-                    =descr
-            .card_bottom(class=!price ? "card_bottom--wo" : "")
-                .card_bottom_add
-                    .card_bottom--left
-                        a.card_bottom_more(href="#") Узнать больше
-                    .card_bottom--right
-                        .rating
-                            .rating_stars
-                                i.material-icons.active star_border
-                                i.material-icons.active star_border
-                                i.material-icons.active star_border
-                                i.material-icons star_border
-                                i.material-icons star_border
-                            | 2.8
-                .card_bottom_price
-                    .card_bottom--left
-                        if price
-                            | Взрослый 
-                            b 549
-                            | 
-                            span бат
-                            br
-                            | Детский 
-                            b 449
-                            | 
-                            span бат
-                        else
-                            | Бесплатный трансфер
-                    if price
-                        .card_bottom--right
-                            button.card_add
-                                i.fa.fa-plus-circle
+- var page = 'main';
+include includes/_item
 
 doctype html
 html(lang="ru")
@@ -51,6 +7,7 @@ html(lang="ru")
     body
         main.wrap
             include includes/_header
+            include includes/_banner
             section.row.column
                 .card.card--about
                     p.header О сервисе Zalooka

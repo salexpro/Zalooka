@@ -1,0 +1,12 @@
+.path{
+    color: $medium-gray;
+    font-size: 12px;
+    font-weight: 300;
+    margin: 50px 0;
+    a{
+        color: $medium-gray;
+        &:hover{
+            color: $primary-color;
+        }
+    }
+}

@@ -30,7 +30,7 @@
 // @include foundation-media-object;
 // @include foundation-off-canvas;
 // @include foundation-orbit;
-// @include foundation-pagination;
+@include foundation-pagination;
 // @include foundation-progress-bar;
 // @include foundation-progress-element;
 // @include foundation-progress-element;
@@ -57,7 +57,11 @@
 @import 'includes/layout';
 @import 'includes/head';
 @import 'includes/nav';
+@import 'includes/lmenu';
 @import 'includes/banner';
+@import 'includes/path';
+@import 'includes/filter';
+@import 'includes/pager';
 @import 'includes/card';
 @import 'includes/rating';
 @import 'includes/footer';
