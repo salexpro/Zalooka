@@ -1,4 +1,4 @@
-mixin item(title, descr, prepay, price)
+mixin item(title, descr, prepay, price, add)
     .large-4.column
         .card
             .card_content
@@ -40,7 +40,7 @@ mixin item(title, descr, prepay, price)
                             span бат
                         else
                             | Бесплатный трансфер
-                    if price
+                    if add
                         .card_bottom--right
                             button.card_add
                                 i.fa.fa-plus-circle

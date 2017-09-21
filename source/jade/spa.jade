@@ -1,0 +1,45 @@
+-
+    var page = 'section';
+    var type = 'spa';
+    var section_name = 'SPA';
+    var logged = true;
+include includes/_item
+
+doctype html
+html(lang="ru")
+    include includes/_head
+    body
+        main.wrap.wrap--lmenu
+            include includes/_header
+            include includes/_lmenu
+            include includes/_banner
+            section.row.section
+                include includes/_path
+                .card.card--thin.card--description
+                    p.header
+                        =section_name
+                        |  в Паттайе
+                    p.header.primary
+                        | 123 SPA-салона
+                    .card_content
+                        | Массаж и СПА, что может быть лучше для расслабления на сегодняшний день? Мы предлагаем вам посетить лучшие СПА салоны в Паттайе и ощутить на себе все целебные свойства массажа. В этом разделе вы можете ознакомиться со всем разнообразием программ и процедур, которые предлагают тайские СПА-салоны. Все программы выполняют мастера с природным даром диагностики. Делайте заказ и вы получите бесплатный трансфер в обе стороны из любой части города Паттайя.
+                include includes/_filter
+            section.row.items
+                include includes/_pager
+                .row.items_content
+                    +item('7 Spa', 'Оригинальные программы для обретения внутренней гармонии и пополнения сил для больших планов.', false, false, true)
+                    +item('СПА салон Кита Кито', 'Отправляйтесь в эксклюзивное Спа-путешествие от Кита Кито и просто наслаждайтесь отдыхом.', false, false, true)
+                    +item('Oasis Spa Pattaya', 'Побалуйте себя в оазисе наслаждения и красоты!', false, false, true)
+                    +item('Orhideya Spa', 'Получите максимальный заряд энергии в тропическом раю!', false, false, true)
+                    +item('Silavadee', 'Попробуйте целительную силу камня и вдохните в себя новую жизнь!', false, false, true)
+                include includes/_pager
+                .card.card--thin.card--description
+                    p.header
+                        =section_name
+                        |  в Паттайе
+                    p.header.primary
+                        | 123 SPA-салона
+                    .card_content
+                        | Массаж и СПА, что может быть лучше для расслабления на сегодняшний день? Мы предлагаем вам посетить лучшие СПА салоны в Паттайе и ощутить на себе все целебные свойства массажа. В этом разделе вы можете ознакомиться со всем разнообразием программ и процедур, которые предлагают тайские СПА-салоны. Все программы выполняют мастера с природным даром диагностики. Делайте заказ и вы получите бесплатный трансфер в обе стороны из любой части города Паттайя.
+            include includes/_benefits
+            include includes/_footer

@@ -5910,6 +5910,16 @@
 		"opt": 1,
 		"q": 100
 		},
+	"\/source\/img\/promo\/banner_spa.jpg": {
+		"ft": 16384,
+		"iS": 343047,
+		"oA": 0,
+		"oAP": "\/build\/img\/promo\/banner_spa.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"\/source\/img\/promo\/banner_tours.jpg": {
 		"ft": 16384,
 		"iS": 204168,
@@ -6029,6 +6039,14 @@
 		"ft": 512,
 		"oA": 0,
 		"oAP": "\/build\/shopping.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/source\/jade\/spa.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/build\/spa.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -6252,7 +6270,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 503077683,
-	"displayValue": "Zalooka",
+	"displayValue": "take.travel",
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "meme-cocaine",
 	"lastBuiltDate": 527459058
