@@ -1,10 +1,13 @@
-section(class=(page == 'section') ? "banner banner--section banner--" + type : "banner")
+section(class=(page != 'main') ? "banner banner--section banner--" + type : "banner")
     p.banner_header
-        if page == 'section'
-            =section_name
-            |  в Паттайе
-        else
-            | НАЧНИ ПУТЕШЕСТВИЕ С ВЫБОРА МЕСТА
+        case page
+            when 'main'
+                | НАЧНИ ПУТЕШЕСТВИЕ С ВЫБОРА МЕСТА
+            when 'section'
+                =name
+                |  в Паттайе
+            default
+                =name
     .banner_selplace
         form(action="")
             input(type="text" placeholder="Таиланд" value="Таиланд" name="country" readonly)

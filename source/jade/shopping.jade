@@ -1,7 +1,7 @@
 -
     var page = 'section';
     var type = 'shopping';
-    var section_name = 'Шоппинг';
+    var name = 'Шоппинг';
     var logged = true;
 include includes/_item
 
@@ -29,12 +29,12 @@ html(lang="ru")
             section.row.items
                 include includes/_pager
                 .row.items_content
-                    +item('Центр косметологии VitaMax', 'Все препараты изготовлены на натуральной основе.', false, false, true)
-                    +item('Ювелирная фабрика Gems Gallery', 'Добро пожаловать - на фабрику "Джемс Галлери".', false, false, true)
-                    +item('Duty Free King Power Pattaya', 'Единственный в Паттайе центр беспошлинной торговли Duty Free.', false, false, true)
-                    +item('Салон кожи и меха Toscano', 'Изысканные модели от итальянских дизайнеров и профессиональное шоу-дефиле.', false, false, true)
-                    +item('Мир кожи', 'Модные изделия из кожи азиатского буйвола, крокодила, питона, змеи, акулы.', false, false)
-                    +item('Аптека Erawadee в Паттайе', 'Натуральная косметика, чаи, бальзамы, тайская народная медицина, аромотерапия.', false, false, true)
+                    +item('Центр косметологии VitaMax', 'Таиланд', 'Паттайя', 'Все препараты изготовлены на натуральной основе.', false, false, true)
+                    +item('Ювелирная фабрика Gems Gallery', 'Таиланд', 'Паттайя', 'Добро пожаловать - на фабрику "Джемс Галлери".', false, false, true)
+                    +item('Duty Free King Power Pattaya', 'Таиланд', 'Паттайя', 'Единственный в Паттайе центр беспошлинной торговли Duty Free.', false, false, true)
+                    +item('Салон кожи и меха Toscano', 'Таиланд', 'Паттайя', 'Изысканные модели от итальянских дизайнеров и профессиональное шоу-дефиле.', false, false, true)
+                    +item('Мир кожи', 'Таиланд', 'Паттайя', 'Модные изделия из кожи азиатского буйвола, крокодила, питона, змеи, акулы.', false, false)
+                    +item('Аптека Erawadee в Паттайе', 'Таиланд', 'Паттайя', 'Натуральная косметика, чаи, бальзамы, тайская народная медицина, аромотерапия.', false, false, true)
                 include includes/_pager
                 .card.card--thin.card--description
                     p.header

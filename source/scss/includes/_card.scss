@@ -86,6 +86,40 @@
             }
         }
     }
+    &--large{
+        .card{
+            &_top{
+                padding: 17px 30px;
+            }
+            &_flag{
+                flex: 0 0 40px;
+                margin-right: 30px;
+            }
+            &_name{
+                font-weight: 300;
+                &_location{
+                    a:first-child{
+                        color: $primary-color;
+                    }
+                }
+            }
+            &_brief{
+                font-weight: 300;
+                padding: 25px 30px 20px 30px;
+                .menu{
+                    line-height: 1.4;
+                    li{
+                        margin-bottom: 5px;
+                    }
+                }
+                b{
+                    color: $primary-color;
+                    font-weight: 300;
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
     &_top{
         display: flex;
         align-items: center;
@@ -111,8 +145,11 @@
         &_link{
             color: $black;
         }
-        &_location{
+        &_location a{
             color: $dark-gray;
+            &:hover{
+                color: $primary-color;
+            }
         }
         &_link{
             display: block;

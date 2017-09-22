@@ -5900,6 +5900,16 @@
 		"opt": 1,
 		"q": 100
 		},
+	"\/source\/img\/promo\/banner_page.jpg": {
+		"ft": 16384,
+		"iS": 315012,
+		"oA": 0,
+		"oAP": "\/build\/img\/promo\/banner_page.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"\/source\/img\/promo\/banner_shopping.jpg": {
 		"ft": 16384,
 		"iS": 306194,
@@ -5929,6 +5939,14 @@
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
+		},
+	"\/source\/jade\/cities.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/build\/cities.html",
+		"oF": 0,
+		"oS": 0
 		},
 	"\/source\/jade\/includes\/_banner.jade": {
 		"cOD": 1,

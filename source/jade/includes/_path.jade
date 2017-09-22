@@ -1,8 +1,10 @@
 .path
     a(href="#") Главная
     |  > 
-    a(href="#") Страна
-    |  > 
-    a(href="#") Город
-    |  >  
-    =section_name
+    case page
+        when 'section'
+            a(href="#") Страна
+            |  > 
+            a(href="#") Город
+            |  >  
+    =name
