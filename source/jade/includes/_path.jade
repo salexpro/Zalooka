@@ -1,10 +1,15 @@
 .path
-    a(href="#") Главная
+    a(href="/") Главная
     |  > 
     case page
         when 'section'
-            a(href="#") Страна
+            a(href="./country.html") Страна
             |  > 
-            a(href="#") Город
+            a(href="./city.html") Город
             |  >  
+        when 'location'
+            if country
+                a(href="./country.html")
+                    =country
+                |  > 
     =name
