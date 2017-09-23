@@ -2,7 +2,7 @@
     width: 100%;
     margin-bottom: 35px;
     .header{
-        display: table;
+        display: inline-block;
         margin: 0;
         margin-bottom: 16px;
         font-size: 14px;
@@ -12,6 +12,7 @@
     }
     .menu{
         a{
+            display: inline-block;
             line-height: 1.9;
             font-weight: 300;
             padding: 0;
