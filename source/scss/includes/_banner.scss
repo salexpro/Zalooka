@@ -49,6 +49,9 @@
     }
     &--section{
         background-image: url(../img/promo/banner_section.jpg);
+        &::before{
+            background-color: rgba(21, 29, 33, 0.5);
+        }
         .banner_header{
             font-size: 30px;
             text-transform: none;

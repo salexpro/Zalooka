@@ -10,7 +10,7 @@ mixin item(title, country, city, descr, prepay, price, add, large)
                             a.card_name_link(href="#")
                                 =title
                         .card_name_location
-                            if large
+                            if large && city
                                 a(href="#")
                                     =city
                                 | , 

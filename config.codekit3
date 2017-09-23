@@ -5956,6 +5956,22 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/source\/jade\/countries.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/build\/countries.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/source\/jade\/country.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/build\/country.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/source\/jade\/includes\/_banner.jade": {
 		"cOD": 1,
 		"ft": 512,
