@@ -12,6 +12,15 @@
         @extend .head_left;
         justify-content: flex-end;
     }
+    &_logo{
+        font-size: 18px;
+        a{
+            color: $black;
+        }
+        img{
+            margin-right: 10px;
+        }
+    }
     &_place{
         font-size: 12px;
         line-height: 14px;
