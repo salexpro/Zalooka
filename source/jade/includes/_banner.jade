@@ -8,7 +8,7 @@ section(class=(page != 'main') ? "banner banner--section banner--" + type : "ban
                 |  в Паттайе
             default
                 =name
-    if page != 'faq'
+    if page != 'faq' && page != 'visa'
         .banner_selplace
             form(action="")
                 input(type="text" placeholder="Таиланд" value="Таиланд" name="country" readonly)

@@ -63,11 +63,11 @@
         }
     }
 
-    $banners: ('tours', 'shopping', 'spa', 'page', 'faq');
+    $banners: ('tours', 'shopping', 'spa', 'page', 'faq', 'visa');
 
     @each $banner in $banners {
         &--#{$banner} {
-            background-image: url(../img/promo/banner_#{$banner}.jpg);
+            background-image: url(../img/promo/#{$banner}.jpg);
         }
     }
 }

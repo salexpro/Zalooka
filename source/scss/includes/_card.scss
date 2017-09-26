@@ -192,18 +192,24 @@
             margin: 0;
             color: $primary-color;
         }
-        ol{
-            list-style: none;
-            margin: 0;
-            counter-reset: list;
-            li:before{
-                counter-increment: list;
-                content: counter(list) '. ';
-                color: $primary-color;
-            }
+    }
+    &--expanded{
+        font-weight: 300;
+        .header{
+            font-weight: 300;
         }
-        .card_content{
-            color: $secondary-color;
+        .card{
+            &_top{
+                display: block;
+                text-align: center;
+                padding: 34px 20px 20px;
+                .header{
+                    margin: 0;
+                }
+            }
+            &_content{
+                padding: 0 100px 60px;
+            }
         }
     }
     &_top{
@@ -265,7 +271,7 @@
         color: $black;
     }
     &_content{
-        color: $dark-gray;
+        color: $secondary-color;
     }
     &_bottom{
         padding: 18px 16px;

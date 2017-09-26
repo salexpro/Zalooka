@@ -162,7 +162,7 @@ a{
 .header{
     font-size: 20px;
     font-weight: 500;
-    line-height: 32px;
+    line-height: 1.6;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 25px;
@@ -172,4 +172,22 @@ a{
     &.thin{
         font-weight: 300;
     }
+    &.secondary{
+        font-size: 18px;
+        color: $secondary-color;
+        margin: 0;
+    }
+    &.small{
+        font-size: 14px;
+        text-align: left;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    &.big{
+        font-size: 24px;
+    }
+}
+
+.primary{
+    color: $primary-color;
 }

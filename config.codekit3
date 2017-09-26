@@ -5890,61 +5890,71 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/source\/img\/promo\/banner_faq.jpg": {
+	"\/source\/img\/promo\/faq.jpg": {
 		"ft": 16384,
 		"iS": 323695,
 		"oA": 0,
-		"oAP": "\/build\/img\/promo\/banner_faq.jpg",
+		"oAP": "\/build\/img\/promo\/faq.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/source\/img\/promo\/banner_main.jpg": {
+	"\/source\/img\/promo\/main.jpg": {
 		"ft": 16384,
 		"iS": 730790,
 		"oA": 0,
-		"oAP": "\/build\/img\/promo\/banner_main.jpg",
+		"oAP": "\/build\/img\/promo\/main.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/source\/img\/promo\/banner_page.jpg": {
+	"\/source\/img\/promo\/page.jpg": {
 		"ft": 16384,
 		"iS": 315012,
 		"oA": 0,
-		"oAP": "\/build\/img\/promo\/banner_page.jpg",
+		"oAP": "\/build\/img\/promo\/page.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/source\/img\/promo\/banner_shopping.jpg": {
+	"\/source\/img\/promo\/shopping.jpg": {
 		"ft": 16384,
 		"iS": 306194,
 		"oA": 0,
-		"oAP": "\/build\/img\/promo\/banner_shopping.jpg",
+		"oAP": "\/build\/img\/promo\/shopping.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/source\/img\/promo\/banner_spa.jpg": {
+	"\/source\/img\/promo\/spa.jpg": {
 		"ft": 16384,
 		"iS": 343047,
 		"oA": 0,
-		"oAP": "\/build\/img\/promo\/banner_spa.jpg",
+		"oAP": "\/build\/img\/promo\/spa.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/source\/img\/promo\/banner_tours.jpg": {
+	"\/source\/img\/promo\/tours.jpg": {
 		"ft": 16384,
 		"iS": 204168,
 		"oA": 0,
-		"oAP": "\/build\/img\/promo\/banner_tours.jpg",
+		"oAP": "\/build\/img\/promo\/tours.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/source\/img\/promo\/visa.jpg": {
+		"ft": 16384,
+		"iS": 351838,
+		"oA": 0,
+		"oAP": "\/build\/img\/promo\/visa.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -6115,6 +6125,14 @@
 		"ft": 512,
 		"oA": 0,
 		"oAP": "\/build\/tours.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/source\/jade\/visa.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/build\/visa.html",
 		"oF": 0,
 		"oS": 0
 		},

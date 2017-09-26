@@ -1,6 +1,16 @@
 .list{
     width: 100%;
     margin-bottom: 35px;
+    &--numbered{
+        list-style: none;
+        margin: 0;
+        counter-reset: list;
+        li:before{
+            counter-increment: list;
+            content: counter(list) '. ';
+            color: $primary-color;
+        }
+    }
     .header{
         display: inline-block;
         margin: 0;
