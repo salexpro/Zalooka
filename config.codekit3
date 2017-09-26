@@ -5890,6 +5890,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/source\/img\/promo\/banner_faq.jpg": {
+		"ft": 16384,
+		"iS": 323695,
+		"oA": 0,
+		"oAP": "\/build\/img\/promo\/banner_faq.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"\/source\/img\/promo\/banner_main.jpg": {
 		"ft": 16384,
 		"iS": 730790,
@@ -5969,6 +5979,14 @@
 		"ft": 512,
 		"oA": 0,
 		"oAP": "\/build\/country.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/source\/jade\/faq.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/build\/faq.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -6210,6 +6228,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/build\/scss\/css\/_head.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/source\/scss\/includes\/_items.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/scss\/css\/_items.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

@@ -13,7 +13,7 @@ html(lang="ru")
             include includes/_header
             include includes/_lmenu
             include includes/_banner
-            section.row.section
+            section.row.column.section
                 include includes/_path
                 .card.card--thin.card--description
                     p.header
@@ -24,7 +24,7 @@ html(lang="ru")
                     .card_content
                         | Массаж и СПА, что может быть лучше для расслабления на сегодняшний день? Мы предлагаем вам посетить лучшие СПА салоны в Паттайе и ощутить на себе все целебные свойства массажа. В этом разделе вы можете ознакомиться со всем разнообразием программ и процедур, которые предлагают тайские СПА-салоны. Все программы выполняют мастера с природным даром диагностики. Делайте заказ и вы получите бесплатный трансфер в обе стороны из любой части города Паттайя.
                 include includes/_filter
-            section.row.items
+            section.items
                 include includes/_pager
                 .row.items_content
                     +item('7 Spa', 'Таиланд', 'Паттайя', 'Оригинальные программы для обретения внутренней гармонии и пополнения сил для больших планов.', false, false, true)
@@ -33,6 +33,7 @@ html(lang="ru")
                     +item('Orhideya Spa', 'Таиланд', 'Паттайя', 'Получите максимальный заряд энергии в тропическом раю!', false, false, true)
                     +item('Silavadee', 'Таиланд', 'Паттайя', 'Попробуйте целительную силу камня и вдохните в себя новую жизнь!', false, false, true)
                 include includes/_pager
+            section.row.column.section
                 .card.card--thin.card--description
                     p.header
                         =name

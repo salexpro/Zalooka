@@ -11,14 +11,14 @@ mixin item(title, country, city, descr, prepay, price, add, large)
                                 =title
                         .card_name_location
                             if large && city
-                                a(href="#")
+                                a(href="./city.html")
                                     =city
                                 | , 
-                            a(href="#")
+                            a(href="./country.html")
                                 =country
                             if !large
                                 | , 
-                                a(href="#")
+                                a(href="./city.html")
                                     =city
                 .card_image(class=prepay?'card_image--prepay':'')
                     img(src="https://unsplash.it/345/190/?random", alt=title)
@@ -41,7 +41,7 @@ mixin item(title, country, city, descr, prepay, price, add, large)
                                 b 456
                                 | Туров
                     else
-                        =descr
+                        !=descr
             if !large
                 .card_bottom(class=!price?'card_bottom--wo':'')
                     .card_bottom_add

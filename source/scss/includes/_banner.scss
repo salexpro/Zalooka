@@ -57,10 +57,13 @@
             text-transform: none;
             font-weight: 300;
             margin-bottom: 70px;
+            &:only-child{
+                margin: 0;
+            }
         }
     }
 
-    $banners: ('tours', 'shopping', 'spa', 'page');
+    $banners: ('tours', 'shopping', 'spa', 'page', 'faq');
 
     @each $banner in $banners {
         &--#{$banner} {

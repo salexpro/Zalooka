@@ -13,7 +13,7 @@ html(lang="ru")
             include includes/_header
             include includes/_lmenu
             include includes/_banner
-            section.row.section
+            section.row.column.section
                 include includes/_path
                 .card.card--thin.card--description
                     p.header
@@ -26,7 +26,7 @@ html(lang="ru")
                         br
                         | Разнообразные сувениры, кожаные изделия, ювелирные фабрики, натуральная тайская косметика и многое другое. Более подробно ознакомится с шоп-турами Паттайи, а также заказать бесплатный транспорт можно в этом разделе.
                 include includes/_filter
-            section.row.items
+            section.items
                 include includes/_pager
                 .row.items_content
                     +item('Центр косметологии VitaMax', 'Таиланд', 'Паттайя', 'Все препараты изготовлены на натуральной основе.', false, false, true)
@@ -36,6 +36,7 @@ html(lang="ru")
                     +item('Мир кожи', 'Таиланд', 'Паттайя', 'Модные изделия из кожи азиатского буйвола, крокодила, питона, змеи, акулы.', false, false)
                     +item('Аптека Erawadee в Паттайе', 'Таиланд', 'Паттайя', 'Натуральная косметика, чаи, бальзамы, тайская народная медицина, аромотерапия.', false, false, true)
                 include includes/_pager
+            section.row.column.section
                 .card.card--thin.card--description
                     p.header
                         =name

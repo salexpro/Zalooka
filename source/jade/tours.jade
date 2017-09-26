@@ -13,7 +13,7 @@ html(lang="ru")
             include includes/_header
             include includes/_lmenu
             include includes/_banner
-            section.row.section
+            section.row.column.section
                 include includes/_path
                 .card.card--thin.card--description
                     p.header
@@ -43,7 +43,7 @@ html(lang="ru")
                             li 
                                 a(href="#") Экстрим
                 include includes/_filter
-            section.row.items
+            section.items
                 include includes/_pager
                 .row.items_content
                     +item('Тропический парк Нонг Нуч', 'Таиланд', 'Паттайя', 'Тропический сад мадам Нонг Нуч - это оранжереи орхидей, кактусов, и мини зоопарк.', false, true, true)

@@ -8,9 +8,10 @@ section(class=(page != 'main') ? "banner banner--section banner--" + type : "ban
                 |  в Паттайе
             default
                 =name
-    .banner_selplace
-        form(action="")
-            input(type="text" placeholder="Таиланд" value="Таиланд" name="country" readonly)
-            input(type="text" placeholder="Паттайя" name="city")
-            input(type="text" placeholder="Услуга" name="service")
-            input.button(type="submit" value="Перейти")
+    if page != 'faq'
+        .banner_selplace
+            form(action="")
+                input(type="text" placeholder="Таиланд" value="Таиланд" name="country" readonly)
+                input(type="text" placeholder="Паттайя" name="city")
+                input(type="text" placeholder="Услуга" name="service")
+                input.button(type="submit" value="Перейти")

@@ -178,6 +178,34 @@
             }
         }
     }
+    &--faq{
+        break-inside: avoid;
+        padding: 20px 20px 30px 20px;
+        .header{
+            height: 38px;
+            font-size: 14px;
+            margin-bottom: 13px;
+            line-height: 1.4;
+        }
+        ul{
+            list-style: none;
+            margin: 0;
+            color: $primary-color;
+        }
+        ol{
+            list-style: none;
+            margin: 0;
+            counter-reset: list;
+            li:before{
+                counter-increment: list;
+                content: counter(list) '. ';
+                color: $primary-color;
+            }
+        }
+        .card_content{
+            color: $secondary-color;
+        }
+    }
     &_top{
         display: flex;
         align-items: center;
