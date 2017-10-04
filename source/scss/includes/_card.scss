@@ -212,6 +212,69 @@
             }
         }
     }
+    &--contact{
+        padding: 40px;
+        display: block;
+        .header{
+            height: auto;
+        }
+        a{
+            color: $secondary-color;
+            &:hover{
+                color: $primary-color
+            }
+        }
+        .card{
+            &_more{
+                display: block;
+                color: $black;
+                margin-top: 12px;
+                i{
+                    font-size: 13px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+    &--form{
+        .header{
+            font-size: 14px;
+            text-align: left;
+            margin-bottom: 30px;
+        }
+        .card{
+            &_content{
+                padding-top: 38px;
+                padding-bottom: 38px;
+                .column{
+                    max-width: 400px;
+                }
+            }
+        }
+        textarea{
+            min-width: 100%;
+        }
+        .button{
+            margin: 0;
+            margin-top: 34px;
+        }
+        table{
+            width: 100%;
+            td{
+                vertical-align: top;
+                padding-bottom: 15px;
+                &:first-child{
+                    padding-right: 20%;
+                }
+            }
+            a{
+                color: $secondary-color;
+                &:hover{
+                    color: $primary-color
+                }
+            }
+        }
+    }
     &_top{
         display: flex;
         align-items: center;
