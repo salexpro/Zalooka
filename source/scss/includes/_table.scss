@@ -1,0 +1,61 @@
+.table{
+    border-spacing: 0;
+    &--transfer{
+        color: $black;
+        margin: 0 -20px;
+        margin-bottom: 75px;
+        tr{
+            &:last-child{
+                td{
+                    border: 0;
+                }
+            }
+        }
+        th{
+            font-weight: 300;
+            padding: 10px 20px;
+            text-align: right;
+            &:first-child{
+                text-align: left;
+            }
+            &:nth-last-child(-n+2){
+                padding-left: 0;
+                padding-right: 73px;
+            }
+        }
+        td{
+            padding: 14px 20px;
+            border-bottom: 1px solid $light-gray;
+            color: $medium-gray;
+            &:first-child{
+                color: $black;
+            }
+            &:nth-child(2){
+                text-align: right;
+            }
+            &:nth-last-child(-n+2){
+                text-align: right;
+                width: 1%;
+                white-space: nowrap;
+            }
+        }
+    }
+    &_actions{
+        display: inline-flex;
+        align-items: center;
+        margin-left: 20px;
+        a{
+            display: flex;
+        }
+    }
+    &_add{
+        
+    }
+    &_wish{
+        display: block;
+        margin-left: 5px;
+        i{
+            font-size: 15px;
+        }
+    }
+}

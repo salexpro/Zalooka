@@ -238,9 +238,8 @@
     }
     &--form{
         .header{
-            font-size: 14px;
-            text-align: left;
             margin-bottom: 30px;
+            text-align: left;
         }
         .card{
             &_content{
@@ -272,6 +271,32 @@
                 &:hover{
                     color: $primary-color
                 }
+            }
+        }
+    }
+    &_tabs{
+        border-bottom: 1px solid $light-gray;
+        padding: 0 100px;
+        padding-top: 34px;
+        display: flex;
+        font-weight: 400;
+        margin-bottom: 38px;
+        color: $medium-gray;
+        a{
+            color: $medium-gray;
+        }
+        &_tab{
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+            height: 45px;
+            margin-right: 40px;
+            border-bottom: 2px solid transparent;
+            &:hover, &.active{
+                border-bottom-color: $primary-color;
+            }
+            &:last-child{
+                margin: 0;
             }
         }
     }

@@ -5950,6 +5950,16 @@
 		"opt": 1,
 		"q": 100
 		},
+	"\/source\/img\/promo\/transfer.jpg": {
+		"ft": 16384,
+		"iS": 431252,
+		"oA": 0,
+		"oAP": "\/build\/img\/promo\/transfer.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"\/source\/img\/promo\/visa.jpg": {
 		"ft": 16384,
 		"iS": 351838,
@@ -6136,6 +6146,14 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/source\/jade\/transfer.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/build\/transfer.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/source\/jade\/visa.jade": {
 		"cOD": 1,
 		"ft": 512,
@@ -6254,6 +6272,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/build\/scss\/css\/_footer.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/source\/scss\/includes\/_form.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/scss\/css\/_form.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -6397,6 +6428,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/build\/scss\/css\/_rating.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/source\/scss\/includes\/_table.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/scss\/css\/_table.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

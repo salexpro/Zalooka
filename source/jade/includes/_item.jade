@@ -1,4 +1,4 @@
-mixin item(title, country, city, descr, prepay, price, add, large)
+mixin item(title, country, city, descr, prepay, price, add, large, price_text)
     .large-4.column
         .card(class=large?'card--large':'')
             .card_content
@@ -58,7 +58,14 @@ mixin item(title, country, city, descr, prepay, price, add, large)
                                 | 2.8
                     .card_bottom_price
                         .card_bottom--left
-                            if price
+                            if price_text
+                                | От 
+                                b 549
+                                | 
+                                span бат
+                                br
+                                | За 1 пассажира
+                            else if price
                                 | Взрослый 
                                 b 549
                                 | 

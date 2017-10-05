@@ -169,6 +169,37 @@ button, [type="button"], [type="reset"], [type="submit"]{
     }
 }
 
+[type="radio"]{
+    display: none;
+    + label{
+        margin: 0;
+        display: flex;
+        align-items: center;
+        line-height: normal;
+        margin-bottom: 8px;
+        margin-left: -30px;
+        &::before{
+            content: '';
+            flex: 16px 0 0;
+            width: 16px;
+            height: 16px;
+            border: 1px solid $medium-gray;
+            margin-right: 15px;
+            border-radius: 50%;
+            transition: 200ms;
+        }
+    }
+    &:checked{
+        + label{
+            &::before{
+                border-color: $primary-color;
+                background: $primary-color;
+                box-shadow: inset 0 0 0 2px $white;
+            }
+        }
+    }
+}
+
 a{
     transition: 300ms;
 }
@@ -190,9 +221,6 @@ a{
     text-align: center;
     margin-top: 20px;
     margin-bottom: 25px;
-    &.primary{
-        color: $primary-color;
-    }
     &.thin{
         font-weight: 300;
     }
@@ -207,8 +235,15 @@ a{
         margin-top: 0;
         margin-bottom: 20px;
     }
+    &.medium{
+        font-size: 20px;
+    }
     &.big{
         font-size: 24px;
+    }
+    &.primary{
+        color: $primary-color;
+        text-align: left;
     }
 }
 

@@ -1,0 +1,305 @@
+-
+    var page = 'page';
+    var type = 'transfer';
+    var name = 'Трансфер';
+    var logged = true;
+include includes/_item
+
+doctype html
+html(lang="ru")
+    include includes/_head
+    body
+        main.wrap.wrap--lmenu
+            include includes/_header
+            include includes/_lmenu
+            include includes/_banner
+            section.row.column.section
+                include includes/_path
+                .card.card--expanded
+                    .card_tabs
+                        div.card_tabs_tab.active
+                            | Групповой трансфер
+                        a.card_tabs_tab(href="./taxi.html")
+                            | Такси
+                    .card_content
+                        .header.secondary.primary
+                            | Трансфер из Паттайи на острова
+                        br
+                        | Ближайшие острова от Паттайи – удивительные места, которые стоит посетить каждому путешественнику. Заказать трансфер до этих мест легко – достаточно связаться с русскоговорящими операторами на сайте online-pattaya.ru.
+                        br
+                        br
+                        .header.small.primary
+                            | Особенности:
+                        | Групповые поездки организуются каждый день – с 6 до 7 или с 8 до 9 утра – в зависимости от пункта назначения.
+                        br
+                        | Забронировать трансфер на острова возле Паттайи можно прямо по телефону, а оплатить – при посадке в автобус.
+                        br
+                        | Все проходит с максимальным комфортом – мы заберем вас в согласованной точке – из отеля, апартаментов, дома.
+                        br
+                        br
+                        .header.small.primary
+                            | Сколько стоит трансфер на острова около Паттайи?
+                        | Из Паттайи на острова вы доберетесь различным транспортом. Предоставьте заботу об этом нам. Микроавтобус, паром, скоростной катер и/или такси – все зависит от конкретного пункта назначения.
+                        br
+                        br
+                        | На стоимость влияет то, на какой остров вы хотите приплыть.
+                        br
+                        br
+                        .header.secondary.primary
+                            | Ориентировочные цены:
+                        table.table.table--transfer
+                            tr
+                                th
+                                    | Групповые трансферы-направления
+                                th
+                                    | Транспорт
+                                th
+                                    | Цена в 1 сторону за человека
+                                th
+                                    | Цена в 2 стороны за человека
+                            tr
+                                td 
+                                    | Паттайя - Ко Самет (до пирса на острове на пороме)
+                                td
+                                    | микроавтобус, паром
+                                td
+                                    | 390 бат
+                                    .table_actions
+                                        a.table_add(href="#")
+                                            i.fa.fa-plus
+                                        a.table_wish(href="#")
+                                            i.material-icons
+                                                | favorite_border
+                                td
+                                    | 700 бат
+                                    .table_actions
+                                        a.table_add(href="#")
+                                            i.fa.fa-plus
+                                        a.table_wish(href="#")
+                                            i.material-icons
+                                                | favorite_border
+                            tr
+                                td 
+                                    | Паттайя - Ко Самет (до пляжа на спидботе)
+                                td
+                                    | микроавтобус, паром
+                                td
+                                    | 890  бат  
+                                    .table_actions
+                                        a.table_add(href="#")
+                                            i.fa.fa-plus
+                                        a.table_wish(href="#")
+                                            i.material-icons
+                                                | favorite_border
+                                td
+                                    | 990  бат
+                                    .table_actions
+                                        a.table_add(href="#")
+                                            i.fa.fa-plus
+                                        a.table_wish(href="#")
+                                            i.material-icons
+                                                | favorite_border
+                            tr
+                                td 
+                                    | Паттайя - Ко Чанг (до пирса на острове)
+                                td
+                                    | микроавтобус, паром
+                                td
+                                    | 550 бат
+                                    .table_actions
+                                        a.table_add(href="#")
+                                            i.fa.fa-plus
+                                        a.table_wish(href="#")
+                                            i.material-icons
+                                                | favorite_border
+                                td
+                                    | 1000 бат
+                                    .table_actions
+                                        a.table_add(href="#")
+                                            i.fa.fa-plus
+                                        a.table_wish(href="#")
+                                            i.material-icons
+                                                | favorite_border
+                            tr
+                                td 
+                                    | Паттайя - Ко Чанг (до отеля на острове)
+                                td
+                                    | микроавтобус, спидбот
+                                td
+                                    | 650 бат
+                                    .table_actions
+                                        a.table_add(href="#")
+                                            i.fa.fa-plus
+                                        a.table_wish(href="#")
+                                            i.material-icons
+                                                | favorite_border
+                                td
+                                    | 1300 бат
+                                    .table_actions
+                                        a.table_add(href="#")
+                                            i.fa.fa-plus
+                                        a.table_wish(href="#")
+                                            i.material-icons
+                                                | favorite_border
+                            tr
+                                td 
+                                    | Паттайя - Ко Мак (до острова)
+                                td
+                                    | микроавтобус, спидбот
+                                td
+                                    | 950 бат   
+                                    .table_actions
+                                        a.table_add(href="#")
+                                            i.fa.fa-plus
+                                        a.table_wish(href="#")
+                                            i.material-icons
+                                                | favorite_border
+                                td
+                                    | 1900 бат
+                                    .table_actions
+                                        a.table_add(href="#")
+                                            i.fa.fa-plus
+                                        a.table_wish(href="#")
+                                            i.material-icons
+                                                | favorite_border
+                            tr
+                                td 
+                                    | Паттайя - Ко Вай (до острова)
+                                td
+                                    | микроавтобус, спидбот
+                                td
+                                    | 950 бат   
+                                    .table_actions
+                                        a.table_add(href="#")
+                                            i.fa.fa-plus
+                                        a.table_wish(href="#")
+                                            i.material-icons
+                                                | favorite_border
+                                td
+                                    | 1900 бат
+                                    .table_actions
+                                        a.table_add(href="#")
+                                            i.fa.fa-plus
+                                        a.table_wish(href="#")
+                                            i.material-icons
+                                                | favorite_border
+                            tr
+                                td 
+                                    | Паттайя - Ко Куд (до отеля на острове)
+                                td
+                                    | микроавтобус, спидбот,такси
+                                td
+                                    | 840 бат   
+                                    .table_actions
+                                        a.table_add(href="#")
+                                            i.fa.fa-plus
+                                        a.table_wish(href="#")
+                                            i.material-icons
+                                                | favorite_border
+                                td
+                                    | 1680 бат
+                                    .table_actions
+                                        a.table_add(href="#")
+                                            i.fa.fa-plus
+                                        a.table_wish(href="#")
+                                            i.material-icons
+                                                | favorite_border
+
+                        | Уточняем также, что эти цены указываются из расчета, что отель находится в Центральной или Северной Паттайе, Наклыа, Джомтьен. Если ваш отель расположен дальше от центра города Паттайи, тогда будет доплата от 100 бат на каждый билет.
+                        br
+                        br
+                        | В стоимость поездки уже включена возможность провоза багажа – по одному чемодану на каждое пассажирское место.
+                        br
+                        br
+                        | Для заказа трансфера позвоните нам или оставьте заявку на русском языке на сайте. Укажите имя, контактные данные (телефон, e-mail), ваш отель и номер, число пассажиров, а также желаемые даты.
+                        br
+                        br
+                        | Если есть вопросы по трансферу, необходимость в срочном заказе транспорта с какого-либо острова, звоните нашим операторам +66 60002 4036.
+            section.row.items
+                +item('Трансфер Паттайя - Ко Чанг', 'Таиланд', 'Паттайя', 'Крупнейший остров Таиланда, в переводе обозначающий "слон", часть национального парка Му Ко Чанг, 310 км от Бангкока.', false, true, true, false , true)
+                +item('Трансфер Паттайя - Ко Мак', 'Таиланд', 'Паттайя', 'Третий по размерам остров, отличается плоским рельефом, с тропическими джунглями.', false, true, true, false , true)
+                +item('Трансфер Паттайя - Ко Вай', 'Таиланд', 'Паттайя', 'Остров, в 20 метрах от берега которого находится знаменитый коралловый риф.', false, true, true, false , true)
+                +item('Трансфер Паттайя - Ко Куд', 'Таиланд', 'Паттайя', 'Остров, напоминающий рекламу Баунти – часть Му Ко Чанг, с роскошными пляжами.', false, true, true, false , true)
+                +item('Трансфер Паттайя - Ко Самет', 'Таиланд', 'Паттайя', 'Национальный парк с удивительными достопримечательностями, одна из которых «встречает» путешественников: статуя Русалочки с Принцем.', false, true, true, false , true)
+            section.row.column
+                .card.card--expanded.card--form
+                    .card_content
+                        .header.medium
+                            | Для заказа 
+                            a(href="#") свяжитесь с нами
+                            |  или заполните форму ниже
+                        .header.secondary
+                            | Форма заказа
+                        form.form.row.align-justify(action="")
+                            .large-6.column
+                                input(type="text" placeholder="Имя *")
+                                input(type="text" placeholder="Программа")
+                                input(type="text" placeholder="Дата поездки")
+                                .select
+                                    select
+                                        option(selected disabled) Количество взрослых
+                                        option(value="") 1
+                                        option(value="") 2
+                                        option(value="") 3
+                                        option(value="") 4
+                                        option(value="") 5
+                                        option(value="") 6
+                                        option(value="") 7
+                                        option(value="") 8
+                                        option(value="") 9
+                                        option(value="") 10
+                                .select
+                                    select
+                                        option(selected disabled) Количество детей
+                                        option(value="") 1
+                                        option(value="") 2
+                                        option(value="") 3
+                                        option(value="") 4
+                                        option(value="") 5
+                                        option(value="") 6
+                                        option(value="") 7
+                                        option(value="") 8
+                                        option(value="") 9
+                                        option(value="") 10
+                                .form_input
+                                    .form_label
+                                        | Способы оплаты:
+                                    .form_content
+                                        input(type="radio" name="p_meth" id="p_meth1")
+                                        label(for="p_meth1")
+                                            | Без предоплаты (оплата гиду или водителю)
+                                        input(type="radio" name="p_meth" id="p_meth2")
+                                        label(for="p_meth2")
+                                            | Частичная оплата (минимальная предоплата на сайте)
+                                        input(type="radio" name="p_meth" id="p_meth3")
+                                        label(for="p_meth3")
+                                            | Полная оплата (100% предоплата на сайте)
+                                .form_input
+                                    .form_label
+                                        | Общая стоимость:
+                                    .form_content
+                                        | 1499 бат
+                                .form_input
+                                    .form_label
+                                        | Предоплата:
+                                    .form_content
+                                        | 1499 бат
+                                .form_input
+                                    .form_label
+                                        | Остаток гиду (водителю):
+                                    .form_content
+                                        | 0 бат
+                            .large-6.column
+                                input(type="tel" placeholder="Телефон *")
+                                input(type="email" placeholder="E-mail *")
+                                input(type="text" placeholder="Откуда вас забрать")
+                                input(type="text" placeholder="Номер комнаты")
+                                input(type="text" placeholder="Дополнительная информация")
+                                .select
+                                    select
+                                        option(selected disabled) Как вам ответить *
+                                        option по телефону
+                                        option по email
+                                input.button(type="submit" value="Заказать")
+
+            include includes/_footer

@@ -40,20 +40,22 @@ html(lang="ru")
                     .card_content
                         .row.align-justify
                             .large-6.column
-                                .header.secondary
+                                .header.small
                                     | Напишите нам
                                 form(action="")
                                     .select
                                         select
-                                            option Тема сообщения
+                                            option(disabled selected) Тема сообщения
+                                            option Тема 1
                                             option Тема 2
+                                            option Тема 3
                                     input(type="text" placeholder="Имя *")
-                                    input(type="text" placeholder="E-mail *")
-                                    input(type="text" placeholder="Номер телефона")
+                                    input(type="email" placeholder="E-mail *")
+                                    input(type="tel" placeholder="Номер телефона")
                                     textarea(placeholder="Текст сообщения *" cols="2")
                                     input.button(type="submit" value="Отправить")
                             .large-6.column
-                                .header.secondary
+                                .header.small
                                     | Контактные телефоны в других странах
                                 table
                                     tr
