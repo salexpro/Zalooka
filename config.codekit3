@@ -5970,6 +5970,36 @@
 		"opt": 1,
 		"q": 100
 		},
+	"\/source\/img\/taxi\/econom.jpg": {
+		"ft": 16384,
+		"iS": 12229,
+		"oA": 0,
+		"oAP": "\/build\/img\/taxi\/econom.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/source\/img\/taxi\/minibus.jpg": {
+		"ft": 16384,
+		"iS": 21138,
+		"oA": 0,
+		"oAP": "\/build\/img\/taxi\/minibus.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/source\/img\/taxi\/minivan.jpg": {
+		"ft": 16384,
+		"iS": 13592,
+		"oA": 0,
+		"oAP": "\/build\/img\/taxi\/minivan.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/source\/jade\/cities.jade": {
 		"cOD": 1,
 		"ft": 512,
@@ -6135,6 +6165,14 @@
 		"ft": 512,
 		"oA": 0,
 		"oAP": "\/build\/spa.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/source\/jade\/taxi.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/build\/taxi.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -6441,6 +6479,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/build\/scss\/css\/_table.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/source\/scss\/includes\/_taxi.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/scss\/css\/_taxi.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

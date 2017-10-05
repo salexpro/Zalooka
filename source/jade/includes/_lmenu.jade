@@ -7,7 +7,7 @@
                 span.lmenu_label
                     | Главная
         li
-            a(href="./tours.html" data-menu="lmenu_tours")
+            a(href="./tours.html" data-menu="lmenu_tours" class=type=='tours'?'active':'')
                 span.lmenu_icon
                     svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='22', height='19', viewbox='0 0 22 19')
                         defs
@@ -26,7 +26,7 @@
                 span.lmenu_label
                     | Экскурсии
         li
-            a(href="./transfer.html")
+            a(href="./transfer.html" data-menu="lmenu_transfer" class=type=='transfer'?'active':'')
                 span.lmenu_icon
                     svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='24', height='13', viewbox='0 0 24 13')
                         defs
@@ -36,13 +36,13 @@
                 span.lmenu_label
                     | Трансфер
         li
-            a(href="./shopping.html")
+            a(href="./shopping.html" class=type=='shopping'?'active':'')
                 span.lmenu_icon
                     i.icon-wallet
                 span.lmenu_label
                     | Шоппинг
         li
-            a(href="./spa.html")
+            a(href="./spa.html" class=type=='spa'?'active':'')
                 span.lmenu_icon
                     svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='24', height='19', viewbox='0 0 24 19')
                         defs
@@ -90,6 +90,19 @@
                 a(href="#") Чиангмай
             li 
                 a(href="#") Паккрет
+        ul#lmenu_transfer.menu.vertical
+            li
+                a(href="#") Tillmanburgh
+            li 
+                a(href="#") Lake Russelport
+            li 
+                a(href="#") West Cleora
+            li 
+                a(href="#") East Donato
+            li 
+                a(href="#") Schmittberg
+            li 
+                a(href="#" data-menutwo="lmenutwo_transfer") Lake Leta
     .lmenu_lvl_three
         #lmenutwo_interesting.lmenu_content
             ul.menu.vertical
@@ -136,5 +149,74 @@
                 a(href="#")
                     | Смотреть все Экскурсии
                     i.icon-arrow-down
+        #lmenutwo_transfer.lmenu_content
+            ul.menu.vertical
+                li
+                    span Lost In Lagos Portugal
+                li 
+                    a(href="#") Lost In Lagos Portugal
+                li 
+                    a(href="#") Traveling To Barcelona
+                li 
+                    a(href="#") Choosing A Static Caravan
+                li 
+                    a(href="#") Global Travel And Vacations Luxury Travel
+                li 
+                    a(href="#") Les Houches The Hidden
+                li 
+                    a(href="#") Addiction When 
+                li 
+                    a(href="#") Global Resorts
+            ul.menu.vertical
+                li
+                    span Tremblant In Canada
+                li 
+                    a(href="#") Getting Cheap Airfare For Last Minute Travel
+                li 
+                    a(href="#") Choosing A Static Caravan
+                li 
+                    a(href="#") Cheap Airline Tickets Great Ways To Save
+                li 
+                    a(href="#") Travel Health Useful Medical Information For Good Health Be
+                li 
+                    a(href="#") Global Resorts Network Grn Putting Timeshares To Shame
+                li 
+                    a(href="#") Mother Earth Hosts Our Travels
+                li 
+                    a(href="#") Online Games How To Play To Win
+            ul.menu.vertical
+                li
+                    span Top Things To See During A Holiday In Hong Kong
+                li 
+                    a(href="#") How To Maintain Your Mental Health
+                li 
+                    a(href="#") Become A Travel Pro In One Easy Lesson
+                li 
+                    a(href="#") The Luxury Of Traveling With Yacht Charter Companies
+                li 
+                    a(href="#") Virginia Travel For Kids
+                li 
+                    a(href="#") Train Travel On Track For Safety
+                li 
+                    a(href="#") Cheap Airline Tickets Great Ways To Save
+                li 
+                    a(href="#") The Surprising Popularity Of Cigar Smoking
+            ul.menu.vertical
+                li
+                    span Life Advice Looking Through A Window
+                li 
+                    a(href="#") New Ideas For A Low Cost Vacation On Water
+                li 
+                    a(href="#") The Surprising Popularity Of Cigar Smoking
+                li 
+                    a(href="#") The Luxury Of Traveling With Yacht Charter Companies
+                li 
+                    a(href="#") American Standards And European Culture
+                li 
+                    a(href="#") Addiction When Gambling Becomes A Problem
+                li 
+                    a(href="#") Copper Canyon
+                li 
+                    a(href="#") Travel Health Useful Medical Information For Good Health Be
         button.close-button.small(aria-label='Закрыть', type='button', data-close)
             span(aria-hidden='true') ×

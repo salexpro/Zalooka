@@ -1,0 +1,47 @@
+.taxi{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    &_container{
+        display: flex;
+        padding-right: 20px;
+    }
+    &_img{
+        margin-right: 15px;
+    }
+    &_content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .header{
+            text-align: left;
+            font-weight: 300;
+        }
+    }
+    &_brief{
+        color: $secondary-color;
+    }
+    &_details{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: $medium-gray;
+        height: 26px;
+        i{
+            font-size: 20px;
+            margin-right: 15px;
+            vertical-align: middle;
+        }
+    }
+    &_actions{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 18px;
+        text-align: center;
+        font-weight: 300;
+        .button{
+            margin: 0;
+        }
+    }
+}

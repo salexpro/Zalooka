@@ -274,6 +274,55 @@
             }
         }
     }
+    &--search{
+        .header{
+            color: $medium-gray;
+            font-weight: 300;
+        }
+        .card{
+            &_top{
+                padding-top: 36px;
+                padding-bottom: 30px;
+                justify-content: center;
+            }
+            &_content{
+                display: flex;
+                padding: 0 70px;
+                padding-bottom: 80px;
+                input{
+                    margin-bottom: 0;
+                }
+                i{
+                    display: block;
+                    cursor: pointer;
+                    color: $medium-gray;
+                    align-self: center;
+                    margin: 0 18px;
+                    transition: 300ms;
+                    &:hover{
+                        color: $black;
+                    }
+                }
+            }
+        }
+        .button{
+            margin-left: 45px;
+        }
+    }
+    &--taxi{
+        .card{
+            &_top{
+                padding: 30px 70px;
+                .header{
+                   color: $medium-gray;
+                   font-weight: 300; 
+                }
+            }
+            &_content{
+                padding: 0 70px;
+            }
+        }
+    }
     &_tabs{
         border-bottom: 1px solid $light-gray;
         padding: 0 100px;
