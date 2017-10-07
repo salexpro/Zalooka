@@ -46,6 +46,11 @@
                 }
             }
         }
+        &--pricelist{
+            form{
+                max-width: 500px
+            }
+        }
     }
     &--section{
         background-image: url(../img/promo/banner_section.jpg);
@@ -63,7 +68,7 @@
         }
     }
 
-    $banners: ('tours', 'shopping', 'spa', 'page', 'faq', 'visa', 'transfer');
+    $banners: ('tours', 'shopping', 'spa', 'page', 'faq', 'visa', 'transfer', 'pricelist');
 
     @each $banner in $banners {
         &--#{$banner} {

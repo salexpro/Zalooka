@@ -6,12 +6,16 @@ section(class=(page != 'main') ? "banner banner--section banner--" + type : "ban
             when 'section'
                 =name
                 |  в Паттайе
+            when 'pricelist'
+                =name
+                |  (Паттайя, Таиланд)
             default
                 =name
     if page != 'faq' && page != 'visa'
-        .banner_selplace
+        .banner_selplace(class=page=='pricelist'?'banner_selplace--pricelist':'')
             form(action="")
                 input(type="text" placeholder="Таиланд" value="Таиланд" name="country" readonly)
                 input(type="text" placeholder="Паттайя" name="city")
-                input(type="text" placeholder="Услуга" name="service")
+                if page!='pricelist'
+                    input(type="text" placeholder="Услуга" name="service")
                 input.button(type="submit" value="Перейти")

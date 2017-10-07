@@ -218,9 +218,17 @@ a{
     font-size: 20px;
     font-weight: 500;
     line-height: 1.6;
-    text-align: center;
     margin-top: 20px;
     margin-bottom: 25px;
+    &.tiny{
+        font-size: 16px;
+        color: $medium-gray;
+        i{
+            vertical-align: middle;
+            font-size: 14px;
+            margin-left: 10px;
+        }
+    }
     &.thin{
         font-weight: 300;
     }
@@ -243,7 +251,6 @@ a{
     }
     &.primary{
         color: $primary-color;
-        text-align: left;
     }
 }
 

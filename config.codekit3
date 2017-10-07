@@ -5920,6 +5920,16 @@
 		"opt": 1,
 		"q": 100
 		},
+	"\/source\/img\/promo\/pricelist.jpg": {
+		"ft": 16384,
+		"iS": 283959,
+		"oA": 0,
+		"oAP": "\/build\/img\/promo\/pricelist.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"\/source\/img\/promo\/shopping.jpg": {
 		"ft": 16384,
 		"iS": 306194,
@@ -6149,6 +6159,14 @@
 		"ft": 512,
 		"oA": 0,
 		"oAP": "\/build\/index.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/source\/jade\/pricelist.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/build\/pricelist.html",
 		"oF": 0,
 		"oS": 0
 		},
