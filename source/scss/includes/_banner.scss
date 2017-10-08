@@ -53,7 +53,6 @@
         }
     }
     &--section{
-        background-image: url(../img/promo/banner_section.jpg);
         &::before{
             background-color: rgba(21, 29, 33, 0.5);
         }
@@ -68,7 +67,7 @@
         }
     }
 
-    $banners: ('tours', 'shopping', 'spa', 'page', 'faq', 'visa', 'transfer', 'pricelist');
+    $banners: ('tours', 'shopping', 'spa', 'page', 'faq', 'visa', 'transfer', 'pricelist', 'tour');
 
     @each $banner in $banners {
         &--#{$banner} {

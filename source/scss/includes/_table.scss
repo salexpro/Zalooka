@@ -129,6 +129,50 @@
             }
         }
     }
+    &--tour{
+        text-align: right;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        th{
+            font-weight: 400;
+            font-size: 14px;
+            &:first-child{
+                font-size: 16px;
+            }
+            &:nth-last-child(-n+2){
+                padding-left: 20px;
+                text-align: center;
+            }
+        }
+        td{
+            padding: 12px 20px;
+            &:nth-last-child(-n+2){
+                text-align: center;
+            }
+            &:nth-last-child(-n+4){
+                width: 1%;
+            }
+            &:first-child{
+                text-align: left;
+            }
+        }
+        .table{
+            &_add{
+                font-size: 19px;
+            }
+            &_wish{
+                display: inline-block;
+                margin: 0;
+                i{
+                    display: block;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
     &_program{
         td{
             border: 0;

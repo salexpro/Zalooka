@@ -1,0 +1,32 @@
+.review{
+    display: flex;
+    margin-bottom: 40px;
+    &_left{
+        margin-right: 40px;
+    }
+    &_avatar{
+        width: 50px;
+        height: 50px;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+    &_name{
+        color: $primary-color;
+    }
+    &_info{
+        display: flex;
+        justify-content: space-between;
+        color: $medium-gray;
+        font-size: 12px;
+        margin-bottom: 6px;
+        &_date{
+            color: $primary-color;
+        }
+    }
+    &_form{
+        .button{
+            margin: 0;
+            margin-top: 19px;
+        }
+    }
+}

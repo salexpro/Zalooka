@@ -4,6 +4,8 @@ section(class=(page != 'main') ? "banner banner--section banner--" + type : "ban
             when 'main'
                 | НАЧНИ ПУТЕШЕСТВИЕ С ВЫБОРА МЕСТА
             when 'section'
+                if type == 'tour'
+                    | Экскурсия 
                 =name
                 |  в Паттайе
             when 'pricelist'
@@ -11,7 +13,7 @@ section(class=(page != 'main') ? "banner banner--section banner--" + type : "ban
                 |  (Паттайя, Таиланд)
             default
                 =name
-    if page != 'faq' && page != 'visa'
+    if page != 'faq' && page != 'visa' && type != 'tour'
         .banner_selplace(class=page=='pricelist'?'banner_selplace--pricelist':'')
             form(action="")
                 input(type="text" placeholder="Таиланд" value="Таиланд" name="country" readonly)

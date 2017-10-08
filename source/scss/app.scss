@@ -54,6 +54,10 @@
 // @include motion-ui-transitions;
 // @include motion-ui-animations;
 
+// Additional libraries
+@import '../../bower_components/owl.carousel/src/scss/owl.carousel.scss';
+
+// Components
 @import 'includes/layout';
 @import 'includes/head';
 @import 'includes/nav';
@@ -66,10 +70,13 @@
 @import 'includes/items';
 @import 'includes/card';
 @import 'includes/taxi';
+@import 'includes/tour';
 @import 'includes/rating';
 @import 'includes/list';
 @import 'includes/table';
+@import 'includes/slider';
 @import 'includes/contact_us';
+@import 'includes/review';
 @import 'includes/form';
 @import 'includes/footer';
 @import 'includes/dropdown';

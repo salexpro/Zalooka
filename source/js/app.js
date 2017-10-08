@@ -8,6 +8,7 @@
 @codekit-prepend '../../bower_components/foundation-sites/dist/js/plugins/foundation.util.motion.min.js';
 @codekit-prepend '../../bower_components/foundation-sites/dist/js/plugins/foundation.dropdown.min.js';
 @codekit-prepend '../../bower_components/foundation-sites/dist/js/plugins/foundation.reveal.min.js';
+@codekit-prepend '../../bower_components/owl.carousel/dist/owl.carousel.min.js';
 */
 
 $(document).foundation();
@@ -73,5 +74,16 @@ if($('.lmenu').length){
     $('.lmenu_lvl_three .close-button').click(function(){
         $('.lmenu a, .lmenu_lvl_two a').removeClass('hover');
         $('.lmenu_lvl_two, .lmenu_lvl_two .menu, .lmenu_lvl_three, .lmenu_lvl_three .lmenu_content').removeClass('opened');
+    });
+}
+
+if ($('.owl-carousel').length) {
+    $('.owl-carousel').owlCarousel({
+        // margin:110,
+        items: 3,
+        nav: true,
+        navText: ['<i class="icon-arrow-left"></i>', '<i class="icon-arrow-right"></i>'],
+        lazyLoad:true,
+        margin: 35
     });
 }

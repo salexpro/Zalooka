@@ -1,4 +1,7 @@
 mixin item(title, country, city, descr, prepay, price, add, large, price_text)
+    -
+        var crop_options = ['north', 'east', 'south', 'west', 'center']
+        var rnd = Math.floor(Math.random() * -4 + 4)
     .large-4.column
         .card(class=large?'card--large':'')
             .card_content
@@ -21,7 +24,7 @@ mixin item(title, country, city, descr, prepay, price, add, large, price_text)
                                 a(href="./city.html")
                                     =city
                 .card_image(class=prepay?'card_image--prepay':'')
-                    img(src="https://unsplash.it/345/190/?random", alt=title)
+                    img(src="https://unsplash.it/345/190/?gravity=" + crop_options[rnd], alt=title)
                 .card_brief
                     if large
                         ul.menu.vertical
@@ -46,7 +49,7 @@ mixin item(title, country, city, descr, prepay, price, add, large, price_text)
                 .card_bottom(class=!price?'card_bottom--wo':'')
                     .card_bottom_add
                         .card_bottom--left
-                            a.card_bottom_more(href="#") Узнать больше
+                            a.card_bottom_more(href="./tour.html") Узнать больше
                         .card_bottom--right
                             .rating
                                 .rating_stars
