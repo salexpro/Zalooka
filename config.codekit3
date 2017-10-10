@@ -7570,6 +7570,16 @@
 		"opt": 1,
 		"q": 100
 		},
+	"\/source\/img\/promo\/reviews.jpg": {
+		"ft": 16384,
+		"iS": 734230,
+		"oA": 0,
+		"oAP": "\/build\/img\/promo\/reviews.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"\/source\/img\/promo\/shopping.jpg": {
 		"ft": 16384,
 		"iS": 306194,
@@ -7772,6 +7782,14 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/source\/jade\/includes\/_list.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_list.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/source\/jade\/includes\/_lmenu.jade": {
 		"cOD": 1,
 		"ft": 512,
@@ -7825,6 +7843,14 @@
 		"ft": 512,
 		"oA": 0,
 		"oAP": "\/build\/pricelist.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/source\/jade\/reviews.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/build\/reviews.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -8228,7 +8254,7 @@
 	"creationDate": 503077683,
 	"displayValue": "take.travel",
 	"displayValueWasSetByUser": 1,
-	"iconImageName": "meme-cocaine",
+	"iconImageName": "\/apple-touch-icon.png",
 	"lastBuiltDate": 527459058
 	},
 "projectSettings": {

@@ -13,6 +13,9 @@ section(class=(page != 'main') ? "banner banner--section banner--" + type : "ban
                 |  (Паттайя, Таиланд)
             default
                 =name
+    if page == 'reviews'
+        .banner_header.banner_header--secondary
+            | Читайте отзывы по интересующим вас направлениям и услугам
     if page != 'faq' && page != 'visa' && type != 'tour'
         .banner_selplace(class=page=='pricelist'?'banner_selplace--pricelist':'')
             form(action="")
@@ -20,4 +23,4 @@ section(class=(page != 'main') ? "banner banner--section banner--" + type : "ban
                 input(type="text" placeholder="Паттайя" name="city")
                 if page!='pricelist'
                     input(type="text" placeholder="Услуга" name="service")
-                input.button(type="submit" value="Перейти")
+                input.button(type="submit" value=page == 'reviews' ? 'Перейти к отзывам' : 'Перейти')

@@ -3,16 +3,8 @@
     var type = 'page';
     var name = 'Таиланд';
     var logged = true;
+include includes/_list
 
-mixin list(name, items)
-    .list
-        a.header
-            =name
-        ul.menu.vertical
-            each item in items
-                li
-                    a(href="#")
-                        =item
 doctype html
 html(lang="ru")
     include includes/_head

@@ -64,10 +64,15 @@
             &:only-child{
                 margin: 0;
             }
+            &--secondary{
+                margin-top: -40px;
+                font-size: 24px;
+                margin-bottom: 40px;
+            }
         }
     }
 
-    $banners: ('tours', 'shopping', 'spa', 'page', 'faq', 'visa', 'transfer', 'pricelist', 'tour');
+    $banners: ('tours', 'shopping', 'spa', 'page', 'faq', 'visa', 'transfer', 'pricelist', 'tour', 'reviews');
 
     @each $banner in $banners {
         &--#{$banner} {
