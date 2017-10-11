@@ -21,7 +21,11 @@ section(class=(page != 'main') ? "banner banner--section banner--" + type : "ban
                         =city
                     else
                         =name
-                        |  по странам
+                        if country == 'Страны'
+                            |  по странам
+                        else
+                            | 
+                            =country
                 else
                     =name
             default
