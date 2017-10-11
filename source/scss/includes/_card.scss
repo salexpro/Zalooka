@@ -327,6 +327,10 @@
         .card{
             &_top{
                 padding: 30px 100px 0;
+                text-align: left;
+                &_select{
+                    color: $dark-gray;
+                }
             }
             &_content{
                 padding-top: 30px;
@@ -341,9 +345,8 @@
                     }
                 }
                 i{
-                    font-size: 20px;
                     vertical-align: middle;
-                    margin-left: 30px;
+                    margin-left: 10px;
                 }
             }
         }

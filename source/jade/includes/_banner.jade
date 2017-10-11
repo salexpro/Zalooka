@@ -11,6 +11,19 @@ section(class=(page != 'main') ? "banner banner--section banner--" + type : "ban
             when 'pricelist'
                 =name
                 |  (Паттайя, Таиланд)
+            when 'reviews'
+                if country
+                    if city
+                        =name
+                        | :
+                        =country
+                        | , 
+                        =city
+                    else
+                        =name
+                        |  по странам
+                else
+                    =name
             default
                 =name
     if page == 'reviews'

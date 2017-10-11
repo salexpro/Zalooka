@@ -17,4 +17,20 @@
                 a(href="./country.html")
                     =country
                 |  > 
-    =name
+    if page == 'reviews'
+        if country
+            a(href="./reviews.html")
+                =name
+            |  > 
+            if city
+                a(href="./country.html")
+                    =country
+                |  >
+                a(href="./city.html")
+                    =city
+            else
+                =country
+        else
+            =name
+    else
+        =name

@@ -7854,6 +7854,30 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/source\/jade\/reviews_city.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/build\/reviews_city.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/source\/jade\/reviews_countries.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/build\/reviews_countries.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/source\/jade\/reviews_country.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/build\/reviews_country.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/source\/jade\/shopping.jade": {
 		"cOD": 1,
 		"ft": 512,
