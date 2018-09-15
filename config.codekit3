@@ -621,6 +621,15 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/src\/pug\/components\/_icons.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_icons.html",
+		"oF": 0,
+		"oS": 1
+		},
 	"\/src\/pug\/components\/_item.pug": {
 		"cB": 0,
 		"cOD": 1,
@@ -914,7 +923,7 @@
 		"oA": 0,
 		"oAP": "\/build\/css\/app.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"\/src\/scss\/components\/_card.scss": {
@@ -1227,7 +1236,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "\/src\/assets\/favicon\/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 558719961
+	"lastBuiltDate": 558722930
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

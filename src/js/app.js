@@ -48,7 +48,7 @@ if($('.lmenu').length){
         }
     });
 
-    $('.lmenu_lvl_two a[data-menutwo]').hover(() => {
+    $('.lmenu_lvl_two a[data-menutwo]').hover(function() {
         $('.lmenu_lvl_two a').removeClass('hover');
         $('.lmenu_lvl_three .lmenu_content').removeClass('opened');
 

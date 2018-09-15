@@ -1,4 +1,13 @@
 block const
+-
+    const title  = `take.travel${name ? ' - ' + name : ''}`;
+    const descr  = 'Description';
+    const domain = 'travel.salex.pro'
+
+mixin icon(name, size, color, viewbox)
+    - viewbox = viewbox || size
+    svg(xmlns='http://www.w3.org/2000/svg' width=size[0] height=size[1] viewbox=viewbox ? "0 0 " + viewbox[0] + " " + viewbox[1] : "")
+        use(fill=color, xlink:href='#' + name)
 
 // Components
 include components/_item
@@ -21,5 +30,6 @@ html(lang="ru")
             include sections/_footer
         include components/_dropdown
         include components/_popup
+        include components/_icons
         script(src="/js/app.min.js")
         script(src="https://use.fontawesome.com/5d9df53e16.js")
