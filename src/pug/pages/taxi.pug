@@ -1,0 +1,621 @@
+extends ../_layout
+block const
+    -
+        const page = 'page';
+        const type = 'transfer';
+        const name = 'Трансфер';
+        const logged = true;
+
+block content
+    mixin taxi(img, title, brief, passengers, luggage, price)
+        .taxi
+            .taxi_container
+                .taxi_img
+                    img(src="./assets/img/taxi/" + img + ".jpg", alt=title)
+                .taxi_content
+                    .header.secondary
+                        =title
+                    .taxi_brief
+                        !=brief
+                    .taxi_details
+                        .taxi_details_passengers
+                            i.material-icons
+                                | people
+                            =passengers
+                        .taxi_details_luggage
+                            i.material-icons
+                                | business_center
+                            =luggage
+            .taxi_actions
+                .taxi_price
+                    =price
+                a.button(href="#")
+                    | Забронировать
+
+    section.row.column.section
+        .card.card--search
+            .card_top
+                .header.secondary
+                    | Найти трансфер
+            form.card_content(action="")
+                input(type="text" placeholder="У-Тапао Аэрпорт")
+                i.material-icons
+                    | swap_horiz
+                input(type="text" placeholder="Паттайя отель")
+                input.button(type="submit" value="Найти")
+        .card.card--taxi
+            .card_top
+                .header.secondary
+                    | Паттайя У-Тапао Аэропорт → Паттайя
+            .card_content
+                +taxi('econom', 'Эконом класс', 'VW Polo, Opel Corsa, Renault Clio, Skoda Fabia и т.п.<br><br>Недорогой трансфер для пары или семьи с ребенком.', '3 пассажира', '2 багажных места', '2500 бат')
+                +taxi('minivan', 'Минивэн', 'VW Multivan, Toyota Hiace, Opel Vivaro, Hyundai H-1 и т.п.<br><br>Для группы из 4-7 человек или большого багажа.', '7 пассажира', '7 багажных мест', '3000 бат')
+                +taxi('minibus', 'Микроавтобус', 'VW Multivan, Toyota Hiace, Opel Vivaro, Hyundai H-1 и т.п.<br><br>Универсальный вариант для группы до 10 человек.', '10 пассажира', '10 багажных мест', '4500 бат')
+        .card.card--expanded
+            .card_tabs
+                a.card_tabs_tab(href="./transfer.html")
+                    | Групповой трансфер
+                div.card_tabs_tab.active
+                    | Такси
+            .card_content
+                .header.secondary.primary
+                    | Такси в Паттайе / Таиланде - это просто!
+                br
+                | Вы прилетаете в Бангкок и хотите быстро и с комфортом добраться в свой отель в Паттайе или уже отдыхаете в Таиланде и хотите увидеть главные достопримечательности этой страны?
+                br
+                | Компания Online-Pattaya.ru организует индивидуальный трансфер по всем направлениям на территории Таиланда. Не смотря на то, что основным районом нашей деятельности является туристический город Паттайя, благодоря большому количеству партнеров по всей стране, мы способны организовать трансфер практически в любой уголок Таиланда.
+                br
+                br
+                .header.small.primary
+                    | Встретим вас в аэропорту.
+                | Мы готовы встретить вас в любой день недели, в любое время в аэропортах Бангкока Суварнабхуми и Донмыанг, а также У-Тапао (Паттайя)! 
+                a(href="#") Закажите встречу на такси в аэропорте Бангкока
+                |  и водитель будет ждать в зале прилета, держа в руках табличку с вашим именем. Такси быстро и с комфортом доставит вас прямо к лобби отеля или в любую точку Паттайи.
+                br
+                br
+                .header.small.primary
+                    | Узнайте Паттайю поближе.
+                | Вы можете посетить все туристические места в Паттайе, ее окрестностях, и не только. Заказывайте машину в любое время дня и ночи и она будет подана в указанное место без опозданий и без предоплаты.
+                br
+                | Специально для вашего удобства, по предварительному запросу, мы можем предоставить такси в Паттайе с бесплатным wi-fi в салоне. Путешествуете с малышом? Тогда закажите автомобиль с детским креслом.
+                br
+                | Если вы устали и вас мучает жажда, то в комфортном такси с кондиционером вы сможете отдохнуть и бесплатно утолить жажду водой.
+                br
+                br
+                .header.secondary.primary
+                    | Стоимость такси в Паттайе!
+                | Цены на такси в Паттайе указаны за машину (не за пассажира).
+                br
+                | В автомобиле будете только вы (нет других пассажиров).
+                br
+                | Цена включает все возможные сборы за проезд (дополнительных доплат не потребуется).
+                br
+                br
+                table.table.table--taxi
+                    tr
+                        th.primary
+                            | Направления - Аэропорты
+                        th
+                            | Эконом класс (до 3 человек)
+                        th
+                            | Минивэн, джип (до 6 человек)
+                        th
+                            | Минивэн, джип (до 6 человек)
+                    tr
+                        td
+                            | Такси на весь день в Паттайе (с 9:00 до 17:00, если больше, то доплата 300 бат / час)
+                        td
+                            | 2500 бат
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                        td
+                            | 3000 бат
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                        td
+                            | 4500 бат
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                    tr
+                        td
+                            | Встреча в аэропорту Суварнабхуми (BKK) → Паттайя  
+                        td
+                            | 1099 бат
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                        td
+                            | 1499 бат  
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                        td
+                            | 2099  бат
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                    tr
+                        td
+                            | Паттайя → аэропорт Суварнабхуми (BKK)
+                        td
+                            | 2100 бат
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                        td
+                            | 1399 бат
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                        td
+                            | 1999 бат
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                    tr
+                        td
+                            | Паттайя → аэропорт Суварнабхуми (BKK) → Паттайя (с ожиданием до 3-х часов, при ожидание более 3-х часов, доплата 300 бат / час)   
+                        td
+                            | 1599 бат
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                        td
+                            | 2550 бат
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                        td
+                            | 3800 бат
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                    tr
+                        td
+                            | Встреча в аэропорту Донмыанг (DMK) → Паттайя  
+                        td
+                            | 1599 бат
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                        td
+                            | 1899 бат
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                        td
+                            | 2499 бат
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                    tr
+                        td
+                            | Паттайя → аэропорт Донмыанг (DMK)
+                        td
+                            | 899 бат
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                        td
+                            | 1899 бат
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                        td
+                            | 2499 бат
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                    tr
+                        td
+                            | Встреча в аэропорту У-Тапао (UTP) → Паттайя
+                        td
+                            | 1299 бат
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                        td
+                            | 1099 бат
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                        td
+                            | 1599 бат
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                    tr
+                        td
+                            | Паттайя → У-Тапао (UTP)
+                        td
+                            | 899 бат
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                        td
+                            | 1099 бат
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                        td
+                            | 1599 бат
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                    tr
+                        td
+                            | Бангкок (отель) → Бангкок (аэропорт)
+                        td
+                            | 1000 бат
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                        td
+                            | 1200 бат
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                        td
+                            | 1500 бат
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                    tr
+                        td
+                            | Встреча в аэропорту Суварнабхкми (BKK) → Районг
+                        td
+                            | 2300 бат
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                        td
+                            | по запросу
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                        td
+                            | по запросу
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                    tr
+                        td
+                            | Районг ↔ аэропорт Суварнабхуми (BKK)
+                        td
+                            | 1300 бат
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                        td
+                            | по запросу
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                        td
+                            | по запросу
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                    tr
+                        td
+                            | Районг ↔ аэропорт У-Тапао (UTP)
+                        td
+                            | 1200 бат
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                        td
+                            | по запросу
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                        td
+                            | по запросу
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                    tr
+                        td
+                            | Аэропорт У-Тапао (UTP) → аэропорт Суварнабхуми (BKK)
+                        td
+                            | 2300 бат
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                        td
+                            | по запросу
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                        td
+                            | по запросу
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                    tr
+                        td
+                            | Аэропорт Суварнабхуми (BKK) → Сирача
+                        td
+                            | 1800 бат
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                        td
+                            | по запросу
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                        td
+                            | по запросу
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                table.table.table--taxi
+                    tr
+                        th.primary
+                            | Острова
+                        th
+                            | Эконом класс
+                            br
+                            | (до 3 человек)
+                        th
+                            | Минивэн, джип (до 6 человек)
+                        th
+                            | Минивэн, джип (до 6 человек)
+                    tr
+                        td
+                            | Паттайя → пирс Ко Самет
+                        td
+                            | 1200 бат
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                        td
+                            | 1400 бат
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                        td
+                            | 1800 бат
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                    tr
+                        td
+                            | Бангкок → пирс Ко Самет
+                        td
+                            | 3500 бат
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                        td
+                            | 3950 бат
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                        td
+                            | 4500 бат
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                    tr
+                        td
+                            | Паттайя ↔ пирс Ко Чанг
+                        td
+                            | 4000 бат
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                        td
+                            | 4200 бат
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                        td
+                            | 5000 бат
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                    tr
+                        td
+                            | Аэропорт Суварнабхуми (BKK) ↔ пирс Ко Чанг
+                        td
+                            | 2500 бат
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                        td
+                            | по запросу
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                        td
+                            | по запросу
+                            .table_actions
+                                a.table_add(href="#")
+                                    i.fa.fa-plus
+                                a.table_wish(href="#")
+                                    i.material-icons
+                                        | favorite_border
+                .header.secondary.primary
+                    | Стоимость такси в Паттайе
+                br
+                a(href="#") Заказать Такси внутри Паттайи - 350 бат
+                |  - Паттайя: Паттайя Северная, Центральная, Южная, Пратамнак, Тэпразит, Джомтьен (In Pattaya city: North Pattaya, Pattaya Klang, South Pattaya, Pratamnak, Thepprasit, Jomtien)
+                br
+                br
+                span.primary
+                    | 450 бат
+                |  -  Из Паттайи в Наджомтьен, Амбассадор (From Pattaya city to Na Jomtien, Ambassador)
+                br
+                br
+                span.primary
+                    | 500 бат
+                |  - Из Паттайи в Бан Дусит, Бан Ампер (From Pattaya city to Ban Dusit, Ban Amper)
+                br
+                br
+                span.primary
+                    | 600 бат
+                |  -  Из Паттайи в Бан Сарэ   (From Pattaya city to Ban Sa-re)

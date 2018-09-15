@@ -1,4 +1,5 @@
 build
-bower_components
-
-\.DS_Store
+node_modules
+.DS_Store
+build\.zip
+src/assets/docs/

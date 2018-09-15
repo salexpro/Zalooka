@@ -1,0 +1,214 @@
+extends ../_layout
+block const
+    -
+        const page = 'section';
+        const type = 'tour';
+        const name = 'Мадагаскар';
+        const logged = true;
+
+block content
+    section.row.column.section
+        .card.card--expanded
+            .card_top
+                .header.big.primary
+                    | Экскурсия Мадагаскар в Паттайе
+            .card_content
+                .row.tour_info
+                    .column.shrink.tour_location
+                        | Паттайя, Таиланд
+                    .column.shrink.rating.rating--tour
+                        .rating_stars
+                            i.material-icons.active star_border
+                            i.material-icons.active star_border
+                            i.material-icons.active star_border
+                            i.material-icons star_border
+                            i.material-icons star_border
+                        | 2.8
+                    .column.shrink.tour_comments
+                        i.icon-bubbles
+                        | 2
+                .row.space-around.tour_options
+                    .column.shrink.tour_option
+                        i.material-icons
+                            | access_time
+                        .tour_option_content
+                            | Выезд: 08:30
+                            br
+                            |Возврат: 17:30
+                    .column.shrink.tour_option
+                        i.material-icons
+                            | date_range
+                        .tour_option_content
+                            | Вт Чт Вс
+                    .column.shrink.tour_option
+                        i.material-icons
+                            | wb_sunny
+                        .tour_option_content
+                            | 1 дневый тур
+                    .column.shrink.tour_option
+                        i.material-icons
+                            | airport_shuttle
+                        .tour_option_content
+                            | Бесплатный
+                            br
+                            | трансфер
+                table.table.table--tour
+                    tr
+                        th
+                            | Программа
+                        th
+                            | Дни
+                        th
+                            | Взрослые
+                        th
+                            | Дети
+                        th
+                            | Заказать
+                        th
+                            | Список желаний
+                    tr
+                        td
+                            | Программа Стандарт
+                        td
+                            | Вт Чт Вс
+                        td 1499
+                        td 799
+                        td
+                            a.table_add(href="#")
+                                i.fa.fa-plus
+                        td
+                            a.table_wish(href="#")
+                                i.material-icons
+                                    | favorite_border
+                    tr
+                        td
+                            | Программа Стандарт +
+                        td
+                            | Вт Чт Вс
+                        td 1890
+                        td 1199
+                        td
+                            a.table_add(href="#")
+                                i.fa.fa-plus
+                        td
+                            a.table_wish(href="#")
+                                i.material-icons
+                                    | favorite_border
+                    tr
+                        td
+                            | Программа Премиум
+                        td
+                            | Вт Чт Вс
+                        td 2999
+                        td 1549
+                        td
+                            a.table_add(href="#")
+                                i.fa.fa-plus
+                        td
+                            a.table_wish(href="#")
+                                i.material-icons
+                                    | favorite_border
+                    tr
+                        td
+                            | Программа VIP
+                        td
+                            | Вт Чт Вс
+                        td 2999
+                        td 1350
+                        td
+                            a.table_add(href="#")
+                                i.fa.fa-plus
+                        td
+                            a.table_wish(href="#")
+                                i.material-icons
+                                    | favorite_border
+                | Экскурсия «Мадагаскар» – настоящий эксклюзив, программа, с которой не сравнится ни одна другая. Эмоции от каждого пункта маршрута будут постепенно возрастать. И потом при одном воспоминании о сладком отдыхе или взгляде на фотоснимки сердце станет радостно сжиматься.
+                br
+                br
+                img(src="https://unsplash.it/900/350", alt="")
+                br
+                br
+                .header.tiny.primary
+                    | Вас ждут небывалые приключения
+
+                | Встреча на пирсе, откуда группа туристов возьмет курс на необитаемые острова.
+                br
+                | Развлечения в пути. Пусть дорога покажется мимолетной, веселой и радужной.
+                br
+                | Актеры проведут конкурсы, никто не останется без внимания, сюрпризов и презентов.
+                br
+                | Полнейший релакс – таков девиз пункта под названием «Остров Ко Рин». Загорайте на кристально-чистом песочке, купайтесь в ласкающих водах. А можете попробовать свои силы в пляжном волейболе.
+                br
+                | Корабль-«самобранка», или вкуснейший обед по пути к следующему пункту авторской программы. Напитки тоже будут предложены.
+                br
+                | Остров обезьян – тот пункт маршрута, которого многие туристы ждут с нетерпением. Животных можно покормить. А общение с такими милахами принесет массу эмоций.
+                br
+                br
+                .header.tiny.primary
+                    | Отдых без перерыва – отпуск на полную катушку
+                | Теперь нужно получить очередную порцию ласкающих солнечных лучей, поплавать и отточить навыки сноркелинга. Полет с водной горки – не только брызги воды, но и целый фонтан из впечатлений, попробуйте! Путешествие на комфортабельном судне – это когда все желания моментально исполняются:
+                br
+                | В баре легко заказать напитки: как безалкогольные, так и покрепче.
+                br
+                | Выбор блюд – обед за шведским столом.
+                br
+                | На танцполе можно «зажечь».
+                br
+                | Аниматоры экстра-класса не дадут заскучать.
+                br
+                | И безупречные снимки от фотографа-профи – услуга за отдельную плату..
+                .slider.owl-carousel.owl-theme
+                    .slider_item
+                        img.owl-lazy(data-src="https://unsplash.it/270/180?random", alt="")
+                    .slider_item
+                        img.owl-lazy(data-src="https://unsplash.it/270/180", alt="")
+                    .slider_item
+                        img.owl-lazy(data-src="https://unsplash.it/270/180?gravity=east", alt="")
+                    .slider_item
+                        img.owl-lazy(data-src="https://unsplash.it/270/180?gravity=west", alt="")
+                    .slider_item
+                        img.owl-lazy(data-src="https://unsplash.it/270/180?gravity=south", alt="")
+                    .slider_item
+                        img.owl-lazy(data-src="https://unsplash.it/270/180?gravity=north", alt="")
+                .tour_program
+                    .row.align-justify.tour_program_inner
+                        .column.shrink
+                            table.tour_program_price
+                                tr
+                                    td
+                                        i.material-icons
+                                            | face
+                                        | Взрослый
+                                    td
+                                        span 1499
+                                        |  бат
+                                tr
+                                    td
+                                        i.material-icons
+                                            | child_care
+                                        | Детский
+                                    td
+                                        span 799
+                                        |  бат
+                        .large-7.column.tour_program_content
+                            span.primary
+                                | В стоимость входит:
+                            |  трансфер из отеля и обратно, обед, напитки, русский гид, рыбалка, сноркелинг, анимация.
+                    .large-5.tour_program_note
+                        | * Детский билет считается по росту 90 - 110 см. Ребенок до 90 см проходит бесплатно.
+                .header.tiny.primary
+                    | Отзывы
+                +review('Зоя', 'Экскурсия Мадагаскар', '27/09/2016', 'Древнейшая из экскурсий,однозначно стои своих денег,и того,что на нее надо съездить обязательно!!! То,что вы там увидите,принесет вам массу положительных эмоций и море удовольствия.А кормят там такими блюдами,что вряд ли где то еще это можно попробовать.Храмы Ангкора-это вообще феерия!!!')
+                .header.tiny.primary
+                    | Оставить отзыв
+                .large-5
+                    form.review_form(action="")
+                        input(type="text" placeholder="Имя")
+                        input(type="email" placeholder="E-mail")
+                        textarea(cols="2" placeholder="Ваш отзыв")
+                        input.button(type="button" value="Отправить")
+    section.items
+        .row.items_content
+            +item('Экскурсия в Аюттаю', 'Таиланд', 'Паттайя', 'Историческая экскурсия в древнюю столицу Сиамского Королевства.', false, true, true)
+            +item('Сиам Парк - Siam Park City', 'Таиланд', 'Паттайя', 'Сиам парк в Бангкоке. Самый большой парк аттракционов в Азии.', true, true, true)
+            +item('Саттахип', 'Таиланд', 'Паттайя', 'Экономная экскурсия для всей семьи. Заказывайте прямо сейчас!', false, true, true)

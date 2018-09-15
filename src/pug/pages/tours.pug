@@ -1,0 +1,49 @@
+extends ../_layout
+block const
+    -
+        const page = 'section';
+        const type = 'tours';
+        const name = 'Экскурсии';
+        const logged = true;
+
+block content
+    section.row.column.section
+        .card.card--thin.card--description
+            p.header
+                =name
+                |  в Паттайе
+            p.header.primary
+                | 123 Экскурсии
+            .card_content
+                | Выбирайте и заказывайте экскурсии в Паттайе на сайте или по телефону +66 60002 4036. Мы не берем предоплату на большинство экскурсионных программ! Оплатить можно гиду в день проведения.
+        .card.card--thin.card--categories
+            p.header.primary
+                | Категории Экскурсии
+            .card_content
+                ul.menu
+                    li
+                        a(href="#") Познавательные
+                    li 
+                        a(href="#") Зоопарки, сады, развлечения
+                    li 
+                        a(href="#") Вечернее шоу
+                    li 
+                        a(href="#") Острова, пляжи, дайвинг
+                    li 
+                        a(href="#") VIP Экскурсии
+                    li 
+                        a(href="#") Рыбалка
+                    li 
+                        a(href="#") Экстрим
+        include ../components/_filter
+    section.items
+        include ../components/_pager
+        .row.items_content
+            +item('Тропический парк Нонг Нуч', 'Таиланд', 'Паттайя', 'Тропический сад мадам Нонг Нуч - это оранжереи орхидей, кактусов, и мини зоопарк.', false, true, true)
+            +item('Река Квай и водопад Эраван', 'Таиланд', 'Паттайя', 'Красивейший национальный парк с 7-ми уровневым водопадом.', false, true, true)
+            +item('Мадагаскар', 'Таиланд', 'Паттайя', 'Морская прогулка, проходящая по программе all inclusive.', true, true, true)
+            +item('Экскурсия в Аюттаю', 'Таиланд', 'Паттайя', 'Историческая экскурсия в древнюю столицу Сиамского Королевства.', false, true, true)
+            +item('Сиам Парк - Siam Park City', 'Таиланд', 'Паттайя', 'Сиам парк в Бангкоке. Самый большой парк аттракционов в Азии.', true, true)
+            +item('Саттахип', 'Таиланд', 'Паттайя', 'Экономная экскурсия для всей семьи. Заказывайте прямо сейчас!', false, true)
+        include ../components/_pager
+    include ../sections/_benefits

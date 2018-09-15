@@ -1,0 +1,25 @@
+block const
+
+// Components
+include components/_item
+include components/_list
+include components/_review
+
+doctype html
+html(lang="ru")
+    head
+        include components/_head
+    body
+        main.wrap
+            include sections/_header
+            include components/_lmenu
+            include sections/_banner
+            if page != 'main'
+                section.row.column.section
+                    include components/_path
+            block content
+            include sections/_footer
+        include components/_dropdown
+        include components/_popup
+        script(src="/js/app.min.js")
+        script(src="https://use.fontawesome.com/5d9df53e16.js")

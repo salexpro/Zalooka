@@ -1,0 +1,16 @@
+extends ../_layout
+block const
+    -
+        const page = 'page';
+        const type = 'page';
+        const name = 'Популярные города';
+        const logged = true;
+
+block content
+    section.row.items
+        +item('', 'Таиланд', 'Паттайя', '', 0, 0, 0, 1)
+        +item('', 'Россия', 'Сочи', '', 0, 0, 0, 1)
+        +item('', 'ОАЭ', 'Дубаи', '', 0, 0, 0, 1)
+        +item('', 'Россия', 'Геленджик', '', 0, 0, 0, 1)
+        +item('', 'Черногория', 'Подгорица', '', 0, 0, 0, 1)
+        +item('', 'Польша', 'Варшава', '', 0, 0, 0, 1)
