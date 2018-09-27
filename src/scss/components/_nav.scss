@@ -12,7 +12,8 @@
         color: #263238;
         border-bottom: 3px solid transparent;
         padding-bottom: 10px;
-        transition: 200ms;
+        transition: color 200ms,
+                    border-color 200ms;
         margin-left: 25px;
         text-decoration: none;
         height: 100%;

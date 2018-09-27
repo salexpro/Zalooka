@@ -1,0 +1,43 @@
+.header{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    &.tiny{
+        font-size: 16px;
+        color: $medium-gray;
+        i{
+            vertical-align: middle;
+            font-size: 14px;
+            margin-left: 10px;
+        }
+    }
+    &.thin{
+        font-weight: 300;
+    }
+    &.secondary{
+        font-size: 18px;
+        color: $secondary-color;
+        margin: 0;
+    }
+    &.small{
+        font-size: 14px;
+        text-align: left;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    &.medium{
+        font-size: 20px;
+    }
+    &.big{
+        font-size: 24px;
+    }
+    &.primary{
+        color: $primary-color;
+    }
+}
+
+.primary{
+    color: $primary-color;
+}
