@@ -351,6 +351,29 @@
             }
         }
     }
+    &--404{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 36px;
+        margin-bottom: 0;
+        height: 567px;
+        font-weight: 300;
+        &_content{
+            max-width: 270px;
+            margin: 0 65px;
+            &--left{
+                text-align: center;
+            }
+        }
+        &_img{
+            margin-bottom: 12px;
+        }
+        &_button{
+            margin: 20px 0; 
+        }
+    }
+
     &_tabs{
         border-bottom: 1px solid $light-gray;
         padding: 0 100px;
@@ -396,6 +419,15 @@
         color: $black;
         margin: 0;
         line-height: 1.5;
+        &--large{
+            font-size: 20px;
+            font-weight: 300;
+            color: $secondary-color;
+        }
+        &--medium{
+            font-size: 18px;
+            color: $secondary-color;
+        }
     }
     &_name{
         font-weight: 500;

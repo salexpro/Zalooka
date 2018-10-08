@@ -165,4 +165,13 @@ a{
     .head, .nav{
         margin-left: -80px;
     }
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container{
+    width: 100%;
+    max-width: $grid-row-width;
+    margin: auto;
 }

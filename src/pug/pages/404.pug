@@ -1,0 +1,27 @@
+extends ../_layout
+block const
+    -
+        const page = '404';
+        const name = '404';
+
+block content
+    section.column.container
+        .card.card--404
+            .card--404_content.card--404_content--left
+                .card--404_img
+                    img(src="./assets/img/404.jpg" srcset="./assets/img/404.jpg 1x, ./assets/img/404@2x.jpg 2x", alt="404")
+                h1.card_header.card_header--large
+                    | Страница не найдена
+                .card--404_button
+                    a.button(href="/")
+                        | На главную
+                .card_header.card_header--medium
+                    | Почему это случилось:
+            .card--404_content
+                ol.list.list--numbered.list--large
+                    li
+                        | Неверный адрес страницы
+                    li
+                        | Мы недавно обновили сайт и некоторые страницы изменили свой адрес (URL)
+                    li
+                        | Ссылка ведущая на сайт online-pattaya.ru содержит ошибку и приводит к несуществующей странице
