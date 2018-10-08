@@ -67,9 +67,9 @@
 
 $global-font-size: 14px;
 $global-width: rem-calc(1130);
-$global-lineheight: 1.5;
+$global-lineheight: 1.3;
 $foundation-palette: (
-  primary: #f80,
+  primary: #ff8800,
   secondary: #4a4a4a,
   success: #3adb76,
   warning: #ffae00,
@@ -173,7 +173,7 @@ $anchor-text-decoration-hover: none;
 $hr-width: $global-width;
 $hr-border: 1px solid #304047;
 $hr-margin: rem-calc(7) auto;
-$list-lineheight: $paragraph-lineheight;
+$list-lineheight: $global-lineheight;
 $list-margin-bottom: $paragraph-margin-bottom;
 $list-style-type: disc;
 $list-style-position: outside;
@@ -279,8 +279,8 @@ $breadcrumbs-item-separator-color: $medium-gray;
 // ----------
 
 $button-font-family: inherit;
-$button-padding: 0.39em 1.61em;
-$button-margin: 0 0 $global-margin 0;
+$button-padding: 0.5em 1.61em;
+$button-margin: 0;
 $button-fill: solid;
 $button-background: $primary-color;
 $button-background-hover: scale-color($button-background, $lightness: -15%);

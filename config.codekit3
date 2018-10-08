@@ -1,5 +1,5 @@
 {
-"AAInfo": "This is a CodeKit 3 project config file. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. Doing so will cause CodeKit to crash and/or corrupt your project. I know it looks like JSON, but it is *not*. Many numbers in this file are 64-bit long long bitFlags, which JSON does not support. These numbers *cannot* be treated as discrete values and if you attempt to parse this file as standard JSON with any public JSON parser, these values will be corrupted. This file is not backwards-compatible with CodeKit 1 or 2. For more information, see https://codekitapp.com/",
+"AAInfo": "This is a CodeKit 3 project config file. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. Doing so will cause CodeKit to crash and\/or corrupt your project. I know it looks like JSON, but it is *not*. Many numbers in this file are 64-bit long long bitFlags, which JSON does not support. These numbers *cannot* be treated as discrete values and if you attempt to parse this file as standard JSON with any public JSON parser, these values will be corrupted. This file is not backwards-compatible with CodeKit 1 or 2. For more information, see https:\/\/codekitapp.com\/",
 "buildSteps": [
 	{
 		"name": "Process All Remaining Files and Folders",
@@ -8,162 +8,162 @@
 		},
 	{
 		"name": "Demo mode with Github Pages",
-		"scriptSourceString": "rm -rf docs/\ncp -rf build/ docs/\nrm -f build/CNAME\ncat docs/js/components/fastnav.min.js >> docs/js/app.min.js\nrm -f build.zip\nzip -r build.zip build/",
+		"scriptSourceString": "rm -rf docs\/\ncp -rf build\/ docs\/\nrm -f build\/CNAME\ncat docs\/js\/components\/fastnav.min.js >> docs\/js\/app.min.js\nrm -f build.zip\nzip -r build.zip build\/",
 		"scriptType": 1,
 		"scriptUUIDString": "26AE3F7B-AC2D-4F34-BF67-57F311D0110B",
 		"stepType": 2,
 		"uuidString": "F1EFA6C6-105C-418D-BECE-C2E49FE54D13"
 		}
 	],
-"creatorBuild": "28841",
+"creatorBuild": "26680",
 "files": {
-	"/.babelrc": {
+	"\/.babelrc": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
-		"oAP": "/build/.babelrc",
+		"oAP": "\/build\/.babelrc",
 		"oF": 1
 		},
-	"/.eslintrc": {
+	"\/.eslintrc": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
-		"oAP": "/build/.eslintrc",
+		"oAP": "\/build\/.eslintrc",
 		"oF": 1
 		},
-	"/.gitignore": {
+	"\/.gitignore": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
-		"oAP": "/build/.gitignore",
+		"oAP": "\/build\/.gitignore",
 		"oF": 1
 		},
-	"/build": {
+	"\/build": {
 		"ft": 65536,
 		"oA": 1,
-		"oAP": "/build/build",
+		"oAP": "\/build\/build",
 		"oF": 0
 		},
-	"/build.zip": {
+	"\/build.zip": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
-		"oAP": "/build/build.zip",
+		"oAP": "\/build\/build.zip",
 		"oF": 1
 		},
-	"/docs": {
+	"\/docs": {
 		"ft": 65536,
 		"oA": 1,
-		"oAP": "/build/docs",
+		"oAP": "\/build\/docs",
 		"oF": 0
 		},
-	"/node_modules": {
+	"\/node_modules": {
 		"ft": 65536,
 		"oA": 2,
-		"oAP": "/build/node_modules",
+		"oAP": "\/build\/node_modules",
 		"oF": 0
 		},
-	"/node_modules/foundation-sites/dist/js/plugins/foundation.core.min.js": {
+	"\/node_modules\/foundation-sites\/dist\/js\/plugins\/foundation.core.min.js": {
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/build/node_modules/foundation-sites/dist/js/plugins/foundation.core.min.min.js",
+		"oAP": "\/build\/node_modules\/foundation-sites\/dist\/js\/plugins\/foundation.core.min.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
 		},
-	"/node_modules/foundation-sites/dist/js/plugins/foundation.dropdown.min.js": {
+	"\/node_modules\/foundation-sites\/dist\/js\/plugins\/foundation.dropdown.min.js": {
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/build/node_modules/foundation-sites/dist/js/plugins/foundation.dropdown.min.min.js",
+		"oAP": "\/build\/node_modules\/foundation-sites\/dist\/js\/plugins\/foundation.dropdown.min.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
 		},
-	"/node_modules/foundation-sites/dist/js/plugins/foundation.reveal.min.js": {
+	"\/node_modules\/foundation-sites\/dist\/js\/plugins\/foundation.reveal.min.js": {
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/build/node_modules/foundation-sites/dist/js/plugins/foundation.reveal.min.min.js",
+		"oAP": "\/build\/node_modules\/foundation-sites\/dist\/js\/plugins\/foundation.reveal.min.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
 		},
-	"/node_modules/foundation-sites/dist/js/plugins/foundation.util.box.min.js": {
+	"\/node_modules\/foundation-sites\/dist\/js\/plugins\/foundation.util.box.min.js": {
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/build/node_modules/foundation-sites/dist/js/plugins/foundation.util.box.min.min.js",
+		"oAP": "\/build\/node_modules\/foundation-sites\/dist\/js\/plugins\/foundation.util.box.min.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
 		},
-	"/node_modules/foundation-sites/dist/js/plugins/foundation.util.keyboard.min.js": {
+	"\/node_modules\/foundation-sites\/dist\/js\/plugins\/foundation.util.keyboard.min.js": {
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/build/node_modules/foundation-sites/dist/js/plugins/foundation.util.keyboard.min.min.js",
+		"oAP": "\/build\/node_modules\/foundation-sites\/dist\/js\/plugins\/foundation.util.keyboard.min.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
 		},
-	"/node_modules/foundation-sites/dist/js/plugins/foundation.util.mediaQuery.min.js": {
+	"\/node_modules\/foundation-sites\/dist\/js\/plugins\/foundation.util.mediaQuery.min.js": {
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/build/node_modules/foundation-sites/dist/js/plugins/foundation.util.mediaQuery.min.min.js",
+		"oAP": "\/build\/node_modules\/foundation-sites\/dist\/js\/plugins\/foundation.util.mediaQuery.min.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
 		},
-	"/node_modules/foundation-sites/dist/js/plugins/foundation.util.motion.min.js": {
+	"\/node_modules\/foundation-sites\/dist\/js\/plugins\/foundation.util.motion.min.js": {
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/build/node_modules/foundation-sites/dist/js/plugins/foundation.util.motion.min.min.js",
+		"oAP": "\/build\/node_modules\/foundation-sites\/dist\/js\/plugins\/foundation.util.motion.min.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
 		},
-	"/node_modules/foundation-sites/dist/js/plugins/foundation.util.triggers.min.js": {
+	"\/node_modules\/foundation-sites\/dist\/js\/plugins\/foundation.util.triggers.min.js": {
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/build/node_modules/foundation-sites/dist/js/plugins/foundation.util.triggers.min.min.js",
+		"oAP": "\/build\/node_modules\/foundation-sites\/dist\/js\/plugins\/foundation.util.triggers.min.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
 		},
-	"/node_modules/jquery/dist/jquery.min.js": {
+	"\/node_modules\/jquery\/dist\/jquery.min.js": {
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/build/node_modules/jquery/dist/jquery.min.min.js",
+		"oAP": "\/build\/node_modules\/jquery\/dist\/jquery.min.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
 		},
-	"/node_modules/owl.carousel/dist/owl.carousel.min.js": {
+	"\/node_modules\/owl.carousel\/dist\/owl.carousel.min.js": {
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/build/node_modules/owl.carousel/dist/owl.carousel.min.min.js",
+		"oAP": "\/build\/node_modules\/owl.carousel\/dist\/owl.carousel.min.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
 		},
-	"/node_modules/owl.carousel/src/scss/_animate.scss": {
+	"\/node_modules\/owl.carousel\/src\/scss\/_animate.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -171,12 +171,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/node_modules/owl.carousel/src/css/_animate.css",
+		"oAP": "\/build\/node_modules\/owl.carousel\/src\/css\/_animate.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
 		},
-	"/node_modules/owl.carousel/src/scss/_autoheight.scss": {
+	"\/node_modules\/owl.carousel\/src\/scss\/_autoheight.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -184,12 +184,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/node_modules/owl.carousel/src/css/_autoheight.css",
+		"oAP": "\/build\/node_modules\/owl.carousel\/src\/css\/_autoheight.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
 		},
-	"/node_modules/owl.carousel/src/scss/_core.scss": {
+	"\/node_modules\/owl.carousel\/src\/scss\/_core.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -197,12 +197,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/node_modules/owl.carousel/src/css/_core.css",
+		"oAP": "\/build\/node_modules\/owl.carousel\/src\/css\/_core.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
 		},
-	"/node_modules/owl.carousel/src/scss/_lazyload.scss": {
+	"\/node_modules\/owl.carousel\/src\/scss\/_lazyload.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -210,12 +210,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/node_modules/owl.carousel/src/css/_lazyload.css",
+		"oAP": "\/build\/node_modules\/owl.carousel\/src\/css\/_lazyload.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
 		},
-	"/node_modules/owl.carousel/src/scss/_video.scss": {
+	"\/node_modules\/owl.carousel\/src\/scss\/_video.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -223,12 +223,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/node_modules/owl.carousel/src/css/_video.css",
+		"oAP": "\/build\/node_modules\/owl.carousel\/src\/css\/_video.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
 		},
-	"/node_modules/owl.carousel/src/scss/owl.carousel.scss": {
+	"\/node_modules\/owl.carousel\/src\/scss\/owl.carousel.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -236,671 +236,702 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/node_modules/owl.carousel/src/css/owl.carousel.css",
+		"oAP": "\/build\/node_modules\/owl.carousel\/src\/css\/owl.carousel.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
 		},
-	"/package-lock.json": {
+	"\/package-lock.json": {
 		"ft": 524288,
 		"oA": 1,
-		"oAP": "/build/package-lock.json",
+		"oAP": "\/build\/package-lock.json",
 		"oF": 1,
 		"oO": 0,
 		"oS": 0
 		},
-	"/package.json": {
+	"\/package.json": {
 		"ft": 524288,
 		"oA": 1,
-		"oAP": "/build/package.json",
+		"oAP": "\/build\/package.json",
 		"oF": 1,
 		"oO": 0,
 		"oS": 0
 		},
-	"/src/assets/favicon/android-chrome-144x144.png": {
+	"\/src\/assets\/favicon\/android-chrome-144x144.png": {
 		"ft": 32768,
 		"iS": 7460,
 		"oA": 0,
-		"oAP": "/build/assets/favicon/android-chrome-144x144.png",
+		"oAP": "\/build\/assets\/favicon\/android-chrome-144x144.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/favicon/apple-touch-icon.png": {
+	"\/src\/assets\/favicon\/apple-touch-icon.png": {
 		"ft": 32768,
 		"iS": 6740,
 		"oA": 0,
-		"oAP": "/build/assets/favicon/apple-touch-icon.png",
+		"oAP": "\/build\/assets\/favicon\/apple-touch-icon.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/favicon/browserconfig.xml": {
+	"\/src\/assets\/favicon\/browserconfig.xml": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "/build/assets/favicon/browserconfig.xml",
+		"oAP": "\/build\/assets\/favicon\/browserconfig.xml",
 		"oF": 0
 		},
-	"/src/assets/favicon/favicon-16x16.png": {
+	"\/src\/assets\/favicon\/favicon-16x16.png": {
 		"ft": 32768,
 		"iS": 1360,
 		"oA": 0,
-		"oAP": "/build/assets/favicon/favicon-16x16.png",
+		"oAP": "\/build\/assets\/favicon\/favicon-16x16.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/favicon/favicon-32x32.png": {
+	"\/src\/assets\/favicon\/favicon-32x32.png": {
 		"ft": 32768,
 		"iS": 2080,
 		"oA": 0,
-		"oAP": "/build/assets/favicon/favicon-32x32.png",
+		"oAP": "\/build\/assets\/favicon\/favicon-32x32.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/favicon/favicon.ico": {
+	"\/src\/assets\/favicon\/favicon.ico": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "/build/assets/favicon/favicon.ico",
+		"oAP": "\/build\/assets\/favicon\/favicon.ico",
 		"oF": 0
 		},
-	"/src/assets/favicon/manifest.json": {
+	"\/src\/assets\/favicon\/manifest.json": {
 		"ft": 524288,
 		"oA": 2,
-		"oAP": "/build/assets/favicon/manifest.json",
+		"oAP": "\/build\/assets\/favicon\/manifest.json",
 		"oF": 1,
 		"oO": 0,
 		"oS": 1
 		},
-	"/src/assets/favicon/mstile-150x150.png": {
+	"\/src\/assets\/favicon\/mstile-150x150.png": {
 		"ft": 32768,
 		"iS": 6986,
 		"oA": 0,
-		"oAP": "/build/assets/favicon/mstile-150x150.png",
+		"oAP": "\/build\/assets\/favicon\/mstile-150x150.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/favicon/safari-pinned-tab.svg": {
+	"\/src\/assets\/favicon\/safari-pinned-tab.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 0,
-		"oAP": "/build/assets/favicon/safari-pinned-tab.svg",
+		"oAP": "\/build\/assets\/favicon\/safari-pinned-tab.svg",
 		"oF": 0,
 		"opt": 1,
 		"plM": 1103269715935,
 		"prP": 0
 		},
-	"/src/assets/img/logo.svg": {
+	"\/src\/assets\/img\/404.jpg": {
+		"ft": 16384,
+		"iS": 6053,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/build\/assets\/img\/404.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/src\/assets\/img\/404@2x.jpg": {
+		"ft": 16384,
+		"iS": 13627,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/build\/assets\/img\/404@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/src\/assets\/img\/logo.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 0,
-		"oAP": "/build/assets/img/logo.svg",
+		"oAP": "\/build\/assets\/img\/logo.svg",
 		"oF": 0,
 		"opt": 1,
 		"plM": 1103269715935,
 		"prP": 0
 		},
-	"/src/assets/img/payments/mastercard.svg": {
+	"\/src\/assets\/img\/payments\/mastercard.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 0,
-		"oAP": "/build/assets/img/payments/mastercard.svg",
+		"oAP": "\/build\/assets\/img\/payments\/mastercard.svg",
 		"oF": 0,
 		"opt": 1,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"/src/assets/img/payments/paypal.svg": {
+	"\/src\/assets\/img\/payments\/paypal.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 0,
-		"oAP": "/build/assets/img/payments/paypal.svg",
+		"oAP": "\/build\/assets\/img\/payments\/paypal.svg",
 		"oF": 0,
 		"opt": 1,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"/src/assets/img/payments/visa.svg": {
+	"\/src\/assets\/img\/payments\/visa.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 0,
-		"oAP": "/build/assets/img/payments/visa.svg",
+		"oAP": "\/build\/assets\/img\/payments\/visa.svg",
 		"oF": 0,
 		"opt": 1,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"/src/assets/img/payments/webmoney.svg": {
+	"\/src\/assets\/img\/payments\/webmoney.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 0,
-		"oAP": "/build/assets/img/payments/webmoney.svg",
+		"oAP": "\/build\/assets\/img\/payments\/webmoney.svg",
 		"oF": 0,
 		"opt": 1,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"/src/assets/img/payments/yandex.svg": {
+	"\/src\/assets\/img\/payments\/yandex.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 0,
-		"oAP": "/build/assets/img/payments/yandex.svg",
+		"oAP": "\/build\/assets\/img\/payments\/yandex.svg",
 		"oF": 0,
 		"opt": 1,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"/src/assets/img/promo/faq.jpg": {
+	"\/src\/assets\/img\/promo\/faq.jpg": {
 		"ft": 16384,
 		"iS": 323695,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/build/assets/img/promo/faq.jpg",
+		"oAP": "\/build\/assets\/img\/promo\/faq.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"/src/assets/img/promo/main.jpg": {
+	"\/src\/assets\/img\/promo\/main.jpg": {
 		"ft": 16384,
 		"iS": 730790,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/build/assets/img/promo/main.jpg",
+		"oAP": "\/build\/assets\/img\/promo\/main.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"/src/assets/img/promo/page.jpg": {
+	"\/src\/assets\/img\/promo\/page.jpg": {
 		"ft": 16384,
 		"iS": 315012,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/build/assets/img/promo/page.jpg",
+		"oAP": "\/build\/assets\/img\/promo\/page.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"/src/assets/img/promo/pricelist.jpg": {
+	"\/src\/assets\/img\/promo\/pricelist.jpg": {
 		"ft": 16384,
 		"iS": 283959,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/build/assets/img/promo/pricelist.jpg",
+		"oAP": "\/build\/assets\/img\/promo\/pricelist.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"/src/assets/img/promo/reviews.jpg": {
+	"\/src\/assets\/img\/promo\/reviews.jpg": {
 		"ft": 16384,
 		"iS": 734230,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/build/assets/img/promo/reviews.jpg",
+		"oAP": "\/build\/assets\/img\/promo\/reviews.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"/src/assets/img/promo/shopping.jpg": {
+	"\/src\/assets\/img\/promo\/shopping.jpg": {
 		"ft": 16384,
 		"iS": 306194,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/build/assets/img/promo/shopping.jpg",
+		"oAP": "\/build\/assets\/img\/promo\/shopping.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"/src/assets/img/promo/spa.jpg": {
+	"\/src\/assets\/img\/promo\/spa.jpg": {
 		"ft": 16384,
 		"iS": 343047,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/build/assets/img/promo/spa.jpg",
+		"oAP": "\/build\/assets\/img\/promo\/spa.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"/src/assets/img/promo/tour.jpg": {
+	"\/src\/assets\/img\/promo\/tour.jpg": {
 		"ft": 16384,
 		"iS": 204168,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/build/assets/img/promo/tour.jpg",
+		"oAP": "\/build\/assets\/img\/promo\/tour.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"/src/assets/img/promo/tours.jpg": {
+	"\/src\/assets\/img\/promo\/tours.jpg": {
 		"ft": 16384,
 		"iS": 204168,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/build/assets/img/promo/tours.jpg",
+		"oAP": "\/build\/assets\/img\/promo\/tours.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"/src/assets/img/promo/transfer.jpg": {
+	"\/src\/assets\/img\/promo\/transfer.jpg": {
 		"ft": 16384,
 		"iS": 431252,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/build/assets/img/promo/transfer.jpg",
+		"oAP": "\/build\/assets\/img\/promo\/transfer.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"/src/assets/img/promo/visa.jpg": {
+	"\/src\/assets\/img\/promo\/visa.jpg": {
 		"ft": 16384,
 		"iS": 351838,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/build/assets/img/promo/visa.jpg",
+		"oAP": "\/build\/assets\/img\/promo\/visa.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"/src/assets/img/taxi/econom.jpg": {
+	"\/src\/assets\/img\/taxi\/econom.jpg": {
 		"ft": 16384,
 		"iS": 12229,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/build/assets/img/taxi/econom.jpg",
+		"oAP": "\/build\/assets\/img\/taxi\/econom.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"/src/assets/img/taxi/minibus.jpg": {
+	"\/src\/assets\/img\/taxi\/minibus.jpg": {
 		"ft": 16384,
 		"iS": 21138,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/build/assets/img/taxi/minibus.jpg",
+		"oAP": "\/build\/assets\/img\/taxi\/minibus.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"/src/assets/img/taxi/minivan.jpg": {
+	"\/src\/assets\/img\/taxi\/minivan.jpg": {
 		"ft": 16384,
 		"iS": 13592,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/build/assets/img/taxi/minivan.jpg",
+		"oAP": "\/build\/assets\/img\/taxi\/minivan.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"/src/CNAME": {
+	"\/src\/CNAME": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "/build/CNAME",
+		"oAP": "\/build\/CNAME",
 		"oF": 0
 		},
-	"/src/js/app.js": {
+	"\/src\/js\/app.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/build/js/app.min.js",
+		"oAP": "\/build\/js\/app.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
 		},
-	"/src/js/components/fastnav.js": {
+	"\/src\/js\/components\/fastnav.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/build/js/components/fastnav.min.js",
+		"oAP": "\/build\/js\/components\/fastnav.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
 		},
-	"/src/pug/_layout.pug": {
+	"\/src\/pug\/_layout.pug": {
 		"cB": 0,
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/_layout.html",
+		"oAP": "\/build\/_layout.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/components/_dropdown.pug": {
+	"\/src\/pug\/components\/_dropdown.pug": {
 		"cB": 0,
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/_dropdown.html",
+		"oAP": "\/build\/_dropdown.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/components/_filter.pug": {
+	"\/src\/pug\/components\/_filter.pug": {
 		"cB": 0,
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/_filter.html",
+		"oAP": "\/build\/_filter.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/components/_head.pug": {
+	"\/src\/pug\/components\/_head.pug": {
 		"cB": 0,
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/_head.html",
+		"oAP": "\/build\/_head.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/components/_icons.pug": {
+	"\/src\/pug\/components\/_icons.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/_icons.html",
+		"oAP": "\/build\/_icons.html",
 		"oF": 0,
 		"oS": 1
 		},
-	"/src/pug/components/_item.pug": {
+	"\/src\/pug\/components\/_item.pug": {
 		"cB": 0,
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/_item.html",
+		"oAP": "\/build\/_item.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/components/_list.pug": {
+	"\/src\/pug\/components\/_list.pug": {
 		"cB": 0,
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/_list.html",
+		"oAP": "\/build\/_list.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/components/_lmenu.pug": {
+	"\/src\/pug\/components\/_lmenu.pug": {
 		"cB": 0,
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/_lmenu.html",
+		"oAP": "\/build\/_lmenu.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/components/_pager.pug": {
+	"\/src\/pug\/components\/_pager.pug": {
 		"cB": 0,
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/_pager.html",
+		"oAP": "\/build\/_pager.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/components/_path.pug": {
+	"\/src\/pug\/components\/_path.pug": {
 		"cB": 0,
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/_path.html",
+		"oAP": "\/build\/_path.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/components/_popup.pug": {
+	"\/src\/pug\/components\/_popup.pug": {
 		"cB": 0,
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/_popup.html",
+		"oAP": "\/build\/_popup.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/components/_review.pug": {
+	"\/src\/pug\/components\/_review.pug": {
 		"cB": 0,
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/_review.html",
+		"oAP": "\/build\/_review.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/pages/cities.pug": {
+	"\/src\/pug\/pages\/404.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "/build/cities.html",
+		"oAP": "\/build\/404.html",
 		"oF": 0,
-		"oS": 0
+		"oS": 1
 		},
-	"/src/pug/pages/city.pug": {
+	"\/src\/pug\/pages\/cities.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "/build/city.html",
+		"oAP": "\/build\/cities.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/pages/contacts.pug": {
+	"\/src\/pug\/pages\/city.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "/build/contacts.html",
+		"oAP": "\/build\/city.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/pages/countries.pug": {
+	"\/src\/pug\/pages\/contacts.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "/build/countries.html",
+		"oAP": "\/build\/contacts.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/pages/country.pug": {
+	"\/src\/pug\/pages\/countries.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "/build/country.html",
+		"oAP": "\/build\/countries.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/pages/faq.pug": {
+	"\/src\/pug\/pages\/country.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "/build/faq.html",
+		"oAP": "\/build\/country.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/pages/index.pug": {
+	"\/src\/pug\/pages\/faq.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "/build/index.html",
+		"oAP": "\/build\/faq.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/pages/pricelist.pug": {
+	"\/src\/pug\/pages\/index.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "/build/pricelist.html",
+		"oAP": "\/build\/index.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/pages/reviews.pug": {
+	"\/src\/pug\/pages\/pricelist.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "/build/reviews.html",
+		"oAP": "\/build\/pricelist.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/pages/reviews_city.pug": {
+	"\/src\/pug\/pages\/reviews.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "/build/reviews_city.html",
+		"oAP": "\/build\/reviews.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/pages/reviews_countries.pug": {
+	"\/src\/pug\/pages\/reviews_city.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "/build/reviews_countries.html",
+		"oAP": "\/build\/reviews_city.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/pages/reviews_country.pug": {
+	"\/src\/pug\/pages\/reviews_countries.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "/build/reviews_country.html",
+		"oAP": "\/build\/reviews_countries.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/pages/shopping.pug": {
+	"\/src\/pug\/pages\/reviews_country.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "/build/shopping.html",
+		"oAP": "\/build\/reviews_country.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/pages/spa.pug": {
+	"\/src\/pug\/pages\/shopping.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "/build/spa.html",
+		"oAP": "\/build\/shopping.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/pages/taxi.pug": {
+	"\/src\/pug\/pages\/spa.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "/build/taxi.html",
+		"oAP": "\/build\/spa.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/pages/tour.pug": {
+	"\/src\/pug\/pages\/taxi.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "/build/tour.html",
+		"oAP": "\/build\/taxi.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/pages/tours.pug": {
+	"\/src\/pug\/pages\/tour.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "/build/tours.html",
+		"oAP": "\/build\/tour.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/pages/transfer.pug": {
+	"\/src\/pug\/pages\/tours.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "/build/transfer.html",
+		"oAP": "\/build\/tours.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/pages/visa.pug": {
+	"\/src\/pug\/pages\/transfer.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "/build/visa.html",
+		"oAP": "\/build\/transfer.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/sections/_banner.pug": {
+	"\/src\/pug\/pages\/visa.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/build\/visa.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/src\/pug\/sections\/_banner.pug": {
 		"cB": 0,
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/_banner.html",
+		"oAP": "\/build\/_banner.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/sections/_benefits.pug": {
+	"\/src\/pug\/sections\/_benefits.pug": {
 		"cB": 0,
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/_benefits.html",
+		"oAP": "\/build\/_benefits.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/sections/_footer.pug": {
+	"\/src\/pug\/sections\/_footer.pug": {
 		"cB": 0,
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/_footer.html",
+		"oAP": "\/build\/_footer.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/sections/_header.pug": {
+	"\/src\/pug\/sections\/_header.pug": {
 		"cB": 0,
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/_header.html",
+		"oAP": "\/build\/_header.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/scss/_settings.scss": {
+	"\/src\/scss\/_settings.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -908,25 +939,25 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/css/_settings.css",
+		"oAP": "\/build\/css\/_settings.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
 		},
-	"/src/scss/app.scss": {
+	"\/src\/scss\/app.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
-		"ma": 0,
+		"ma": 1,
 		"oA": 0,
-		"oAP": "/build/css/app.css",
+		"oAP": "\/build\/css\/app.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
 		},
-	"/src/scss/components/_base.scss": {
+	"\/src\/scss\/components\/_base.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -934,64 +965,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/css/components/_base.css",
+		"oAP": "\/build\/css\/components\/_base.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/scss/components/_card.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/build/css/components/_card.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/src/scss/components/_contact_us.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/build/css/components/_contact_us.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/src/scss/components/_dropdown.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/build/css/components/_dropdown.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/src/scss/components/_filter.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/build/css/components/_filter.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/src/scss/components/_fonts.scss": {
+	"\/src\/scss\/components\/_button.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -999,12 +978,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/css/components/_fonts.css",
+		"oAP": "\/build\/css\/components\/_button.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
 		},
-	"/src/scss/components/_form.scss": {
+	"\/src\/scss\/components\/_card.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1012,12 +991,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/css/components/_form.css",
+		"oAP": "\/build\/css\/components\/_card.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/scss/components/_items.scss": {
+	"\/src\/scss\/components\/_contact_us.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1025,12 +1004,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/css/components/_items.css",
+		"oAP": "\/build\/css\/components\/_contact_us.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/scss/components/_list.scss": {
+	"\/src\/scss\/components\/_dropdown.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1038,12 +1017,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/css/components/_list.css",
+		"oAP": "\/build\/css\/components\/_dropdown.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/scss/components/_lmenu.scss": {
+	"\/src\/scss\/components\/_filter.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1051,155 +1030,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/css/components/_lmenu.css",
+		"oAP": "\/build\/css\/components\/_filter.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/scss/components/_map.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/build/css/components/_map.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/src/scss/components/_nav.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/build/css/components/_nav.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/src/scss/components/_pager.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/build/css/components/_pager.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/src/scss/components/_path.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/build/css/components/_path.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/src/scss/components/_popup.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/build/css/components/_popup.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/src/scss/components/_rating.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/build/css/components/_rating.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/src/scss/components/_review.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/build/css/components/_review.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/src/scss/components/_slider.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/build/css/components/_slider.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/src/scss/components/_table.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/build/css/components/_table.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/src/scss/components/_taxi.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/build/css/components/_taxi.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/src/scss/components/_tour.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/build/css/components/_tour.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/src/scss/components/_typography.scss": {
+	"\/src\/scss\/components\/_fonts.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -1207,12 +1043,207 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/css/components/_typography.css",
+		"oAP": "\/build\/css\/components\/_fonts.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
 		},
-	"/src/scss/sections/_banner.scss": {
+	"\/src\/scss\/components\/_form.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/css\/components\/_form.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/scss\/components\/_items.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/css\/components\/_items.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/scss\/components\/_list.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/css\/components\/_list.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/scss\/components\/_lmenu.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/css\/components\/_lmenu.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/scss\/components\/_map.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/css\/components\/_map.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/scss\/components\/_nav.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/css\/components\/_nav.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/scss\/components\/_pager.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/css\/components\/_pager.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/scss\/components\/_path.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/css\/components\/_path.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/scss\/components\/_popup.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/css\/components\/_popup.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/scss\/components\/_rating.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/css\/components\/_rating.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/scss\/components\/_review.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/css\/components\/_review.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/scss\/components\/_slider.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/css\/components\/_slider.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/scss\/components\/_table.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/css\/components\/_table.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/scss\/components\/_taxi.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/css\/components\/_taxi.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/scss\/components\/_tour.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/css\/components\/_tour.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/scss\/components\/_typography.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -1220,12 +1251,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/css/sections/_banner.css",
+		"oAP": "\/build\/css\/components\/_typography.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
 		},
-	"/src/scss/sections/_footer.scss": {
+	"\/src\/scss\/sections\/_banner.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -1233,12 +1264,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/css/sections/_footer.css",
+		"oAP": "\/build\/css\/sections\/_banner.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
 		},
-	"/src/scss/sections/_head.scss": {
+	"\/src\/scss\/sections\/_footer.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -1246,7 +1277,20 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/css/sections/_head.css",
+		"oAP": "\/build\/css\/sections\/_footer.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/src\/scss\/sections\/_head.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/css\/sections\/_head.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -1260,21 +1304,20 @@
 	"creationDate": 505831586,
 	"displayValue": "take.travel",
 	"displayValueWasSetByUser": 1,
-	"iconImageName": "/src/assets/favicon/apple-touch-icon.png",
+	"iconImageName": "\/src\/assets\/favicon\/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 559754205.30070496
+	"lastBuiltDate": 560656642
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
 	"alwaysUseExternalServer": 0,
 	"animateCSSInjections": 0,
 	"autoBuildNewItems": 1,
+	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
 	"autoprefixerEnableIEGrid": 1,
-	"babel7PresetType": 1,
-	"babelAllowRCFiles": 0,
 	"babelAuxiliaryCommentAfter": "",
 	"babelAuxiliaryCommentBefore": "",
-	"babelConfigType": 0,
+	"babelConfigFileHandlingType": 0,
 	"babelCustomPluginsList": "",
 	"babelCustomPresetsList": "",
 	"babelInsertModuleIDs": 0,
@@ -1282,7 +1325,7 @@
 	"babelNoComments": 0,
 	"babelPlugins": {
 		"arrow-functions": {
-			"active": 0
+			"active": false
 			},
 		"async-generator-functions": {
 			"active": 0
@@ -1291,43 +1334,43 @@
 			"active": 0
 			},
 		"block-scoped-functions": {
-			"active": 0
+			"active": false
 			},
 		"block-scoping": {
-			"active": 0
+			"active": false
 			},
 		"class-properties": {
 			"active": 0
 			},
 		"classes": {
-			"active": 0
+			"active": false
 			},
 		"computed-properties": {
-			"active": 0
+			"active": false
 			},
 		"decorators": {
 			"active": 0
 			},
 		"destructuring": {
-			"active": 0
+			"active": false
 			},
 		"do-expressions": {
 			"active": 0
 			},
 		"dotall-regex": {
-			"active": 0
+			"active": false
 			},
 		"duplicate-keys": {
-			"active": 0
+			"active": false
 			},
 		"exponentiation-operator": {
 			"active": 0
 			},
 		"export-default-from": {
-			"active": 0
+			"active": false
 			},
 		"export-namespace-from": {
-			"active": 0
+			"active": false
 			},
 		"external-helpers": {
 			"active": 0
@@ -1336,28 +1379,28 @@
 			"active": 0
 			},
 		"for-of": {
-			"active": 0
+			"active": false
 			},
 		"function-bind": {
 			"active": 0
 			},
 		"function-name": {
-			"active": 0
+			"active": false
 			},
 		"function-sent": {
-			"active": 0
+			"active": false
 			},
 		"instanceof": {
-			"active": 0
+			"active": false
 			},
 		"jscript": {
 			"active": 0
 			},
 		"literals": {
-			"active": 0
+			"active": false
 			},
 		"logical-assignment-operators": {
-			"active": 0
+			"active": false
 			},
 		"member-expression-literals": {
 			"active": 0
@@ -1369,28 +1412,28 @@
 			"active": 0
 			},
 		"modules-amd": {
-			"active": 0
+			"active": false
 			},
 		"modules-commonjs": {
-			"active": 0
+			"active": false
 			},
 		"modules-systemjs": {
-			"active": 0
+			"active": false
 			},
 		"modules-umd": {
-			"active": 0
+			"active": false
 			},
 		"new-target": {
-			"active": 0
+			"active": false
 			},
 		"node-env-inline": {
 			"active": 0
 			},
 		"nullish-coalescing-operator": {
-			"active": 0
+			"active": false
 			},
 		"numeric-separator": {
-			"active": 0
+			"active": false
 			},
 		"object-assign": {
 			"active": 0
@@ -1402,25 +1445,25 @@
 			"active": 0
 			},
 		"object-super": {
-			"active": 0
+			"active": false
 			},
 		"optional-catch-binding": {
-			"active": 0
+			"active": false
 			},
 		"optional-chaining": {
-			"active": 0
+			"active": false
 			},
 		"parameters": {
-			"active": 0
+			"active": false
 			},
 		"pipeline-operator": {
-			"active": 0
+			"active": false
 			},
 		"property-literals": {
 			"active": 0
 			},
 		"property-mutators": {
-			"active": 0
+			"active": false
 			},
 		"proto-to-assign": {
 			"active": 0
@@ -1456,45 +1499,46 @@
 			"active": 0
 			},
 		"reserved-words": {
-			"active": 0
+			"active": false
 			},
 		"runtime": {
 			"active": 0
 			},
 		"shorthand-properties": {
-			"active": 0
+			"active": false
 			},
 		"simplify-comparison-operators": {
 			"active": 0
 			},
 		"spread": {
-			"active": 0
+			"active": false
 			},
 		"sticky-regex": {
-			"active": 0
+			"active": false
 			},
 		"strict-mode": {
 			"active": 0
 			},
 		"template-literals": {
-			"active": 0
+			"active": false
 			},
 		"throw-expressions": {
-			"active": 0
+			"active": false
 			},
 		"typeof-symbol": {
-			"active": 0
+			"active": false
 			},
 		"undefined-to-void": {
 			"active": 0
 			},
 		"unicode-property-regex": {
-			"active": 0
+			"active": false
 			},
 		"unicode-regex": {
-			"active": 0
+			"active": false
 			}
 		},
+	"babelPresetType": 193,
 	"babelRetainLines": 0,
 	"bowerAbbreviatedPath": "bower_components",
 	"bowerAutoCreateInfoFile": 1,
@@ -1503,7 +1547,6 @@
 	"bowerSaveDevDependencies": 1,
 	"bowerUseExactVersion": 0,
 	"browserRefreshDelay": 0,
-	"browserslistString": ">0.2%, last 2 versions, Firefox ESR, not dead",
 	"buildFolderActive": 1,
 	"buildFolderName": "build",
 	"cleanBuild": 1,
@@ -1861,10 +1904,6 @@
 			"active": 0,
 			"optionString": "'always', {exceptAfterSingleLine: false}"
 			},
-		"max-classes-per-file": {
-			"active": 0,
-			"optionString": "1"
-			},
 		"max-depth": {
 			"active": 0,
 			"optionString": "{'max': 4}"
@@ -1876,10 +1915,6 @@
 		"max-lines": {
 			"active": 0,
 			"optionString": "{'max': 300, 'skipBlankLines': true, 'skipComments': true}"
-			},
-		"max-lines-per-function": {
-			"active": 0,
-			"optionString": "{'max': 50, 'skipBlankLines': true, 'skipComments': true, 'IIFEs': false}"
 			},
 		"max-nested-callbacks": {
 			"active": 0,
@@ -1925,10 +1960,6 @@
 			"active": 0,
 			"optionString": ""
 			},
-		"no-async-promise-executor": {
-			"active": 0,
-			"optionString": ""
-			},
 		"no-await-in-loop": {
 			"active": 0,
 			"optionString": ""
@@ -1947,6 +1978,10 @@
 			},
 		"no-case-declarations": {
 			"active": 1,
+			"optionString": ""
+			},
+		"no-catch-shadow": {
+			"active": 0,
 			"optionString": ""
 			},
 		"no-class-assign": {
@@ -2145,13 +2180,9 @@
 			"active": 0,
 			"optionString": "{'ignore': [], 'ignoreArrayIndexes': true, 'enforceConst': false, 'detectObjects': false}"
 			},
-		"no-misleading-character-class": {
-			"active": 0,
-			"optionString": ""
-			},
 		"no-mixed-operators": {
 			"active": 0,
-			"optionString": "{'groups': [['+', '-', '*', '/', '%', '**'], ['&', '|', '^', '~', '<<', '>>', '>>>'], ['==', '!=', '===', '!==', '>', '>=', '<', '<='], ['&&', '||'], ['in', 'instanceof']], 'allowSamePrecedence': true}"
+			"optionString": "{'groups': [['+', '-', '*', '\/', '%', '**'], ['&', '|', '^', '~', '<<', '>>', '>>>'], ['==', '!=', '===', '!==', '>', '>=', '<', '<='], ['&&', '||'], ['in', 'instanceof']], 'allowSamePrecedence': true}"
 			},
 		"no-mixed-requires": {
 			"active": 0,
@@ -2505,10 +2536,6 @@
 			"active": 0,
 			"optionString": ""
 			},
-		"prefer-object-spread": {
-			"active": 0,
-			"optionString": ""
-			},
 		"prefer-promise-reject-errors": {
 			"active": 0,
 			"optionString": "{'allowEmptyReject': false}"
@@ -2537,10 +2564,6 @@
 			"active": 0,
 			"optionString": "'always'"
 			},
-		"require-atomic-updates": {
-			"active": 0,
-			"optionString": ""
-			},
 		"require-await": {
 			"active": 0,
 			"optionString": ""
@@ -2548,10 +2571,6 @@
 		"require-jsdoc": {
 			"active": 0,
 			"optionString": "{'require': {'FunctionDeclaration': true, 'MethodDefinition': false, 'ClassDeclaration': false, 'ArrowFunctionExpression': false}}"
-			},
-		"require-unicode-regexp": {
-			"active": 0,
-			"optionString": ""
 			},
 		"require-yield": {
 			"active": 0,
@@ -2607,7 +2626,7 @@
 			},
 		"spaced-comment": {
 			"active": 0,
-			"optionString": "'always', {'line': {'markers': ['/'], 'exceptions': ['-', '+']}, 'block': {'markers': ['!'], 'exceptions': ['*'], 'balanced': false}}"
+			"optionString": "'always', {'line': {'markers': ['\/'], 'exceptions': ['-', '+']}, 'block': {'markers': ['!'], 'exceptions': ['*'], 'balanced': false}}"
 			},
 		"strict": {
 			"active": 0,
@@ -2667,7 +2686,7 @@
 			}
 		},
 	"esLintSourceType": 0,
-	"externalServerAddress": "https://travel.salex.pro/",
+	"externalServerAddress": "https:\/\/travel.salex.pro\/",
 	"gitIgnoreBuildFolder": 0,
 	"hideConfigFile": 0,
 	"jsCheckerReservedNamesString": "",
@@ -3062,6 +3081,7 @@
 		"escapeHTMLCharacters": 0,
 		"noEscapeInAttributes": 0,
 		"outputFormat": 2,
+		"outputStyle": 0,
 		"shouldRunCacheBuster": 0,
 		"useCDATA": 0,
 		"useDoubleQuotes": 0,
@@ -3080,7 +3100,7 @@
 	"languageDefaultsJS": {
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.min.js",
-		"autoOutputPathRelativePath": "/min",
+		"autoOutputPathRelativePath": "\/min",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
@@ -3112,19 +3132,19 @@
 		"allowInsecureImports": 0,
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.css",
-		"autoOutputPathRelativePath": "../css",
+		"autoOutputPathRelativePath": "..\/css",
 		"autoOutputPathReplace1": "less",
 		"autoOutputPathReplace2": "css",
 		"autoOutputPathStyle": 2,
 		"createSourceMap": 0,
-		"enableJavascript": 0,
+		"disableJavascript": 0,
 		"ieCompatibility": 1,
-		"mathStyle": 0,
 		"outputStyle": 0,
-		"rewriteURLStyle": 0,
+		"relativeURLS": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"strictImports": 0,
+		"strictMath": 0,
 		"strictUnits": 0
 		},
 	"languageDefaultsMARKDOWN": {
@@ -3169,7 +3189,7 @@
 	"languageDefaultsPUG": {
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.html",
-		"autoOutputPathRelativePath": "/",
+		"autoOutputPathRelativePath": "\/",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 1,
@@ -3180,7 +3200,7 @@
 	"languageDefaultsSASS": {
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.css",
-		"autoOutputPathRelativePath": "../css",
+		"autoOutputPathRelativePath": "..\/css",
 		"autoOutputPathReplace1": "scss",
 		"autoOutputPathReplace2": "css",
 		"autoOutputPathStyle": 3,
@@ -3209,7 +3229,7 @@
 	"languageDefaultsSTYLUS": {
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.css",
-		"autoOutputPathRelativePath": "../css",
+		"autoOutputPathRelativePath": "..\/css",
 		"autoOutputPathReplace1": "stylus",
 		"autoOutputPathReplace2": "css",
 		"autoOutputPathStyle": 2,
@@ -3233,70 +3253,36 @@
 	"languageDefaultsTS": {
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.js",
-		"autoOutputPathRelativePath": "/js",
+		"autoOutputPathRelativePath": "\/js",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 2,
 		"createDeclarationFile": 0,
 		"createSourceMap": 0,
+		"jsxMode": 0,
 		"minifyOutput": 0,
 		"moduleResolutionType": 0,
 		"moduleType": 0,
+		"noImplicitAny": 0,
+		"preserveConstEnums": 0,
 		"removeComments": 0,
+		"suppressImplicitAnyIndexErrors": 0,
 		"targetECMAVersion": 0
 		},
 	"languageDefaultsUserDefined": [
 		],
 	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
-	"skippedFoldersString": "log, _logs, logs, _cache, cache, /storage/framework/sessions, /docs, node_modules, build.zip",
+	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, \/docs, node_modules, build.zip",
 	"sourceFolderName": "src",
 	"susyVersion": 3,
-	"tsAllowSyntheticDefaultImports": 0,
-	"tsAllowUnreachableCode": 0,
-	"tsAllowUnusedLabels": 0,
-	"tsAlwaysStrict": 0,
-	"tsDownlevelIteration": 0,
-	"tsEmitBOM": 0,
-	"tsEmitDecoratorMetadata": 0,
-	"tsESModuleInterop": 0,
-	"tsForceConsistentCasingInFileNames": 0,
-	"tsImportHelpers": 0,
-	"tsIsolatedModules": 0,
-	"tsJSXFactory": "React.createElement",
-	"tsKeyofStringsOnly": 0,
-	"tsNoEmitHelpers": 0,
-	"tsNoFallthroughCasesInSwitch": 0,
-	"tsNoImplicitAny": 0,
-	"tsNoImplicitReturns": 0,
-	"tsNoImplicitThis": 0,
-	"tsNoImplicitUseStrict": 0,
-	"tsNoLib": 0,
-	"tsNoResolve": 0,
-	"tsNoStrictGenericChecks": 0,
-	"tsNoUnusedLocals": 0,
-	"tsNoUnusedParameters": 0,
-	"tsPreserveConstEnums": 0,
-	"tsPreserveSymlinks": 0,
-	"tsResolveJsonModule": 0,
-	"tsSkipLibCheck": 0,
-	"tsStrictFunctionTypes": 0,
-	"tsStrictNullChecks": 0,
-	"tsStrictPropertyInitialization": 0,
-	"tsStripInternal": 0,
-	"tsSuppressExcessPropertyErrors": 0,
-	"tsSuppressImplicitAnyIndexErrors": 0,
 	"uglifyDefinesString": "",
 	"uglifyFlags2": {
-		"arguments": {
-			"active": 1,
-			"flagValue": -1
-			},
-		"ascii_only": {
+		"ascii-only": {
 			"active": 0,
 			"flagValue": -1
 			},
-		"bare_returns": {
+		"bare-returns": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -3304,11 +3290,11 @@
 			"active": 1,
 			"flagValue": -1
 			},
-		"braces": {
+		"bracketize": {
 			"active": 0,
 			"flagValue": -1
 			},
-		"collapse_vars": {
+		"cascade": {
 			"active": 1,
 			"flagValue": -1
 			},
@@ -3332,10 +3318,6 @@
 			"active": 0,
 			"flagValue": -1
 			},
-		"directives": {
-			"active": 1,
-			"flagValue": -1
-			},
 		"drop_console": {
 			"active": 0,
 			"flagValue": -1
@@ -3352,15 +3334,7 @@
 			"active": 1,
 			"flagValue": -1
 			},
-		"expression": {
-			"active": 0,
-			"flagValue": -1
-			},
 		"hoist_funs": {
-			"active": 1,
-			"flagValue": -1
-			},
-		"hoist_props": {
 			"active": 1,
 			"flagValue": -1
 			},
@@ -3368,32 +3342,20 @@
 			"active": 0,
 			"flagValue": -1
 			},
-		"html5_comments": {
-			"active": 1,
-			"flagValue": -1
-			},
-		"ie8": {
-			"active": 0,
-			"flagValue": -1
-			},
 		"if_return": {
 			"active": 1,
 			"flagValue": -1
+			},
+		"indent-level": {
+			"active": 0,
+			"flagValue": 4
 			},
 		"indent-start": {
 			"active": 0,
 			"flagValue": 0
 			},
-		"indent_level": {
+		"inline-script": {
 			"active": 0,
-			"flagValue": 4
-			},
-		"inline": {
-			"active": 1,
-			"flagValue": 3
-			},
-		"inline_script": {
-			"active": 1,
 			"flagValue": -1
 			},
 		"join_vars": {
@@ -3408,14 +3370,6 @@
 			"active": 0,
 			"flagValue": -1
 			},
-		"keep_infinity": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"keep_quoted_props": {
-			"active": 0,
-			"flagValue": -1
-			},
 		"loops": {
 			"active": 1,
 			"flagValue": -1
@@ -3424,20 +3378,12 @@
 			"active": 1,
 			"flagValue": -1
 			},
-		"max_line_len": {
+		"max-line-len": {
 			"active": 1,
 			"flagValue": 32000
 			},
 		"negate_iife": {
 			"active": 1,
-			"flagValue": -1
-			},
-		"passes": {
-			"active": 1,
-			"flagValue": 1
-			},
-		"preserve_line": {
-			"active": 0,
 			"flagValue": -1
 			},
 		"properties": {
@@ -3448,19 +3394,11 @@
 			"active": 0,
 			"flagValue": -1
 			},
-		"quote_keys": {
+		"quote-keys": {
 			"active": 0,
 			"flagValue": -1
 			},
-		"quote_style": {
-			"active": 1,
-			"flagValue": 0
-			},
-		"reduce_funcs": {
-			"active": 1,
-			"flagValue": -1
-			},
-		"reduce_vars": {
+		"screw-ie8": {
 			"active": 1,
 			"flagValue": -1
 			},
@@ -3472,51 +3410,23 @@
 			"active": 1,
 			"flagValue": -1
 			},
-		"shebang": {
+		"sort": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"space-colon": {
 			"active": 1,
 			"flagValue": -1
 			},
-		"side_effects": {
-			"active": 1,
-			"flagValue": -1
-			},
-		"switches": {
-			"active": 1,
+		"support-ie8": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"toplevel": {
 			"active": 0,
 			"flagValue": -1
 			},
-		"typeofs": {
-			"active": 1,
-			"flagValue": -1
-			},
 		"unsafe": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"unsafe_comps": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"unsafe_Function": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"unsafe_math": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"unsafe_proto": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"unsafe_regexp": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"unsafe_undefined": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -3528,21 +3438,13 @@
 			"active": 0,
 			"flagValue": -1
 			},
-		"webkit": {
-			"active": 0,
-			"flagValue": -1
-			},
 		"width": {
 			"active": 1,
 			"flagValue": 80
-			},
-		"wrap_iife": {
-			"active": 0,
-			"flagValue": -1
 			}
 		},
 	"uglifyReservedNamesString": "$",
-	"websiteRelativeRoot": "/build"
+	"websiteRelativeRoot": "\/build"
 	},
 "settingsFileVersion": "3"
 }

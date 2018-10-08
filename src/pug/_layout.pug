@@ -22,10 +22,11 @@ html(lang="ru")
         main.wrap
             include sections/_header
             include components/_lmenu
-            include sections/_banner
-            if page != 'main'
-                section.row.column.section
-                    include components/_path
+            if page != '404'
+                include sections/_banner
+                if page != 'main'
+                    section.row.column.container
+                        include components/_path
             block content
             include sections/_footer
         include components/_dropdown
