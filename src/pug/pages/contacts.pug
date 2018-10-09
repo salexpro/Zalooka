@@ -13,7 +13,7 @@ block content
                     =title
                 .card_content
                     !=content
-    section.row
+    section.row.container
         +card('Для звонков из Тайланда и других стран', '<a href="tel:+66600024036">+66 60002 4036</a><br><a href="tel:+66600024036">06 0002 4036</a>')
         +card('Для звонков из России и других стран', '<a href="tel:+74996776077">+7 499 677 6077</a><a class="card_more" href="#">Смотреть все телефоны <i class="icon-arrow-down"></i></a>')
         +card('Для бесплатных звонков из России', '<a href="+78001006618">8 800 100 6618</a>')
@@ -27,7 +27,7 @@ block content
             |  или 
             a(href="#")
                 | отправить e-mail
-    section.row.column
+    section.container.column
         .card.card--expanded.card--form
             .card_content
                 .row.align-justify

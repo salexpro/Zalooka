@@ -1,32 +1,30 @@
-mixin item(title, country, city, descr, prepay, price, add, large, price_text)
-    -
-        var crop_options = ['north', 'east', 'south', 'west', 'center']
-        var rnd = Math.floor(Math.random() * -4 + 4)
+mixin item(title, country, city, descr, prepay, price, add, is_large, price_text, is_article)
     .large-4.column
-        .card(class=large?'card--large':'')
+        .card(class=is_large?'card--large':'')
             .card_content
-                .card_top
+                .card_top(class=is_article ? 'card_top--fixed' : false)
                     .card_flag
-                        img(src="https://unsplash.it/40?random", alt="")
+                        span.flag-icon.flag-icon-th.flag-icon-squared
                     .card_name
-                        if !large
+                        if !is_large
                             a.card_name_link(href="#")
                                 =title
-                        .card_name_location
-                            if large && city
-                                a(href="./city.html")
-                                    =city
-                                | , 
-                            a(href="./country.html")
-                                =country
-                            if !large
-                                | , 
-                                a(href="./city.html")
-                                    =city
-                .card_image(class=prepay?'card_image--prepay':'')
-                    img(src="https://unsplash.it/345/190/?gravity=" + crop_options[rnd], alt=title)
+                        if !is_article
+                            .card_name_location
+                                if is_large && city
+                                    a(href="./city.html")
+                                        =city
+                                    | , 
+                                a(href="./country.html")
+                                    =country
+                                if !is_large
+                                    | , 
+                                    a(href="./city.html")
+                                        =city
+                a.card_image(href=`./${is_article?'article':'tour'}.html` class=prepay?'card_image--prepay':false)
+                    img(src=`https://unsplash.it/690/380/?random&${Math.random()}`, alt=title)
                 .card_brief
-                    if large
+                    if is_large
                         ul.menu.vertical
                             li
                                 b 456
@@ -45,11 +43,12 @@ mixin item(title, country, city, descr, prepay, price, add, large, price_text)
                                 | Туров
                     else
                         !=descr
-            if !large
+            if !is_large
                 .card_bottom(class=!price?'card_bottom--wo':'')
                     .card_bottom_add
                         .card_bottom--left
-                            a.card_bottom_more(href="./tour.html") Узнать больше
+                            a.card_bottom_more(href=`./${is_article?'article':'tour'}.html`)
+                                | Узнать больше
                         .card_bottom--right
                             .rating
                                 .rating_stars
@@ -61,7 +60,9 @@ mixin item(title, country, city, descr, prepay, price, add, large, price_text)
                                 | 2.8
                     .card_bottom_price
                         .card_bottom--left
-                            if price_text
+                            if is_article
+                                | 07/09/2018
+                            else if price_text
                                 | От 
                                 b 549
                                 | 
@@ -80,7 +81,12 @@ mixin item(title, country, city, descr, prepay, price, add, large, price_text)
                                 span бат
                             else
                                 | Бесплатный трансфер
-                        if add
+                        if add || is_article
                             .card_bottom--right
-                                button.card_add
-                                    i.fa.fa-plus-circle
+                                if add
+                                    button.card_add
+                                        i.fa.fa-plus-circle
+                                else
+                                    a.card_comments(href=`./${is_article?'article':'tour'}.html#comments`)
+                                        i.icon-bubbles
+                                        | 2

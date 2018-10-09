@@ -39,13 +39,11 @@ html, body{
 [type='color'],
 textarea {
     padding: 0;
-    font-weight: 300;
 }
 
 button, [type="button"], [type="reset"], [type="submit"]{
     outline: none;
     cursor: pointer;
-    font-weight: 300;
 }
 
 .select{
@@ -78,7 +76,6 @@ button, [type="button"], [type="reset"], [type="submit"]{
         color: $medium-gray;
         border-radius: 0;
         padding: 0;
-        font-weight: 300;
         margin: 0;
         background: transparent;
         padding-right: 33px;

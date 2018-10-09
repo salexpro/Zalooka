@@ -53,10 +53,8 @@
         padding: 20px 36px 30px;
         flex-direction: row;
         flex-wrap: wrap;
-        font-weight: 300;
         .header{
             text-align: left;
-            font-weight: 300;
             margin-top: 0;
             margin-bottom: 20px;
             font-size: 18px;
@@ -404,13 +402,17 @@
         display: flex;
         align-items: center;
         padding: 20px 26px;
+        &--fixed{
+            min-height: 76px;
+        }
     }
     &_flag{
         flex: 0 0 20px;
         margin-right: 26px;
         border-radius: 50%;
         overflow: hidden;
-        img{
+        font-size: 20px;
+        span{
             display: block;
         }
     }
@@ -466,6 +468,7 @@
         padding: 11px 16px;
         padding-bottom: 0;
         color: $black;
+        font-weight: 400;
     }
     &_content{
         color: $secondary-color;
@@ -517,6 +520,13 @@
         transition: 300ms;
         &:hover{
             color: $button-background-hover;
+        }
+    }
+    &_comments{
+        font-size: 11px;
+        i{
+            margin-right: 7px;
+            vertical-align: middle;
         }
     }
 }

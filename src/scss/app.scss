@@ -55,9 +55,10 @@
 // @include motion-ui-animations;
 
 // Components
-@import 'components/_fonts';
-@import 'components/_typography';
-@import 'components/_base';
+@import 'components/fonts';
+@import 'components/typography';
+@import 'components/base';
+@import 'components/button';
 @import 'components/nav';
 @import 'components/lmenu';
 @import 'components/path';
@@ -78,6 +79,8 @@
 @import 'components/dropdown';
 @import 'components/popup';
 @import '../../node_modules/owl.carousel/src/scss/owl.carousel';
+$flag-icon-css-path: '../assets/img/flags';
+@import '../../node_modules/flag-icon-css/sass/flag-icon';
 
 // Sections
 @import 'sections/head';

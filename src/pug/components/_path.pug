@@ -12,24 +12,27 @@
                 a(href="./tours.html")
                     | Экскурсии
                 |  > 
+            =name
         when 'location'
             if country
                 a(href="./country.html")
                     =country
                 |  > 
-    if page == 'reviews'
-        if country
-            a(href="./reviews.html")
-                =name
-            |  > 
-            if city
-                a(href="./country.html")
-                    =country
-                |  > 
-                =city
-            else
-                =country
-        else
             =name
-    else
-        =name
+        when 'reviews'
+        when 'articles'
+            if country
+                a(href=`./${page}.html`)
+                    =name
+                |  > 
+                if city
+                    a(href="./country.html")
+                        =country
+                    |  > 
+                    =city
+                else
+                    =country
+            else
+                =name
+        default
+            =name

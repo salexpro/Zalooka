@@ -72,7 +72,7 @@
         }
     }
 
-    $banners: ('tours', 'shopping', 'spa', 'page', 'faq', 'visa', 'transfer', 'pricelist', 'tour', 'reviews');
+    $banners: tours, shopping, spa, page, faq, visa, transfer, pricelist, tour, reviews, articles;
 
     @each $banner in $banners {
         &--#{$banner} {

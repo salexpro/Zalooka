@@ -33,7 +33,7 @@ section(class=(page != 'main') ? "banner banner--section banner--" + type : "ban
     if page == 'reviews'
         .banner_header.banner_header--secondary
             | Читайте отзывы по интересующим вас направлениям и услугам
-    if page != 'faq' && page != 'visa' && type != 'tour'
+    if page != 'page' && page != 'visa' && type != 'tour' && page != 'articles'
         .banner_selplace(class=page=='pricelist'?'banner_selplace--pricelist':'')
             form(action="")
                 input(type="text" placeholder="Таиланд" value="Таиланд" name="country" readonly)
