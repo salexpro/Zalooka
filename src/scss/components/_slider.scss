@@ -25,18 +25,31 @@
         display: flex;
         justify-content: center;
     }
-    &-dot{
-        width: 15px;
-        height: 15px;
-        background-color: $light-gray;
-        border-radius: 50%;
-        margin: 0 5px;
-        transition: 200ms;
-        &.active{
-            background-color: $primary-color;
+    &-carousel{
+        button.owl-dot {
+            width: 15px;
+            height: 15px;
+            background-color: $light-gray;
+            border-radius: 50%;
+            margin: 0 5px;
+            transition: 300ms;
+
+            &.active {
+                background-color: $primary-color;
+            }
         }
-    }
+
+        button.owl-prev,
+        button.owl-next {
+            transition: 300ms;
+
+            &.disabled {
+                opacity: 0.25;
+            }
+        }
+    }    
 }
+
 .slider{
     margin-top: 30px;
     margin-bottom: 100px;

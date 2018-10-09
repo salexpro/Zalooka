@@ -72,13 +72,15 @@
 @import 'components/rating';
 @import 'components/list';
 @import 'components/table';
+@import '../../node_modules/owl.carousel/src/scss/owl.carousel';
 @import 'components/slider';
 @import 'components/contact_us';
+@import 'components/reviews';
 @import 'components/review';
 @import 'components/form';
 @import 'components/dropdown';
 @import 'components/popup';
-@import '../../node_modules/owl.carousel/src/scss/owl.carousel';
+
 $flag-icon-css-path: '../assets/img/flags';
 @import '../../node_modules/flag-icon-css/sass/flag-icon';
 

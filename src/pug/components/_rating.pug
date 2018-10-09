@@ -1,0 +1,6 @@
+mixin rating(rating, mod)
+    .rating(class=mod)
+        .rating_stars
+            each _, i in Array(5)
+                i.material-icons(class=(i<=rating-1)? 'active' : false) star_border
+        =rating

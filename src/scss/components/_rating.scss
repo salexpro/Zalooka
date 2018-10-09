@@ -20,4 +20,9 @@
         font-size: 14px;
         color: $medium-gray;
     }
+    &--inline{
+        display: inline-flex;
+        vertical-align: middle;
+        margin-left: 20px;
+    }
 }

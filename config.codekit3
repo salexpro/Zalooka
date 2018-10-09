@@ -3342,6 +3342,15 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/src\/pug\/components\/_rating.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_rating.html",
+		"oF": 0,
+		"oS": 1
+		},
 	"\/src\/pug\/components\/_review.pug": {
 		"cB": 0,
 		"cOD": 1,
@@ -3351,12 +3360,39 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/src\/pug\/components\/_reviews.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_reviews.html",
+		"oF": 0,
+		"oS": 1
+		},
+	"\/src\/pug\/components\/_slider.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_slider.html",
+		"oF": 0,
+		"oS": 1
+		},
 	"\/src\/pug\/pages\/404.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 0,
 		"oAP": "\/build\/404.html",
+		"oF": 0,
+		"oS": 1
+		},
+	"\/src\/pug\/pages\/article.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/build\/article.html",
 		"oF": 0,
 		"oS": 1
 		},
@@ -3836,6 +3872,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/src\/scss\/components\/_reviews.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/css\/components\/_reviews.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"\/src\/scss\/components\/_slider.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -3951,7 +4000,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "\/src\/assets\/favicon\/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 560763040
+	"lastBuiltDate": 560775496
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

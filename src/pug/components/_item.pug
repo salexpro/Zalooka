@@ -7,7 +7,7 @@ mixin item(title, country, city, descr, prepay, price, add, is_large, price_text
                         span.flag-icon.flag-icon-th.flag-icon-squared
                     .card_name
                         if !is_large
-                            a.card_name_link(href="#")
+                            a.card_name_link(href=`./${is_article?'article':'tour'}.html`)
                                 =title
                         if !is_article
                             .card_name_location
@@ -50,14 +50,7 @@ mixin item(title, country, city, descr, prepay, price, add, is_large, price_text
                             a.card_bottom_more(href=`./${is_article?'article':'tour'}.html`)
                                 | Узнать больше
                         .card_bottom--right
-                            .rating
-                                .rating_stars
-                                    i.material-icons.active star_border
-                                    i.material-icons.active star_border
-                                    i.material-icons.active star_border
-                                    i.material-icons star_border
-                                    i.material-icons star_border
-                                | 2.8
+                            +rating(2.8)
                     .card_bottom_price
                         .card_bottom--left
                             if is_article

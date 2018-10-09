@@ -8,6 +8,7 @@
     border-radius: $global-radius;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24), 0 0 2px rgba(0, 0, 0, 0.12);
     margin-bottom: 30px;
+    line-height: 1.5;
     &--about{
         overflow: hidden;
         margin-top: 50px;
@@ -192,21 +193,29 @@
         }
     }
     &--expanded{
-        font-weight: 300;
+        padding-bottom: 60px;
         .header{
-            font-weight: 300;
+            font-weight: 400;
         }
         .card{
             &_top{
                 display: block;
                 text-align: center;
-                padding: 34px 20px 20px;
+                padding: 44px 20px 30px;
                 .header{
                     margin: 0;
                 }
             }
             &_content{
-                padding: 0 100px 60px;
+                padding: 0 100px 0;
+                font-weight: 400;
+            }
+        }
+    }
+    &--pricelist{
+        .card{
+            &_content{
+                font-weight: inherit;
             }
         }
     }
@@ -401,9 +410,9 @@
     &_top{
         display: flex;
         align-items: center;
-        padding: 20px 26px;
+        padding: 15px 26px;
         &--fixed{
-            min-height: 76px;
+            min-height: 72px;
         }
     }
     &_flag{

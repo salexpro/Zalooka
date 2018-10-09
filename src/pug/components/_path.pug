@@ -20,9 +20,8 @@
                 |  > 
             =name
         when 'reviews'
-        when 'articles'
             if country
-                a(href=`./${page}.html`)
+                a(href='./country.html')
                     =name
                 |  > 
                 if city
@@ -34,5 +33,10 @@
                     =country
             else
                 =name
+        when 'article'
+            a(href='./articles.html')
+                | Статьи
+            |  > 
+            =name
         default
             =name
