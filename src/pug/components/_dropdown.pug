@@ -1,17 +1,56 @@
-#currencies.dropdown-pane.tiny.dropdown-pane--currencies(data-dropdown data-v-offset="10" data-h-offset="0" data-alignment="right" data-close-on-click="true")
+-
+    const countries = [
+        ['Тайланд', 'thailand'],
+        ['США', 'usa'],
+        ['Кипр', 'cyprus'],
+        ['Турция', 'turkey'],
+        ['Мальдивы', 'maldives'],
+        ['Уругвай', 'uruguay'],
+        ['Черногория', 'hungary'],
+        ['OAЭ', 'uae'],
+        ['Германия', 'germany']
+    ]
+    const cities = {
+        thailand: ['Паттайя', 'Пхукет', 'Бангкок', 'Паккрет', 'Чиангмай', 'Сураттхани'],
+        usa: ['Нью-Йорк', 'Лос-Анджелес', 'Сан-Франциско', 'Майами', 'Вашингтон', 'Бостон'],
+        cyprus: ['Пафос', 'Ларнака', 'Лимасол', 'Никосия'],
+        turkey: ['Стамбул', 'Анкара', 'Бодрум', 'Сиде', 'Аланья', 'Измир'],
+        maldives: ['Мале'],
+        uruguay: ['Монтевидео', 'Колония-дель-Сакраменто', 'Сальто', 'Пунта-дель-Эсте'],
+        hungary: ['Будапешт', 'Дебрецен', 'Мишкольц', 'Печ'],
+        uae: ['Абу-Даби', 'Дубай', 'Эль-Фуджайра', 'Шарджа', 'Рас-эль-Хайма'],
+        germany: ['Берлин', 'Мюнхен', 'Кёльн', 'Гамбург', 'Франкфурт-на-Майне', 'Дюссельдорф'],
+    }
+
+#countries.dropdown-pane.small.dropdown-pane--list.dropdown-pane--countries(data-dropdown data-v-offset="10" data-h-offset="0" data-alignment="right" data-close-on-click="true")
+    ul.menu.vertical
+        each country in countries
+            li
+                a(href="./country.html" data-toggle=`cities_${country[1]}` class=(country[1] == 'thailand') ? 'active' : false)
+                    =country[0]
+        
+each country, i in Object.keys(cities)
+    .dropdown-pane.right.small.dropdown-pane--list.dropdown-pane--cities(id=`cities_${country}` data-dropdown data-hover="true" data-hover-pane="true" data-position="right" data-alignment=(i < 2) ? 'top' : 'center' data-v-offset=(i < 2) ? '-10' : false)
+        ul.menu.vertical
+            each city in cities[country] 
+                li
+                    a(href="./city.html" class=(city == 'Паттайя') ? 'active' : false)
+                        =city
+
+#currencies.dropdown-pane.small.dropdown-pane--list(data-dropdown data-v-offset="10" data-h-offset="-30" data-alignment="right" data-close-on-click="true")
     ul.menu.vertical
         li
             a(href="#")
-                | Рубль
+                | EUR - Евро
         li
             a(href="#")
-                | Доллар
+                | USD - Доллар
         li
             a(href="#")
-                | Евро
+                | RUB - Рубль
         li
             a.active(href="#")
-                | Тайский бат
+                | THB - Тайский бат
 
 #support.dropdown-pane.dropdown-pane--support(data-dropdown data-v-offset="10" data-h-offset="-70" data-position="bottom" data-alignment="right" data-hover="true" data-hover-pane="true" data-hover-delay="100")
     .dropdown-pane_header
@@ -52,7 +91,7 @@
                     span )
                     |  123 4567
 if logged
-    #logged.dropdown-pane.small.dropdown-pane--logged(data-dropdown data-v-offset="10" data-h-offset="-23" data-close-on-click="true" data-position="bottom" data-alignment="right")
+    #logged.dropdown-pane.tiny.dropdown-pane--logged(data-dropdown data-v-offset="10" data-h-offset="-23" data-close-on-click="true" data-position="bottom" data-alignment="right")
         ul.menu.vertical
             li
                 a(href="profile.html")

@@ -13,10 +13,18 @@
 
 $(document).foundation();
 
+$('#countries').on('hide.zf.dropdown', function() {
+    if ($(this).is(':hover') || $('.dropdown-pane--cities.is-open').is(':hover')) {
+        $(this).addClass('is-open');
+    }
+})
+
+
+
 if($('.lmenu').length){
 
     // Left menu scrolling
-    $(window).scroll(function(){
+    $(window).scroll(function() {
         if($(this).scrollTop() >= 100){
             $('.lmenu').addClass('fixed');
         } else {

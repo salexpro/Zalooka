@@ -1,10 +1,10 @@
-mixin item(title, country, city, descr, prepay, price, add, is_large, price_text, is_article)
+mixin item(country_code, title, country, city, descr, prepay, price, add, is_large, price_text, is_article)
     .large-4.column
         .card(class=is_large?'card--large':'')
             .card_content
                 .card_top(class=is_article ? 'card_top--fixed' : false)
                     .card_flag
-                        span.flag-icon.flag-icon-th.flag-icon-squared
+                        span.flag-icon.flag-icon-squared(class=`flag-icon-${country_code}`)
                     .card_name
                         if !is_large
                             a.card_name_link(href=`./${is_article?'article':'tour'}.html`)

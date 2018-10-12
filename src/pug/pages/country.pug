@@ -7,11 +7,29 @@ block const
         const logged = true;
 
 block content
+    mixin location(city)
+        .card.card--location
+            .card_top
+                .card_flag
+                    span.flag-icon.flag-icon-th.flag-icon-squared
+                .card_name
+                    a(href="./city.html")
+                        =city
+            .card_content
+                .card_content_cols
+                    +list('Экскурсии', ['Река Квай и Водопад Эраван','RamaYana Water Park - Аквапарк в Паттайе','Тропический парк Нонг Нуч','Аквапарк в Паттайе'])
+                    +list('Шоппинг', ['Gems Gallery - Галерея Самоцветов','Аптека Дом здоровья в Паттайе','Салон кожи и меха Toscano в Паттайе','Салон кожи и меха в Паттайе'])
+                    +list('SPA', ['СПА салон Кита Кито в Паттайе','Orhideya Spa в Паттайе'])
+                .card_more
+                    a(href="#")
+                        | Смотреть больше услуг
+                        i.icon-arrow-down
+
     section.row.column.section
         .card.card--thin.card--description
             .header
                 .card_flag
-                    img(src="https://unsplash.it/30?random", alt="")
+                    span.flag-icon.flag-icon-th.flag-icon-squared
                 =name
             p.header.primary
                 | 123 Предложения
@@ -19,51 +37,7 @@ block content
                 | Королевство Тайланд (общей площадью 514 000 км²) расположено в Юго-Восточной Азии. Территория государства занимает большую часть Индокитайского полуострова, северную часть полуострова Малакка и целый ряд островов, большинство из которых необитаемы. Омывается водами Южно-Китайского и Андаманского морей. Имеет общие границы с Малайзией, Бирмой, Камбоджей и Лаосом. Столица – Бангкок. Климат влажный, тропический и субэкваториальный. Тайланд традиционно разделяют на пять основных регионов (Центральный, Южный, Восточный, Северный и Северо-Восточный), что обусловлено особенностями географического положения, распределением природных ресурсов, разнообразием климатических зон и этническим составом населения.
         .map
             iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7961711.08940682!2d96.99445918119379!3d13.000337853610944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304d8df747424db1%3A0x9ed72c880757e802!2z0KLQsNC40LvQsNC90LQ!5e0!3m2!1sru!2sua!4v1506202297332" height="325" frameborder="0" allowfullscreen)
-        .card.card--location
-            .card_top
-                .card_flag
-                    img(src="https://unsplash.it/40?random", alt="")
-                .card_name
-                    a(href="./city.html")
-                        | Паттайя
-            .card_content
-                .card_content_cols
-                    +list('Экскурсии', ['Река Квай и Водопад Эраван','RamaYana Water Park - Аквапарк в Паттайе','Тропический парк Нонг Нуч','Аквапарк в Паттайе'])
-                    +list('Шоппинг', ['Gems Gallery - Галерея Самоцветов','Аптека Дом здоровья в Паттайе','Салон кожи и меха Toscano в Паттайе','Салон кожи и меха в Паттайе'])
-                    +list('SPA', ['СПА салон Кита Кито в Паттайе','Orhideya Spa в Паттайе'])
-                .card_more
-                    a(href="#")
-                        | Смотреть больше услуг
-                        i.icon-arrow-down
-        .card.card--location
-            .card_top
-                .card_flag
-                    img(src="https://unsplash.it/40?random", alt="")
-                .card_name
-                    a(href="./city.html")
-                        | Пхукет
-            .card_content
-                .card_content_cols
-                    +list('Экскурсии', ['Река Квай и Водопад Эраван','RamaYana Water Park - Аквапарк в Паттайе','Тропический парк Нонг Нуч','Аквапарк в Паттайе'])
-                    +list('Шоппинг', ['Gems Gallery - Галерея Самоцветов','Аптека Дом здоровья в Паттайе','Салон кожи и меха Toscano в Паттайе','Салон кожи и меха в Паттайе'])
-                    +list('SPA', ['СПА салон Кита Кито в Паттайе','Orhideya Spa в Паттайе'])
-                .card_more
-                    a(href="#")
-                        | Смотреть больше услуг
-                        i.icon-arrow-down
-        .card.card--location
-            .card_top
-                .card_flag
-                    img(src="https://unsplash.it/40?random", alt="")
-                .card_name
-                    a(href="./city.html")
-                        | Бангкок
-            .card_content
-                .card_content_cols
-                    +list('Экскурсии', ['Река Квай и Водопад Эраван','RamaYana Water Park - Аквапарк в Паттайе','Тропический парк Нонг Нуч','Аквапарк в Паттайе'])
-                    +list('Шоппинг', ['Gems Gallery - Галерея Самоцветов','Аптека Дом здоровья в Паттайе','Салон кожи и меха Toscano в Паттайе','Салон кожи и меха в Паттайе'])
-                    +list('SPA', ['СПА салон Кита Кито в Паттайе','Orhideya Spa в Паттайе'])
-                .card_more
-                    a(href="#")
-                        | Смотреть больше услуг
-                        i.icon-arrow-down
+        
+        +location('Паттайя')
+        +location('Пхукет')
+        +location('Бангкок')
