@@ -29,6 +29,7 @@
             }
         }
         a{
+            line-height: 1.2;
             padding: 6px 0;
             color: #9b9b9b;
             &:hover{
@@ -59,8 +60,8 @@
     &_contacts{
         color: #9b9b9b;
         .menu li{
-            &:nth-child(-n+3){
-                margin: 2px 0;
+            &:nth-child(-n+3) {
+                margin-bottom: 8px;
             }
             &:last-child{
                 display: flex;

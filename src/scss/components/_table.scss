@@ -174,6 +174,39 @@
             }
         }
     }
+
+    &--profile{
+        margin: 0 -15px 70px;
+        th{
+            font-weight: 400;
+            text-align: left;
+            vertical-align: top;
+            color: $secondary-color;
+            padding: 0 15px 10px;
+            &:nth-last-child(-n+2){
+                padding-left: 15px;
+            }
+        }
+        td{
+            padding: 5px 15px;
+            border: 0;
+            color: $secondary-color;
+            &:first-child{
+                padding: 0;
+            }
+            &:nth-last-child(-n+2),
+            &:nth-child(2) {
+                text-align: left;
+            }
+            &.primary{
+                color: $primary-color;
+                font-weight: 400;
+            }
+        }
+        .text-center{
+            font-weight: 400;
+        }
+    }
     &_program{
         td{
             border: 0;
@@ -204,6 +237,56 @@
         i{
             margin-left: 15px;
             font-size: 12px;
+        }
+    }
+    &_reserve{
+        &--closed{
+            td:not([class^="table"]){
+                text-decoration: line-through;
+                color: #aaaaaa;
+            }
+        }
+    }
+    &_buttons {
+        font-size: 0;
+        text-align: right;
+        width: 1%;
+        white-space: nowrap;
+        i {
+            font-size: 20px;
+        }
+        &--done  i{
+            color: $success-color;
+        }
+        &--cancelled i{
+            color: $alert-color;
+        }
+    }
+    &_button{
+        color: $primary-color;
+        i{
+            vertical-align: middle;
+            font-size: 15px;
+        }
+        + button{
+            margin-left: 10px;
+        }
+    }
+    &_small{
+        font-size: 12px;
+    }
+    &_status.table_status {
+        width: auto;
+        text-align: left;
+        font-size: 12px;
+        color: #448aff;
+    }
+    &_action{
+        font-size: 12px;
+    }
+    &_divider{
+        hr{
+            border-color: #e7e3e3;
         }
     }
 }

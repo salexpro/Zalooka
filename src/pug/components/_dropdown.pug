@@ -1,27 +1,3 @@
--
-    const countries = [
-        ['Тайланд', 'thailand'],
-        ['США', 'usa'],
-        ['Кипр', 'cyprus'],
-        ['Турция', 'turkey'],
-        ['Мальдивы', 'maldives'],
-        ['Уругвай', 'uruguay'],
-        ['Черногория', 'hungary'],
-        ['OAЭ', 'uae'],
-        ['Германия', 'germany']
-    ]
-    const cities = {
-        thailand: ['Паттайя', 'Пхукет', 'Бангкок', 'Паккрет', 'Чиангмай', 'Сураттхани'],
-        usa: ['Нью-Йорк', 'Лос-Анджелес', 'Сан-Франциско', 'Майами', 'Вашингтон', 'Бостон'],
-        cyprus: ['Пафос', 'Ларнака', 'Лимасол', 'Никосия'],
-        turkey: ['Стамбул', 'Анкара', 'Бодрум', 'Сиде', 'Аланья', 'Измир'],
-        maldives: ['Мале'],
-        uruguay: ['Монтевидео', 'Колония-дель-Сакраменто', 'Сальто', 'Пунта-дель-Эсте'],
-        hungary: ['Будапешт', 'Дебрецен', 'Мишкольц', 'Печ'],
-        uae: ['Абу-Даби', 'Дубай', 'Эль-Фуджайра', 'Шарджа', 'Рас-эль-Хайма'],
-        germany: ['Берлин', 'Мюнхен', 'Кёльн', 'Гамбург', 'Франкфурт-на-Майне', 'Дюссельдорф'],
-    }
-
 #countries.dropdown-pane.small.dropdown-pane--list.dropdown-pane--countries(data-dropdown data-v-offset="10" data-h-offset="0" data-alignment="right" data-close-on-click="true")
     ul.menu.vertical
         each country in countries
@@ -30,7 +6,7 @@
                     =country[0]
         
 each country, i in Object.keys(cities)
-    .dropdown-pane.right.small.dropdown-pane--list.dropdown-pane--cities(id=`cities_${country}` data-dropdown data-hover="true" data-hover-pane="true" data-position="right" data-alignment=(i < 2) ? 'top' : 'center' data-v-offset=(i < 2) ? '-10' : false)
+    .dropdown-pane.right.small.dropdown-pane--list.dropdown-pane--cities(id=`cities_${country}` data-dropdown data-hover="true" data-hover-pane="true" data-position="right" data-alignment=(i < 2) ? 'top' : (i >= (Object.keys(cities).length - 2)) ? 'bottom' : 'center' data-v-offset=(i < 2 || i >= (Object.keys(cities).length - 2)) ? '-10' : false)
         ul.menu.vertical
             each city in cities[country] 
                 li
@@ -94,13 +70,13 @@ if logged
     #logged.dropdown-pane.tiny.dropdown-pane--logged(data-dropdown data-v-offset="10" data-h-offset="-23" data-close-on-click="true" data-position="bottom" data-alignment="right")
         ul.menu.vertical
             li
-                a(href="profile.html")
+                a(href="/profile/edit.html")
                     | Мой профиль
             li
-                a(href="profile.html#reservations")
+                a(href="/profile/reservations.html")
                     | Мои брони
             li
-                a(href="wishlist.html")
+                a(href="/profile/wishlist.html")
                     | Список желаний
             li
                 a(href="/")

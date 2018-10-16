@@ -1,17 +1,21 @@
 mixin list(name, items, more, mod)
     .list(class=mod ? 'list--' + mod : '')
         .list_content
-            a.header(href="#")
-                =name
+            if typeof name == 'object'
+                a.header(href=`/${name[1]}.html`)
+                    =name[0]
+            else
+                p.header.primary
+                    =name
             ul.menu.vertical
                 each item in items
                     li
-                        a(href="#")
-                            =item
+                        a(href=`/${item[1]}.html`)
+                            =item[0]
         if more
             .list_all
                 a(href="#")
-                    if typeof(more) == 'boolean'
+                    if typeof more == 'boolean'
                         | Смотреть все
                         i.icon-arrow-right
                     else

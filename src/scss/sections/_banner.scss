@@ -52,6 +52,48 @@
             }
         }
     }
+
+    &_container{
+        flex: 0 0 auto;
+        margin-bottom: 45px;
+    }
+
+    &_card{
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24),
+        0 0 2px rgba(0, 0, 0, 0.12);
+        border-radius: $global-radius;
+        background-color: $white;
+        display: flex;
+        padding: 40px 50px 48px;
+        &_img{
+            flex: 0 1 130px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 40px;
+        }
+        &_content{
+            text-align: left;
+        }
+        &_name{
+            font-size: 16px;
+            font-weight: 500;
+        }
+        &_contacts{
+            display: flex;
+        }
+        &_col{
+            display: flex;
+            line-height: 1.71;
+            color: rgba($black, 0.54);
+            +.banner_card_col{
+                margin-left: 70px;
+            }
+            &_label{
+                margin-right: 5px;
+            }
+        }
+    }
+
     &--section{
         &::before{
             background-color: rgba(21, 29, 33, 0.5);

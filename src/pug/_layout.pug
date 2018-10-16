@@ -4,6 +4,30 @@ block const
     const descr  = 'Description';
     const domain = 'travel.salex.pro'
 
+-
+    const countries = [
+        ['Тайланд', 'thailand'],
+        ['США', 'usa'],
+        ['Кипр', 'cyprus'],
+        ['Турция', 'turkey'],
+        ['Мальдивы', 'maldives'],
+        ['Уругвай', 'uruguay'],
+        ['Черногория', 'hungary'],
+        ['OAЭ', 'uae'],
+        ['Германия', 'germany']
+    ]
+    const cities = {
+        thailand: ['Паттайя', 'Пхукет', 'Бангкок', 'Паккрет', 'Чиангмай', 'Сураттхани'],
+        usa: ['Нью-Йорк', 'Лос-Анджелес', 'Сан-Франциско', 'Майами', 'Вашингтон', 'Бостон'],
+        cyprus: ['Пафос', 'Ларнака', 'Лимасол', 'Никосия'],
+        turkey: ['Стамбул', 'Анкара', 'Бодрум', 'Сиде', 'Аланья', 'Измир'],
+        maldives: ['Мале'],
+        uruguay: ['Монтевидео', 'Колония-дель-Сакраменто', 'Сальто', 'Пунта-дель-Эсте'],
+        hungary: ['Будапешт', 'Дебрецен', 'Мишкольц', 'Печ'],
+        uae: ['Абу-Даби', 'Дубай', 'Эль-Фуджайра', 'Шарджа', 'Рас-эль-Хайма'],
+        germany: ['Берлин', 'Мюнхен', 'Кёльн', 'Гамбург', 'Франкфурт-на-Майне', 'Дюссельдорф'],
+    }
+
 mixin icon(name, size, color, viewbox)
     - viewbox = viewbox || size
     svg(xmlns='http://www.w3.org/2000/svg' width=size[0] height=size[1] viewbox=viewbox ? "0 0 " + viewbox[0] + " " + viewbox[1] : "")
@@ -25,13 +49,13 @@ html(lang="ru")
             include components/_lmenu
             if page != '404'
                 include sections/_banner
-                if page != 'main'
+                if page != 'main' && page != 'profile'
                     section.row.column.container
                         include components/_path
             block content
             include sections/_footer
         include components/_dropdown
         include components/_popup
-        include components/_icons
-        script(src="./js/app.min.js")
+        script(src="/js/app.min.js")
         script(src="https://use.fontawesome.com/5d9df53e16.js")
+        include components/_icons

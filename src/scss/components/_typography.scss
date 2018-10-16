@@ -40,6 +40,11 @@
     &.primary{
         color: $primary-color;
     }
+    &--profile{
+        font-size: 14px;
+        font-weight: 400;
+        margin: 0 0 35px 67px;
+    }
 }
 
 .primary{

@@ -11,4 +11,4 @@ const pageWidget = pages => {
     });
 }
 
-pageWidget(['404', 'index', 'articles', 'article', 'cities', 'city', 'contacts', 'country', 'faq', 'pricelist', 'reviews', 'reviews_countries', 'reviews_country', 'reviews_city', 'shopping', 'spa', 'taxi', 'tours', 'tour', 'transfer', 'visa']);
+pageWidget(['404', 'index', 'articles/index', 'articles/article', 'cities', 'city', 'contacts', 'country', 'faq', 'pricelist', 'profile/reservations', 'reviews/index', 'reviews/countries', 'reviews/country', 'reviews/city', 'shopping', 'spa', 'taxi', 'tours', 'tour', 'transfer', 'visa']);

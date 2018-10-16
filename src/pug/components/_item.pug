@@ -7,21 +7,21 @@ mixin item(country_code, title, country, city, descr, prepay, price, add, is_lar
                         span.flag-icon.flag-icon-squared(class=`flag-icon-${country_code}`)
                     .card_name
                         if !is_large
-                            a.card_name_link(href=`./${is_article?'article':'tour'}.html`)
+                            a.card_name_link(href=`/${is_article?'articles/article':'tour'}.html`)
                                 =title
                         if !is_article
                             .card_name_location
                                 if is_large && city
-                                    a(href="./city.html")
+                                    a(href="/city.html")
                                         =city
                                     | , 
-                                a(href="./country.html")
+                                a(href="/country.html")
                                     =country
                                 if !is_large
                                     | , 
-                                    a(href="./city.html")
+                                    a(href="/city.html")
                                         =city
-                a.card_image(href=`./${is_article?'article':'tour'}.html` class=prepay?'card_image--prepay':false)
+                a.card_image(href=`/${is_article?'articles/article':'tour'}.html` class=prepay?'card_image--prepay':false)
                     img(src=`https://unsplash.it/690/380/?random&${Math.random()}`, alt=title)
                 .card_brief
                     if is_large
@@ -47,7 +47,7 @@ mixin item(country_code, title, country, city, descr, prepay, price, add, is_lar
                 .card_bottom(class=!price?'card_bottom--wo':'')
                     .card_bottom_add
                         .card_bottom--left
-                            a.card_bottom_more(href=`./${is_article?'article':'tour'}.html`)
+                            a.card_bottom_more(href=`/${is_article?'articles/article':'tour'}.html`)
                                 | Узнать больше
                         .card_bottom--right
                             +rating(2.8)
@@ -80,6 +80,6 @@ mixin item(country_code, title, country, city, descr, prepay, price, add, is_lar
                                     button.card_add
                                         i.fa.fa-plus-circle
                                 else
-                                    a.card_comments(href=`./${is_article?'article':'tour'}.html#comments`)
+                                    a.card_comments(href=`/${is_article?'articles/article':'tour'}.html#comments`)
                                         i.icon-bubbles
                                         | 2

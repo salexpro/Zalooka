@@ -1,0 +1,108 @@
+extends ../../_layout
+block const
+    -
+        const page = 'profile';
+        const type = 'reservations'
+        const logged = true;
+
+block content
+    section.container.column.section
+        .card.card--profile
+            .card_tabs
+                .card_tabs_tab.active
+                    | Мои брони
+                a.card_tabs_tab(href="/profile/wishlist.html")
+                    | Список желаний
+                a.card_tabs_tab(href="/profile/edit.html")
+                    | Редактировать профиль
+                a.card_tabs_tab(href="/profile/support.html")
+                    | Онлайн поддержка
+            .card_content
+                p.header.primary.header--profile
+                    | Добавить новую бронь
+                table.table.table--profile
+                    tr
+                        th
+                        th Услуга
+                        th Место
+                        th 
+                            | Дата
+                            br
+                            | поездки
+                        th
+                            | Время
+                            br
+                            | выезда
+                        th
+                            | Количество
+                            br
+                            | взрослых/детей
+                        th Стоимость
+                        th(colspan="2") Статус
+                    tr.table_reserve
+                        td.table_buttons
+                            button.table_button
+                                i.material-icons edit
+                            button.table_button
+                                i.fa.fa-trash-o
+                        td Полет на параплане
+                        td Патая, Тайланд
+                        td.primary
+                            | 23/09/2016
+                        td.primary
+                            | 12:00
+                        td.text-center 2/0
+                        td.table_small
+                            | 750 бат
+                        td.table_status
+                            | Оплачен
+                        td.table_action
+                    tr.table_reserve
+                        td.table_buttons
+                            button.table_button
+                                i.material-icons edit
+                            button.table_button
+                                i.fa.fa-trash-o
+                        td Дайвинг
+                        td Патая, Тайланд
+                        td.primary
+                            | 21/09/2016
+                        td.primary
+                            | 10:00
+                        td.text-center 2/0
+                        td.table_small
+                            | 750 бат
+                        td.table_status
+                            | Подтвержден
+                        td.table_action
+                            a(href="#")
+                                | Оплатить
+                    tr.table_divider
+                        td(colspan="9")
+                            hr
+                    tr.table_reserve.table_reserve--closed
+                        td.table_buttons.table_buttons--done
+                            i.material-icons check
+                        td Аюттая
+                        td Патая, Тайланд
+                        td 18/09/2016
+                        td 10:00
+                        td.text-center 2/0
+                        td.table_small
+                            | 750 бат
+                        td.table_status
+                            | Выполнено
+                        td.table_action
+                    tr.table_reserve.table_reserve--closed
+                        td.table_buttons.table_buttons--cancelled
+                            i.material-icons close
+                        td Океанариум
+                        td Патая, Тайланд
+                        td 16/09/2016
+                        td 15:00
+                        td.text-center 2/0
+                        td.table_small
+                            | 750 бат
+                        td.table_status
+                            | Отменено
+                        td.table_action

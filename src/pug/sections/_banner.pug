@@ -1,43 +1,69 @@
 section.banner(class=(page != 'main') ? "banner--section banner--" + type : false)
-    p.banner_header
-        case page
-            when 'main'
-                | НАЧНИ ПУТЕШЕСТВИЕ С ВЫБОРА МЕСТА
-            when 'section'
-                if type == 'tour'
-                    | Экскурсия 
-                =name
-                |  в Паттайе
-            when 'pricelist'
-                =name
-                |  (Паттайя, Таиланд)
-            when 'reviews'
-                if country
-                    if city
-                        =name
-                        | : 
-                        =country
-                        | , 
-                        =city
+    if page == 'profile'
+        .container.column.banner_container
+            .banner_card
+                .banner_card_img
+                    img(src="https://placeimg.com/260/260/people", alt="Аватар")
+                .banner_card_content
+                    p.banner_card_name
+                        | Елизавета Петрова
+                    .banner_card_contacts
+                        .banner_card_col
+                            .banner_card_col_label
+                                | Почта:
+                            .banner_card_col_content
+                                | Epetrova@gmail.com
+                                br
+                                | petrovaea@gmail.com
+                        .banner_card_col
+                            .banner_card_col_label
+                                | Телефон:
+                            .banner_card_col_content
+                                | +7 900 111 07 11
+                                br
+                                | +7 999 113 02 06
+                                br
+                                | +7 999 555 11 03
+    else
+        p.banner_header
+            case page
+                when 'main'
+                    | НАЧНИ ПУТЕШЕСТВИЕ С ВЫБОРА МЕСТА
+                when 'section'
+                    if type == 'tour'
+                        | Экскурсия 
+                    =name
+                    |  в Паттайе
+                when 'pricelist'
+                    =name
+                    |  (Паттайя, Таиланд)
+                when 'reviews'
+                    if country
+                        if city
+                            =name
+                            | : 
+                            =country
+                            | , 
+                            =city
+                        else
+                            =name
+                            if country == 'Страны'
+                                |  по странам
+                            else
+                                | 
+                                =country
                     else
                         =name
-                        if country == 'Страны'
-                            |  по странам
-                        else
-                            | 
-                            =country
-                else
+                default
                     =name
-            default
-                =name
-    if page == 'reviews'
-        .banner_header.banner_header--secondary
-            | Читайте отзывы по интересующим вас направлениям и услугам
-    if page != 'page' && page != 'visa' && type != 'tour' && page.includes('articles')
-        .banner_selplace(class=page=='pricelist'?'banner_selplace--pricelist':'')
-            form(action="")
-                input(type="text" placeholder="Таиланд" value="Таиланд" name="country" readonly)
-                input(type="text" placeholder="Паттайя" name="city")
-                if page!='pricelist'
-                    input(type="text" placeholder="Услуга" name="service")
-                input.button(type="submit" value=page == 'reviews' ? 'Перейти к отзывам' : 'Перейти')
+        if page == 'reviews'
+            .banner_header.banner_header--secondary
+                | Читайте отзывы по интересующим вас направлениям и услугам
+        if page != 'page' && page != 'visa' && type != 'tour' && page.includes('articles')
+            .banner_selplace(class=page=='pricelist'?'banner_selplace--pricelist':'')
+                form(action="")
+                    input(type="text" placeholder="Таиланд" value="Таиланд" name="country" readonly)
+                    input(type="text" placeholder="Паттайя" name="city")
+                    if page!='pricelist'
+                        input(type="text" placeholder="Услуга" name="service")
+                    input.button(type="submit" value=page == 'reviews' ? 'Перейти к отзывам' : 'Перейти')

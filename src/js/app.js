@@ -19,8 +19,6 @@ $('#countries').on('hide.zf.dropdown', function() {
     }
 })
 
-
-
 if($('.lmenu').length){
 
     // Left menu scrolling

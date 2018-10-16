@@ -1,0 +1,33 @@
+
+.card.card--expanded.card--review
+    .card_content
+        .row.align-justify
+            .column.shrink
+                +list(['Отзывы по странам', 'reviews/countries'], [
+                    ['Словакия', 'reviews/country'],
+                    ['США', 'reviews/country'],
+                    ['Таиланд', 'reviews/country'],
+                    ['Турция', 'reviews/country'],
+                    ['Украина ', 'reviews/country'],
+                    ['Уругвай ', 'reviews/country'],
+                    ['Финляндия ', 'reviews/country'],
+                    ['Франция', 'reviews/country'],
+                    ['Чехия', 'reviews/country']
+                ], 'Все страны', 'review')
+            .column.shrink
+                +list(['Отзывы по городам', 'reviews/cities'], [
+                    ['Бангкок', 'reviews/city'],
+                    ['Паккрет', 'reviews/city'],
+                    ['Чиангмай', 'reviews/city'],
+                    ['Сураттхани', 'reviews/city'],
+                    ['Паттая', 'reviews/city'],
+                    ['Пхукет', 'reviews/city']
+                ], 'Все города', 'review')
+            .column.large-4
+                +list('Отзывы по услугам', [
+                    ['Экскурсии', 'reviews/countries'],
+                    ['Такси', 'reviews/countries'],
+                    ['SPA', 'reviews/countries'],
+                    ['Шоппинг', 'reviews/countries'],
+                    ['Визовые услуги', 'reviews/countries'],
+                ], false, 'review')

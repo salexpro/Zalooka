@@ -1,4 +1,4 @@
-extends ../_layout
+extends ../../_layout
 block const
     -
         const page = 'reviews';
@@ -20,12 +20,4 @@ block content
                     a(href="#")
                         | ПОСМОТРЕТЬ БОЛЬШЕ ОТЗЫВОВ
                         i.icon-arrow-down
-        .card.card--expanded.card--review
-            .card_content
-                .row.align-justify
-                    .column.shrink
-                        +list('Отзывы по странам', ['Словакия','США','Таиланд','Турция','Украина ','Уругвай ','Финляндия ','Франция','Чехия'], 'Все страны', 'review')
-                    .column.shrink
-                        +list('Отзывы по городам', ['Бангкок','Паккрет','Чиангмай','Сураттхани','Паттая','Пхукет'], 'Все города', 'review')
-                    .column.large-4
-                        +list('Отзывы по услугам', ['Экскурсии','Такси','SPA','Шоппинг','Визовые услуги'], false, 'review')
+        include ../../components/_reviews_filter
