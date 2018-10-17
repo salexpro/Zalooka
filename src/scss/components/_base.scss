@@ -17,6 +17,7 @@
 }
 ::-webkit-scrollbar-thumb {
     background: $primary-color;
+    border-radius: 3px;
 }
 
 html, body{
@@ -95,6 +96,7 @@ button, [type="button"], [type="reset"], [type="submit"]{
     + label{
         margin: 0;
         display: flex;
+        user-select: none;
         &::before{
             content: '';
             width: 18px;
@@ -130,6 +132,7 @@ button, [type="button"], [type="reset"], [type="submit"]{
         line-height: normal;
         margin-bottom: 8px;
         margin-left: -30px;
+        user-select: none;
         &::before{
             content: '';
             flex: 16px 0 0;

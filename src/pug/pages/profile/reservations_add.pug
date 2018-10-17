@@ -1,0 +1,109 @@
+extends ../../_layout
+block const
+    -
+        const page = 'profile';
+        const type = 'reservations'
+        const logged = true;
+
+block content
+    section.container.column.section
+        .card.card--form.card--profile
+            .card_tabs
+                .card_tabs_tab.active
+                    | Мои брони
+                a.card_tabs_tab(href="/profile/wishlist.html")
+                    | Список желаний
+                a.card_tabs_tab(href="/profile/edit.html")
+                    | Редактировать профиль
+                a.card_tabs_tab(href="/profile/support.html")
+                    | Онлайн поддержка
+            .card_content
+                form.form.row.align-justify(action="")
+                    .large-6.column
+                        p.header.small.primary
+                            | Бронирование
+                        .select
+                            select
+                                option(value="" selected disabled) Страна
+                                each country in countries
+                                    option(value=country[1])
+                                        =country[0]
+                        .select
+                            select
+                                option(value="" selected disabled) Город
+                                each city in cities.thailand
+                                    option(value=city)
+                                        =city
+                        .select
+                            select
+                                option(value="" selected disabled) Услуги
+                                each _, i in Array(5)
+                                    option
+                                        | Услуга 
+                                        =i+1
+                        .select
+                            select
+                                option(value="" selected disabled) Программа
+                                each _, i in Array(5)
+                                    option
+                                        | Программа 
+                                        =i+1
+                        input(type="text" placeholder="Дата поездки")
+                        .select
+                            select
+                                option(value="" selected disabled) Количество взрослых
+                                each _, i in Array(10)
+                                    option(value=i+1)= i+1
+                        .select
+                            select
+                                option(selected disabled) Количество детей
+                                each _, i in Array(10)
+                                    option(value=i+1)= i+1
+                        input(type="text" placeholder="Откуда вас забрать")
+                        input(type="text" placeholder="Номер комнаты")
+                    .large-6.column
+                        p.header.small.primary
+                            | Прайс лист
+                        .form_input
+                            .form_label
+                                | Способы оплаты:
+                            .form_content
+                                input(type="radio" name="p_meth" id="p_meth1" value="wo")
+                                label(for="p_meth1")
+                                    | Без предоплаты (оплата гиду или водителю)
+                                input(type="radio" name="p_meth" id="p_meth2" value="partial")
+                                label(for="p_meth2")
+                                    | Частичная оплата (минимальная предоплата на сайте)
+                                input(type="radio" name="p_meth" id="p_meth3" value="full")
+                                label(for="p_meth3")
+                                    | Полная оплата (100% предоплата на сайте)
+                        .form_input
+                            .form_label
+                                | Общая стоимость:
+                            .form_content
+                                | 1499 бат
+                        .form_input
+                            .form_label
+                                | Предоплата:
+                            .form_content
+                                | 1499 бат
+                        .form_input
+                            .form_label
+                                | Остаток гиду (водителю):
+                            .form_content
+                                | 0 бат
+                        br
+                        br
+                        input(type="text" placeholder="Дополнительная информация")
+                        .form_input
+                            .form_label
+                                | Как вам ответить:
+                            .form_content
+                                input(type="radio" name="resp" id="resp1" value="phone")
+                                label(for="resp1")
+                                    | По телефону
+                                input(type="radio" name="resp" id="resp2" value="email")
+                                label(for="resp2")
+                                    | По e-mail (ответ в течении 1 часа, если нет, проверьте «Спам»)
+                        button.button
+                            | Бронировать заказ

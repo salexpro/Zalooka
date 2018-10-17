@@ -250,6 +250,7 @@
         .header{
             margin-bottom: 30px;
             text-align: left;
+            font-weight: 400;
         }
         .card{
             &_content{
@@ -257,6 +258,11 @@
                 padding-bottom: 38px;
                 .column{
                     max-width: 400px;
+                    &:last-child{
+                        .header{
+                            text-align: right;
+                        }
+                    }
                 }
             }
         }
@@ -394,13 +400,13 @@
                 }
             }
             &_content{
-                padding: 0 40px 0;
+                padding: 0 40px 70px;
                 &_empty{
                     color: #cccccc;
                     text-align: center;
                     font-weight: 700;
                     margin-top: 65px;
-                    margin-bottom: 100px;
+                    margin-bottom: 30px;
                     &_img{
                         margin-bottom: 0.8rem;
                     }
@@ -427,6 +433,7 @@
             height: 45px;
             margin-right: 40px;
             border-bottom: 2px solid transparent;
+            transition: 300ms;
             &:hover, &.active{
                 border-bottom-color: $primary-color;
             }
