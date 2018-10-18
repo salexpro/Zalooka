@@ -101,7 +101,7 @@ button, [type="button"], [type="reset"], [type="submit"]{
             content: '';
             width: 18px;
             height: 18px;
-            background-color: #448aff;
+            border: 1px solid #c5c3c6;
             border-radius: $global-radius;
             font-family: 'Material Icons';
             margin-right: 15px;
@@ -112,12 +112,15 @@ button, [type="button"], [type="reset"], [type="submit"]{
             align-items: center;
             justify-content: center;
             padding-left: 2px;
+            transition: 200ms;
         }
     }
     &:checked{
         + label{
             &::before{
-                content: 'check'
+                content: 'check';
+                background-color: #448aff;
+                border-color: #448aff;
             }
         }
     }

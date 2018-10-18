@@ -207,6 +207,29 @@
             font-weight: 400;
         }
     }
+    &--wishlist{
+        max-width: 680px;
+        margin-bottom: 50px;
+        th{
+            font-weight: 300;
+            color: $medium-gray;
+            padding-bottom: 0;
+        }
+        td{
+            color: #212121;
+            padding: 15px 16px;
+            &:nth-child(3){
+                width: 100%;
+            }
+        }
+        .table_button i{
+            font-size: 13px;
+        }
+        .text-center{
+            white-space: nowrap;
+        }
+    }
+
     &_program{
         td{
             border: 0;
@@ -264,6 +287,9 @@
     }
     &_button{
         color: $primary-color;
+        &--close{
+            color: $medium-gray;
+        }
         i{
             vertical-align: middle;
             font-size: 15px;
@@ -287,6 +313,23 @@
     &_divider{
         hr{
             border-color: #e7e3e3;
+        }
+    }
+    &_wishlist{
+        &_img{
+            width: 30px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 5px;
+        }
+    }
+    &_check{
+        width: 1%;
+        label{
+            margin-right: 17px;
+            &::before{
+                margin: 0;
+            }
         }
     }
 }

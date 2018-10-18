@@ -3516,6 +3516,15 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"/src/pug/pages/profile/wishlist.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "/build/profile/wishlist.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"/src/pug/pages/reviews/city.pug": {
 		"cB": 1,
 		"cOD": 0,
@@ -4039,7 +4048,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "/src/assets/favicon/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 561484848.78037703
+	"lastBuiltDate": 561591934.73078895
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

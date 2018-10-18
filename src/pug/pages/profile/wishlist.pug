@@ -1,0 +1,60 @@
+extends ../../_layout
+block const
+    -
+        const page = 'profile';
+        const type = 'wishlist'
+        const logged = true;
+
+block content
+    mixin wish(is_checked, name, place, price)
+        - const id = Math.floor(100 *Math.random());
+        tr.table_wishlist
+            td.table_check
+                input(type="checkbox" id=`item${id}` checked=is_checked)
+                label(for=`item${id}`)
+            td.table_wishlist_img
+                .table_wishlist_img
+                    img(src=`https://placeimg.com/60/60/nature?${Math.random()}`, alt=name)
+            td= name
+            td.text-center
+                =place
+            td.primary
+                =price
+                | 
+                | бат
+            td.table_buttons
+                button.table_button
+                    i.material-icons create
+                button.table_button.table_button--close
+                    i.material-icons clear
+
+    section.container.column.section
+        .card.card--profile
+            .card_tabs
+                a.card_tabs_tab(href="/profile/reservations.html")
+                    | Мои брони
+                .card_tabs_tab.active
+                    | Список желаний
+                a.card_tabs_tab(href="/profile/edit.html")
+                    | Редактировать профиль
+                a.card_tabs_tab(href="/profile/support.html")
+                    | Онлайн поддержка
+            .card_content
+                a.header.header--profile(href="#")
+                    | Добавить новое желание
+                table.table.table--profile.table--wishlist
+                    tr
+                        th
+                        th(colspan="5")
+                            | Паттайя, Тайланд
+                    +wish(false, 'Сафари парк в Бангкоке из Паттайи', 'Паттайя, Тайланд', 1199)
+                    +wish(true, 'Экскурсия Тигровый зоопарк Сирача из Паттайи', 'Паттайя, Тайланд', 699)
+
+                table.table.table--profile.table--wishlist
+                    tr
+                        th
+                        th(colspan="5")
+                            | Пхукет, Тайланд
+                    +wish(false, 'Дайвинг в Пхукете', 'Пхукет, Тайланд', 1180)
+                button.button
+                    | Оформить заказ

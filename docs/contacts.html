@@ -13,16 +13,14 @@
     <meta property="og:description" content="Description">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://travel.salex.pro/assets/favicon/android-chrome-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-touch-icon.png?ckcachebust=561484840">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png?ckcachebust=561484840">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png?ckcachebust=78590e149a8e907e254a221db979bc0c">
-    <link rel="manifest" href="/assets/favicon/manifest.json?ckcachebust=583652a6c457c4d57643274fbaaa431d">
-    <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.?ckcachebust=561484840" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-touch-icon.png?ckcachebust=aa6410bbb12991bc1e23cbf28ac7bdd3">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png?ckcachebust=160ee52390d698d714b8a3a699df2230">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png?ckcachebust=ea9f13e9caed4df2397dc7f90cf5db4d">
+    <link rel="manifest" href="/assets/favicon/manifest.json?ckcachebust=4c276adab8bfc81066593bc1dedaf56e">
+    <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.?ckcachebust=561591929" color="#5bbad5">
     <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="/css/app.css?ckcachebust=4b5e69f1d7bcee5d2bae87813f10dd83">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css?ckcachebust=561484840">
+    <link rel="stylesheet" href="/css/app.css?ckcachebust=1e744d75110acb9786a9ae47f8cc9cc9">
   </head>
   <body>
     <main class="wrap">
@@ -61,16 +59,16 @@
       <div class="lmenu">
         <ul class="menu vertical lmenu_lvl_one">
           <li><a href="/"><span class="lmenu_icon"><i class="icon-screen-desktop"></i></span><span class="lmenu_label">Главная</span></a></li>
-          <li><a href="./tours.html" data-menu="lmenu_tours"><span class="lmenu_icon">
+          <li><a href="/tours.html" data-menu="lmenu_tours"><span class="lmenu_icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="19" viewbox="0 0 22 19">
                   <use xlink:href="#tours"></use>
                 </svg></span><span class="lmenu_label">Экскурсии</span></a></li>
-          <li><a href="./transfer.html" data-menu="lmenu_transfer"><span class="lmenu_icon">
+          <li><a href="/transfer.html" data-menu="lmenu_transfer"><span class="lmenu_icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="13" viewbox="0 0 24 13">
                   <use xlink:href="#transfer"></use>
                 </svg></span><span class="lmenu_label">Трансфер</span></a></li>
-          <li><a href="./shopping.html"><span class="lmenu_icon"><i class="icon-wallet"></i></span><span class="lmenu_label">Шоппинг</span></a></li>
-          <li><a href="./spa.html"><span class="lmenu_icon">
+          <li><a href="/shopping.html"><span class="lmenu_icon"><i class="icon-wallet"></i></span><span class="lmenu_label">Шоппинг</span></a></li>
+          <li><a href="/spa.html"><span class="lmenu_icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="19" viewbox="0 0 24 19">
                   <use xlink:href="#spa"></use>
                 </svg></span><span class="lmenu_label">Спа</span></a></li>
@@ -179,6 +177,14 @@
       <section class="banner banner--section banner--page">
         <p class="banner_header">Контакты
         </p>
+        <div class="banner_selplace">
+          <form action="">
+            <input type="text" placeholder="Таиланд" value="Таиланд" name="country" readonly>
+            <input type="text" placeholder="Паттайя" name="city">
+            <input type="text" placeholder="Услуга" name="service">
+            <input class="button" type="submit" value="Перейти">
+          </form>
+        </div>
       </section>
       <section class="row column container">
         <div class="path"><a href="/">Главная</a> > Контакты
@@ -322,6 +328,9 @@
         </div>
       </footer>
     </main>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css?ckcachebust=561591929">
+    <script src="https://use.fontawesome.com/5d9df53e16.js?ckcachebust=561591929"></script>
     <div class="dropdown-pane small dropdown-pane--list dropdown-pane--countries" id="countries" data-dropdown data-v-offset="10" data-h-offset="0" data-alignment="right" data-close-on-click="true">
       <ul class="menu vertical">
         <li><a class="active" href="./country.html" data-toggle="cities_thailand">Тайланд</a></li>
@@ -484,8 +493,7 @@
       </div>
       <button class="close-button" aria-label="Закрыть" type="button" data-close><span aria-hidden="true">×</span></button>
     </div>
-    <script src="/js/app.min.js?ckcachebust=fa91fa75d6a67f05b598c03a44481898"></script>
-    <script src="https://use.fontawesome.com/5d9df53e16.js?ckcachebust=561484840"></script>
+    <script src="/js/app.min.js?ckcachebust=531cc2c9909aa58e502799fcb16f3f77"></script>
     <svg style="display:none">
       <defs>
         <g id="tours" transform="translate(-29 -116)">
