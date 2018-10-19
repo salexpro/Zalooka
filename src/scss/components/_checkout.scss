@@ -1,0 +1,118 @@
+.checkout{
+    &_steps{
+        display: inline-flex;
+        border: 1px solid #f2f2f2;
+        margin-bottom: 24px;
+    }
+    &_step{
+        padding: 0 10px;
+        min-width: 180px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        padding-left: 0;
+        color: #bdbdbd;
+        + .checkout_step{
+            &::after{
+                content: '';
+                position: absolute;
+                left: -11px;
+                top: 0;
+                height: 100%;
+                width: 11px;
+                border: 15px solid #f2f2f2;
+                border-right: 0;
+                border-left: 10px solid transparent;
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                left: -10px;
+                top: 0;
+                height: 100%;
+                width: 0;
+                border: 15px solid $white;
+                border-right: 0;
+                border-left: 10px solid transparent;
+                z-index: 2;
+            }
+        }
+        &.is_active {
+            background-color: $primary-color;
+            color: $white;
+
+            &::before {
+                border-top-color: $primary-color;
+                border-bottom-color: $primary-color;
+            }
+        }
+    }
+    &_section{
+        margin-bottom: 65px;
+        &_title{
+            color: $medium-gray;
+            font-size: 14px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid $primary-color;
+        }
+    }
+    &_program{
+        &_info{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 76px;
+        }
+        &_img{
+            width: 30px;
+            flex: 0 0 30px;
+            border-radius: 50%;
+            overflow: hidden;   
+        }
+        &_name{
+            max-width: 190px;
+            padding: 10px;
+            color: #212121;
+        }
+        &_place{
+            padding: 10px;
+            font-weight: 400;
+        }
+        &_price{
+            color: $primary-color;
+            font-weight: 400;
+        }
+        &_toggler{
+            margin-left: 20%;
+            margin-right: 30px;
+            font-size: 20px;
+        }
+    }
+    &_form{
+        background-color: #fafafa;
+        padding: 40px;
+        input, input:focus{
+            background-color: transparent;
+        }
+    }
+    &_footer{
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        &_total{
+            .form{
+                &_input{
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                }
+                &_label {
+                    flex: 1 1 auto;
+                }
+            }
+        }
+    }
+}

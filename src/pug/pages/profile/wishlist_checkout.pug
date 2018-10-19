@@ -1,0 +1,119 @@
+extends ../../_layout
+block const
+    -
+        const page = 'profile';
+        const type = 'wishlist'
+        const logged = true;
+
+block content
+    mixin program(name, place, price, arrow)
+        .checkout_program_info
+            .checkout_program_img
+                img(src=`https://placeimg.com/60/60/nature?${Math.random()}`, alt=name)
+            .checkout_program_name
+                =name
+            .checkout_program_place
+                =place
+            .checkout_program_price
+                =price
+                | 
+                | бат
+            button.checkout_program_toggler
+                i(class=`icon-arrow-${arrow ? 'up' : 'down'}`)
+    section.container.column.section
+        .card.card--profile.card--wishlist
+            .card_tabs
+                a.card_tabs_tab(href="/profile/reservations.html")
+                    | Мои брони
+                .card_tabs_tab.active
+                    | Список желаний
+                a.card_tabs_tab(href="/profile/edit.html")
+                    | Редактировать профиль
+                a.card_tabs_tab(href="/profile/support.html")
+                    | Онлайн поддержка
+            .card_content
+                .checkout_steps
+                    .checkout_step.is_active
+                        | Оформление заказа
+                    .checkout_step
+                        | Подтверждение
+                    .checkout_step
+                        | Оплата
+                .checkout_programs
+                    .checkout_section
+                        .checkout_section_title
+                            | Экскурсии
+                        .checkout_program
+                            +program('Сафари парк в Бангкоке из Паттайи', 'Паттайя, Тайланд', 1199, true)
+                            form.form.row.align-center.checkout_form(action="")
+                                .large-6.column
+                                    input(type="text" placeholder="Дата поездки")
+                                    .select
+                                        select
+                                            option(value="" selected disabled) Количество взрослых
+                                            each _, i in Array(10)
+                                                option(value=i+1)= i+1
+                                    .select
+                                        select
+                                            option(selected disabled) Количество детей
+                                            each _, i in Array(10)
+                                                option(value=i+1)= i+1
+                                    input(type="text" placeholder="Откуда вас забрать")
+                                    input(type="text" placeholder="Номер комнаты")
+                                    .form_input
+                                        .form_label
+                                            | Способы оплаты:
+                                        .form_content
+                                            input(type="radio" name="p_meth" id="p_meth1" value="wo")
+                                            label(for="p_meth1")
+                                                | Без предоплаты (оплата гиду или водителю)
+                                            input(type="radio" name="p_meth" id="p_meth2" value="partial")
+                                            label(for="p_meth2")
+                                                | Частичная оплата (минимальная предоплата на сайте)
+                                            input(type="radio" name="p_meth" id="p_meth3" value="full")
+                                            label(for="p_meth3")
+                                                | Полная оплата (100% предоплата на сайте)
+                                    input(type="text" placeholder="Дополнительная информация")
+                                    .form_input
+                                        .form_label
+                                            | Как вам ответить:
+                                        .form_content
+                                            input(type="radio" name="resp" id="resp1" value="phone")
+                                            label(for="resp1")
+                                                | По телефону
+                                            input(type="radio" name="resp" id="resp2" value="email")
+                                            label(for="resp2")
+                                                | По e-mail (ответ в течении 1 часа, если нет, проверьте «Спам»)
+                                    br
+                                    input(type="checkbox" id="all")
+                                    label(for="all") Применить ко всем Экскурсиям
+
+                        .checkout_program
+                            +program('Экскурсия Тигровый зоопарк Сирача из Паттайи', 'Паттайя, Тайланд', 699)
+
+                    .checkout_section
+                        .checkout_section_title
+                            | Трансфер
+                        .checkout_program
+                            +program('Паттайя ↔ Ко Самет (до пляжа на спидботе)', 'Паттайя, Тайланд', 990)
+                    
+                .checkout_footer
+                    .checkout_footer_total
+                        .form_input
+                            .form_label
+                                | Общая стоимость:
+                            .form_content
+                                | 0 бат
+                        .form_input
+                            .form_label
+                                | Предоплата:
+                            .form_content
+                                | 0 бат
+                        .form_input
+                            .form_label
+                                | Остаток гиду (водителю):
+                            .form_content
+                                | 0 бат
+                    .checkout_footer_button
+                        button.button
+                            | Бронировать заказ

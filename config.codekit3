@@ -3525,6 +3525,15 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"/src/pug/pages/profile/wishlist_checkout.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "/build/profile/wishlist_checkout.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"/src/pug/pages/profile/wishlist_empty.pug": {
 		"cB": 1,
 		"cOD": 0,
@@ -3732,6 +3741,19 @@
 		"oAP": "/build/css/components/_card.css",
 		"oF": 0,
 		"oS": 0,
+		"uL": 1
+		},
+	"/src/scss/components/_checkout.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/css/components/_checkout.css",
+		"oF": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/src/scss/components/_contact_us.scss": {
@@ -4057,7 +4079,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "/src/assets/favicon/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 561639804.14930499
+	"lastBuiltDate": 561650762.75985706
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
