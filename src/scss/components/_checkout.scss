@@ -14,7 +14,7 @@
         text-align: center;
         position: relative;
         padding-left: 0;
-        color: #bdbdbd;
+        color: $medium-gray;
         + .checkout_step{
             &::after{
                 content: '';
@@ -64,7 +64,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            height: 76px;
+            min-height: 76px;
         }
         &_img{
             width: 30px;
@@ -74,11 +74,11 @@
         }
         &_name{
             max-width: 190px;
-            padding: 10px;
+            padding: 5px 10px;
             color: #212121;
         }
         &_place{
-            padding: 10px;
+            padding: 5px 10px;
             font-weight: 400;
         }
         &_price{

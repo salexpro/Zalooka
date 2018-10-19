@@ -401,19 +401,6 @@
             }
             &_content{
                 padding: 0 40px 70px;
-                &_empty{
-                    color: #cccccc;
-                    text-align: center;
-                    font-weight: 700;
-                    margin-top: 65px;
-                    margin-bottom: 30px;
-                    &_img{
-                        margin-bottom: 5px;
-                    }
-                    &_label{
-                        margin-bottom: 30px;
-                    }
-                }
             }
         }
     }
@@ -526,6 +513,32 @@
     }
     &_content{
         color: $secondary-color;
+        &_empty {
+            
+            text-align: center;
+            
+            margin-top: 65px;
+            margin-bottom: 30px;
+
+            &_img {
+                margin-bottom: 5px;
+            }
+
+            &_header{
+                font-weight: 400;
+                margin-bottom: 20px;
+            }
+
+            &_label {
+                margin-bottom: 30px;
+                font-weight: 700;
+                color: #cccccc;
+                &.thin{
+                    font-weight: 400;
+                    color: $medium-gray;
+                }
+            }
+        }
     }
     &_bottom{
         padding: 18px 16px;

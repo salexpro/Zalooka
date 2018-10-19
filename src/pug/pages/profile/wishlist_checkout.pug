@@ -32,13 +32,7 @@ block content
                 a.card_tabs_tab(href="/profile/support.html")
                     | Онлайн поддержка
             .card_content
-                .checkout_steps
-                    .checkout_step.is_active
-                        | Оформление заказа
-                    .checkout_step
-                        | Подтверждение
-                    .checkout_step
-                        | Оплата
+                +steps(0)
                 .checkout_programs
                     .checkout_section
                         .checkout_section_title

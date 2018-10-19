@@ -1,0 +1,6 @@
+mixin steps(active)
+    - const steps = ['Оформление заказа', 'Подтверждение', 'Оплата']
+    .checkout_steps
+        each step, i in steps
+            .checkout_step(class=(i == active) ? 'is_active' : false)
+                =step

@@ -425,6 +425,17 @@
 		"opt": 1,
 		"q": 100
 		},
+	"/src/assets/img/bird.jpg": {
+		"ft": 16384,
+		"iS": 10704,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/bird.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"/src/assets/img/flags/1x1/ad.svg": {
 		"ft": 2097152,
 		"miP": 1,
@@ -3381,6 +3392,15 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"/src/pug/components/_steps.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "/build/pug/components/_steps.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"/src/pug/pages/404.pug": {
 		"cB": 1,
 		"cOD": 0,
@@ -3531,6 +3551,15 @@
 		"ft": 512,
 		"oA": 0,
 		"oAP": "/build/profile/wishlist_checkout.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/pages/profile/wishlist_confirmation.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "/build/profile/wishlist_confirmation.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -4079,7 +4108,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "/src/assets/favicon/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 561650762.75985706
+	"lastBuiltDate": 561652220.68282795
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

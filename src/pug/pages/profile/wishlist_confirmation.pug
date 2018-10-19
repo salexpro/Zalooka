@@ -1,0 +1,30 @@
+extends ../../_layout
+block const
+    -
+        const page = 'profile';
+        const type = 'reservations'
+        const logged = true;
+
+block content
+    section.container.column.section
+        .card.card--profile
+            .card_tabs
+                a.card_tabs_tab(href="/profile/reservations.html")
+                    | Мои брони
+                .card_tabs_tab.active
+                    | Список желаний
+                a.card_tabs_tab(href="/profile/edit.html")
+                    | Редактировать профиль
+                a.card_tabs_tab(href="/profile/support.html")
+                    | Онлайн поддержка
+            .card_content.card_content--empty
+                .card_content_empty
+                    .card_content_empty_img
+                        img(src="/assets/img/bird.jpg", alt="")
+                    h4.card_content_empty_header
+                        | Спасибо, что выбрали take.travel
+                        br
+                        | Ваш заказ обрабатывается
+                    +steps(1)
+                    p.card_content_empty_label.thin
+                        | Вы будете перенаправлены в личный кабинет через 3 секунды...
