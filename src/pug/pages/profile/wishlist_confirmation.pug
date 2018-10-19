@@ -2,21 +2,13 @@ extends ../../_layout
 block const
     -
         const page = 'profile';
-        const type = 'reservations'
+        const type = 'wishlist'
         const logged = true;
 
 block content
     section.container.column.section
         .card.card--profile
-            .card_tabs
-                a.card_tabs_tab(href="/profile/reservations.html")
-                    | Мои брони
-                .card_tabs_tab.active
-                    | Список желаний
-                a.card_tabs_tab(href="/profile/edit.html")
-                    | Редактировать профиль
-                a.card_tabs_tab(href="/profile/support.html")
-                    | Онлайн поддержка
+            +tabs(1)
             .card_content.card_content--empty
                 .card_content_empty
                     .card_content_empty_img

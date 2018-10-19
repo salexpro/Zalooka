@@ -13,15 +13,15 @@
     <meta property="og:description" content="Description">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://travel.salex.pro/assets/favicon/android-chrome-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-touch-icon.png?ckcachebust=4f7d5b9adec6fcac2c36b043c77bed70">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png?ckcachebust=703990b1b2accd3720110b55334f22cd">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png?ckcachebust=bee557bc42fdac246acbe6e709bf5448">
-    <link rel="manifest" href="/assets/favicon/manifest.json?ckcachebust=d18ee743d0311817b1ee69b11b198d6a">
-    <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.?ckcachebust=561652215" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-touch-icon.png?ckcachebust=7e0a404fb0adfed2bcd5b3b34b5c1c95">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png?ckcachebust=a7ac377eb5565dcec764a479903a1a0e">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png?ckcachebust=5f768132b6dc2b79cc3343ff1a3c0c71">
+    <link rel="manifest" href="/assets/favicon/manifest.json?ckcachebust=210878f3684d1f934f550369f94f8c4c">
+    <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.?ckcachebust=561658366" color="#5bbad5">
     <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="/css/app.css?ckcachebust=f2ff745aea8bb98bcea5c5e96d6e7f06">
+    <link rel="stylesheet" href="/css/app.css?ckcachebust=4b2668cbf094b737bae19a7df3b6dc43">
   </head>
   <body>
     <main class="wrap">
@@ -198,7 +198,14 @@
       <section class="container column section">
         <div class="card card--form card--profile">
           <div class="card_tabs">
-            <div class="card_tabs_tab active">Мои брони</div><a class="card_tabs_tab" href="/profile/wishlist.html">Список желаний</a><a class="card_tabs_tab" href="/profile/edit.html">Редактировать профиль</a><a class="card_tabs_tab" href="/profile/support.html">Онлайн поддержка</a>
+            <div class="card_tabs_tab active" href="/profile/reservations.html">Мои брони
+            </div>
+            <a class="card_tabs_tab" href="/profile/wishlist.html">Список желаний
+            </a>
+            <a class="card_tabs_tab" href="/profile/edit.html">Редактировать профиль
+            </a>
+            <a class="card_tabs_tab" href="/profile/support.html">Онлайн поддержка
+            </a>
           </div>
           <div class="card_content">
             <form class="form row align-justify" action="">
@@ -411,8 +418,8 @@
       </footer>
     </main>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css?ckcachebust=561652215">
-    <script src="https://use.fontawesome.com/5d9df53e16.js?ckcachebust=561652215"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css?ckcachebust=561658366">
+    <script src="https://use.fontawesome.com/5d9df53e16.js?ckcachebust=561658366"></script>
     <div class="dropdown-pane small dropdown-pane--list dropdown-pane--countries" id="countries" data-dropdown data-v-offset="10" data-h-offset="0" data-alignment="right" data-close-on-click="true">
       <ul class="menu vertical">
         <li><a class="active" href="./country.html" data-toggle="cities_thailand">Тайланд</a></li>
@@ -575,7 +582,7 @@
       </div>
       <button class="close-button" aria-label="Закрыть" type="button" data-close><span aria-hidden="true">×</span></button>
     </div>
-    <script src="/js/app.min.js?ckcachebust=150a872d8f7166f156665f62a7cddd59"></script>
+    <script src="/js/app.min.js?ckcachebust=c4697dc4b7c839ebfeacbe981e17459f"></script>
     <svg style="display:none">
       <defs>
         <g id="tours" transform="translate(-29 -116)">
@@ -591,6 +598,8 @@
           <path d="M256 48C140.563 48 48 141.6 48 256s92.563 208 208 208 208-93.6 208-208S370.401 48 256 48zm0 374.4c-91.518 0-166.404-74.883-166.404-166.4 0-91.518 74.887-166.4 166.404-166.4S422.404 164.482 422.404 256 347.518 422.4 256 422.4z"></path>
           <path d="M328.8 235.2c17.683 0 31.201-13.518 31.201-31.2s-13.519-31.2-31.201-31.2c-17.682 0-31.2 13.518-31.2 31.2s13.518 31.2 31.2 31.2zM183.2 235.2c17.682 0 31.2-13.518 31.2-31.2s-13.519-31.2-31.2-31.2c-17.683 0-31.201 13.518-31.201 31.2s13.519 31.2 31.201 31.2z"></path>
         </g>
+        <path id="eye_disabled" d="M256.1 144.8c56.2 0 101.9 45.3 101.9 101.1 0 13.1-2.6 25.5-7.3 37l59.5 59c30.8-25.5 55-58.4 69.9-96-35.3-88.7-122.3-151.6-224.2-151.6-28.5 0-55.8 5.1-81.1 14.1l44 43.7c11.6-4.6 24.1-7.3 37.3-7.3zM52.4 89.7l46.5 46.1 9.4 9.3c-33.9 26-60.4 60.8-76.3 100.8 35.2 88.7 122.2 151.6 224.1 151.6 31.6 0 61.7-6.1 89.2-17l8.6 8.5 59.7 59 25.9-25.7L78.2 64 52.4 89.7zM165 201.4l31.6 31.3c-1 4.2-1.6 8.7-1.6 13.1 0 33.5 27.3 60.6 61.1 60.6 4.5 0 9-.6 13.2-1.6l31.6 31.3c-13.6 6.7-28.7 10.7-44.8 10.7-56.2 0-101.9-45.3-101.9-101.1 0-15.8 4.1-30.7 10.8-44.3zm87.8-15.7l64.2 63.7.4-3.2c0-33.5-27.3-60.6-61.1-60.6l-3.5.1z"></path>
+        <path id="eye_enabled" d="M256 105c-101.8 0-188.4 62.4-224 151 35.6 88.6 122.2 151 224 151s188.4-62.4 224-151c-35.6-88.6-122.2-151-224-151zm0 251.7c-56 0-101.8-45.3-101.8-100.7S200 155.3 256 155.3 357.8 200.6 357.8 256 312 356.7 256 356.7zm0-161.1c-33.6 0-61.1 27.2-61.1 60.4s27.5 60.4 61.1 60.4 61.1-27.2 61.1-60.4-27.5-60.4-61.1-60.4z"></path>
       </defs>
     </svg>
   </body>

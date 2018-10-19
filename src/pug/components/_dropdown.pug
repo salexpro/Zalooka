@@ -90,3 +90,7 @@ else
                 | Для удобства бронирования и внесения изменений войдите в личный кабинет
                 button.button.small(data-open="login")
                     | Войти
+
+if page == 'profile' && type == 'edit'
+    #places_hint.dropdown-pane.tiny.dropdown-pane--hint(data-dropdown data-v-offset="10" data-h-offset="-50" data-close-on-click="true" data-position="bottom" data-alignment="left")
+        | Вы можете указать место(а) проживания для удобства оформления заказов.

@@ -1,0 +1,25 @@
+mixin tabs(active)
+    -
+        const tabs = [
+            {
+                name: 'Мои брони',
+                link: 'reservations'
+            }, 
+            {
+                name: 'Список желаний',
+                link: 'wishlist'
+            },
+            {
+                name: 'Редактировать профиль',
+                link: 'edit'
+            },
+            {
+                name: 'Онлайн поддержка',
+                link: 'support'
+            }
+        ]
+
+    .card_tabs
+        each tab, i in tabs
+            #{(i == active) ? 'div' : 'a'}.card_tabs_tab(href=`/profile/${tab.link}.html` class=(i == active) ? 'active' : false)
+                =tab.name

@@ -1,10 +1,59 @@
 .form{
     margin-bottom: 15px;
+    &--edit{
+        .form{
+            &_input:not(.form_input--last) {
+                margin: 0;
+                input{
+                    padding-right: 30px;
+                }
+            }
+        }
+    }
+    &_col{
+        display: flex;
+        flex-direction: column;
+    }
+    &_title{
+        color: $medium-gray;
+        margin-bottom: 10px;
+    }
     &_input{
         display: flex;
         align-items: center;
         color: $medium-gray;
+        position: relative;
         margin-bottom: 10px;
+        &--last{
+            margin-top: auto;
+        }
+        &_photo{
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            i{
+                font-size: 20px;
+                margin-right: 10px;
+            }
+        }
+        &_button{
+            display: block;
+            width: 20px;
+            height: 20px;
+            margin-bottom: 1.14rem;
+            i{font-size: 13px;}
+            &.primary{
+                position: absolute;
+                top: 6px;
+                right: 25px;
+            }
+            &--add i{
+                font-size: 20px;
+            }
+            &--clear{
+                color: $medium-gray;
+            }
+        }
     }
     &_label{
         flex: 37% 0 0;

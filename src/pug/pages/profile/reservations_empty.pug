@@ -8,15 +8,7 @@ block const
 block content
     section.container.column.section
         .card.card--profile
-            .card_tabs
-                .card_tabs_tab.active
-                    | Мои брони
-                a.card_tabs_tab(href="/profile/wishlist.html")
-                    | Список желаний
-                a.card_tabs_tab(href="/profile/edit.html")
-                    | Редактировать профиль
-                a.card_tabs_tab(href="/profile/support.html")
-                    | Онлайн поддержка
+            +tabs(0)
             .card_content.card_content--empty
                 .card_content_empty
                     .card_content_empty_img

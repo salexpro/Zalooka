@@ -1,0 +1,61 @@
+extends ../../_layout
+block const
+    -
+        const page = 'profile';
+        const type = 'edit'
+        const logged = true;
+
+block content
+    mixin input(name, placeholder, value, _type='text', req)
+        .form_input
+            input(type=_type name=name placeholder=placeholder value=value required=req data-toggle=(name=='places')?'places_hint':false)
+            button.primary.form_input_button(type="button" class=`form_input_button--${value ? 'edit' : 'add'}`)
+                i.material-icons
+                    if value
+                        | create
+                    else
+                        | add
+            button.form_input_button(type="button" class=`form_input_button--${(_type=='password') ? 'hide' : 'clear'}`)
+                if (_type=='password')
+                    +icon('eye_disabled', [13, 13], '#9b9b9b', [512, 512])
+                else
+                    i.material-icons clear
+
+    section.container.column.section
+        .card.card--profile
+            +tabs(2)
+            .card_content
+                form.row.align-spaced.form.form--edit
+                    .column.large-4
+                        .form_input
+                            button.form_input_photo.primary(type="button")
+                                i.material-icons add
+                                | Изменить фото
+                        +input('name', 'Имя *', 'Елизавета', 'text', true)
+                        +input('surname', 'Фамилия *', 'Петрова', 'text', true)
+                        +input('b_date', 'Дата рождения', false, 'date')
+                        p.form_title
+                            | Основной e-mail
+                        +input('email', 'E-mail *', 'Epetrova@gmail.com', 'email', true)
+                        +input('add_email', 'E-mail', false, 'email')
+                        p.form_title
+                            | Основной  телефон
+                        +input('phone', 'Номер телефона *', '+7 900 111 07 11', 'tel', true)
+                        +input('phone', 'Номер телефона', false, 'tel')
+                    .column.large-4.form_col
+                        +input('places', 'Места проживания﹖', false)
+                        br
+                        p.form_title
+                            | Изменить пароль
+                        +input('password', 'Пароль *', '********', 'password', true)
+                        p.form_title
+                            | Что бы войти в аккаунт Вы всегда можете использовать следующие способы: 
+                            br
+                            | 1. Получение СМС на указанный Вами номер телефона при входе в аккаунт.
+                            br
+                            | 2. Получение ссылки для входа в электронном письме.
+                            br
+                            | 3. Установите свой пароль для входа в аккаунт.
+                        .form_input.form_input--last
+                            input(type="checkbox" name="subs" id="subs")
+                            label(for="subs") Подписка на рассылку спецпредложений

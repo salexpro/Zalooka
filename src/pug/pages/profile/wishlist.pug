@@ -30,15 +30,7 @@ block content
 
     section.container.column.section
         .card.card--profile
-            .card_tabs
-                a.card_tabs_tab(href="/profile/reservations.html")
-                    | Мои брони
-                .card_tabs_tab.active
-                    | Список желаний
-                a.card_tabs_tab(href="/profile/edit.html")
-                    | Редактировать профиль
-                a.card_tabs_tab(href="/profile/support.html")
-                    | Онлайн поддержка
+            +tabs(1)
             .card_content
                 a.header.header--profile(href="#")
                     | Добавить новое желание

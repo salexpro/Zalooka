@@ -3392,12 +3392,21 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/components/_steps.pug": {
+	"/src/pug/components/profile/_steps.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/pug/components/_steps.html",
+		"oAP": "/build/pug/components/profile/_steps.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/components/profile/_tabs.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "/build/pug/components/profile/_tabs.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -4108,7 +4117,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "/src/assets/favicon/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 561652220.68282795
+	"lastBuiltDate": 561658372.59159005
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

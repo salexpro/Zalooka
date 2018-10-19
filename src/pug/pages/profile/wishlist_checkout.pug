@@ -22,15 +22,7 @@ block content
                 i(class=`icon-arrow-${arrow ? 'up' : 'down'}`)
     section.container.column.section
         .card.card--profile.card--wishlist
-            .card_tabs
-                a.card_tabs_tab(href="/profile/reservations.html")
-                    | Мои брони
-                .card_tabs_tab.active
-                    | Список желаний
-                a.card_tabs_tab(href="/profile/edit.html")
-                    | Редактировать профиль
-                a.card_tabs_tab(href="/profile/support.html")
-                    | Онлайн поддержка
+            +tabs(1)
             .card_content
                 +steps(0)
                 .checkout_programs

@@ -165,6 +165,13 @@
             display: none;
         }
     }
+    &--hint{
+        font-size: 11px;
+        color: $white;
+        &::before {
+            right: 35px;
+        }
+    }
     &_header{
         font-size: 14px;
         color: $primary-color;
