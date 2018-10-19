@@ -408,7 +408,10 @@
                     margin-top: 65px;
                     margin-bottom: 30px;
                     &_img{
-                        margin-bottom: 0.8rem;
+                        margin-bottom: 5px;
+                    }
+                    &_label{
+                        margin-bottom: 30px;
                     }
                 }
             }
