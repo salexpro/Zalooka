@@ -4,54 +4,19 @@
         input(type="search" placeholder="Поиск")
     .row.align-justify.reveal_search_content
         .large-6.reveal_search_list
-            ul.menu.vertical
-                li
-                    a(href="./country.html")
-                        | Словакия
-                li
-                    a(href="./country.html")
-                        | США
-                li
-                    a(href="./country.html")
-                        | Таиланд
-                li
-                    a(href="./country.html")
-                        | Турция
-                li
-                    a(href="./country.html")
-                        | Украина 
-                li
-                    a(href="./country.html")
-                        | Уругвай 
-                li
-                    a(href="./country.html")
-                        | Финляндия 
-                li
-                    a(href="./country.html")
-                        | Франция
-                li
-                    a(href="./country.html")
-                        | Чехия
-        .reveal_search_list
-            ul.menu.vertical
-                li
-                    a(href="./city.html")
-                        | Бангкок
-                li
-                    a(href="./city.html")
-                        | Паккрет   
-                li
-                    a(href="./city.html")
-                        | Чиангмай  
-                li
-                    a(href="./city.html")
-                        | Сураттхани    
-                li
-                    a(href="./city.html")
-                        | Паттая    
-                li
-                    a(href="./city.html")
-                        | Пхукет    
+            ul#search_countries.menu.vertical(data-tabs='' data-link-active-class='is_active' data-panel-active-class='is_active')
+                each country, i in countries
+                    li.tabs-title(class=i==0?'is_active':'')
+                        a(data-tabs-target=`search_${country[1]}`, href=`#search_${country[1]}` aria-selected=i==0)
+                            =country[0]
+        .large-6.reveal_search_list(data-tabs-content='search_countries')
+            each country, i in Object.keys(cities)
+                ul.menu.vertical.tabs-panel(id=`search_${country}` class=i==0?'is_active':'')
+                    each city in cities[country]
+                        li
+                            a(href="./city.html" class=(city == 'Паттайя') ? 'active' : false)
+                                =city
+
     button.close-button(aria-label='Закрыть', type='button', data-close)
         span(aria-hidden='true') ×
 if !logged

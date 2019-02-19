@@ -56,8 +56,22 @@
             &::-webkit-scrollbar-thumb {
                 background: $primary-color;
             }
+            .tabs-panel{
+                display: none;
+                &.is_active{
+                    display: block;
+                }
+            }
         }
         .menu{
+            li.is_active a {
+                outline: none;
+                color: $primary-color;
+                &::after{
+                    opacity: 1;
+                    transform: translateX(0)
+                }
+            }
             a{
                 color: $secondary-color;
                 font-size: 18px;
@@ -65,6 +79,7 @@
                 padding-right: 30px;
                 display: table;
                 position: relative;
+                outline: none;
                 &::after{
                     content: "\e606";
                     font-family: 'simple-line-icons';
@@ -74,7 +89,7 @@
                     color: $primary-color;
                     position: absolute;
                     right: 0;
-                    top: calc(50% - 5.5px);
+                    top: calc(50% - 7px);
                     transition: 300ms;
                     opacity: 0;
                     transform: translateX(-10px)

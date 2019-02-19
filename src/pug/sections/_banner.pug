@@ -61,9 +61,30 @@ section.banner(class=(page != 'main') ? "banner--section banner--" + type : fals
                 | Читайте отзывы по интересующим вас направлениям и услугам
         if page != 'page' && page != 'visa' && type != 'tour' || page.includes('articles')
             .banner_selplace(class=page=='pricelist'?'banner_selplace--pricelist':'')
-                form(action="")
-                    input(type="text" placeholder="Таиланд" value="Таиланд" name="country" readonly)
-                    input(type="text" placeholder="Паттайя" name="city")
-                    if page!='pricelist'
-                        input(type="text" placeholder="Услуга" name="service")
-                    input.button(type="submit" value=page == 'reviews' ? 'Перейти к отзывам' : 'Перейти')
+                ul#start.tabs.banner_selplace_tabs(data-tabs='' data-link-active-class='is_active' data-panel-active-class='is_active')
+                    li.tabs-title.banner_selplace_tab.is_active
+                        a(href='#start_tours', aria-selected='true')
+                            | Поиск по турам
+                    li.tabs-title.banner_selplace_tab
+                        a(data-tabs-target='start_transfers', href='#start_transfers')
+                            | Поиск по трансферам
+                .banner_selplace_content(data-tabs-content='start')
+                    #start_tours.tabs-panel.banner_selplace_tab-panel.is_active
+                        form(action="")
+                            input(type="text" placeholder="Название тура" name="title" required)
+                            button.button
+                                | Поиск
+                    #start_transfers.tabs-panel.banner_selplace_tab-panel
+                        form(action="")
+                            select(name="from")
+                                option(selected disabled value="") Откуда
+                            select(name="to")
+                                option(selected disabled value="") Куда
+                            input(type="text" placeholder="Дата" name="date")
+                            select(name="people")
+                                option(selected disabled value="") Человек
+                                option(value="4") 4 пас
+                            //- if page!='pricelist'
+                                input(type="text" placeholder="Услуга" name="service")
+                            button.button
+                                | Поиск
