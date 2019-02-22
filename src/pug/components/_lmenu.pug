@@ -1,3 +1,256 @@
+-
+    const categories = [
+        {
+            name: 'Экскурсии',
+            alias: 'tours',
+            icon: {
+                type: 'mixin',
+                content: ['tours', [22, 19]]
+            },
+            sub1: [
+                {
+                    alias: 'interesting',
+                    sub: true,
+                    name: 'Познавательные'
+                },
+                {
+                    alias: 'diving',
+                    name: 'Острова, Пляжи, Дайвинг'
+                },
+                {
+                    alias: 'vip',
+                    name: 'VIP Экскурсии'
+                },
+                {
+                    alias: 'fishing',
+                    name: 'Рыбалка'
+                },
+                {
+                    alias: 'night_show',
+                    name: 'Вечерние шоу'
+                },
+                {
+                    alias: 'historical',
+                    name: 'Исторические'
+                },
+                {
+                    alias: 'extreme',
+                    name: 'Экстрим'
+                },
+                {
+                    alias: 'islands',
+                    name: 'На острова'
+                }
+            ],
+            sub2: [
+                {
+                    alias: 'interesting',
+                    content: [
+                        {
+                            items: [
+                                {
+                                    alias: 'auttayah',
+                                    name: 'Аюттая'
+                                },
+                                {
+                                    alias: 'kvai',
+                                    name: 'Река Квай'
+                                },
+                                {
+                                    alias: 'hollywood',
+                                    name: 'По стопам Голливуда'
+                                },
+                                {
+                                    alias: 'kamboja_3',
+                                    name: 'Камбоджа 3 дня'
+                                },
+                                {
+                                    alias: 'kamboja_2',
+                                    name: 'Камбоджа 2 дня'
+                                },
+                                {
+                                    alias: 'night_bangkok',
+                                    name: 'Вечерний Бангкок'
+                                },
+                                {
+                                    alias: 'historical_bangkok',
+                                    name: 'Бангкок исторический'
+                                },
+                                {
+                                    alias: 'temple',
+                                    name: 'Храм Истины'
+                                },
+                                {
+                                    alias: 'kvai_auttayah',
+                                    name: 'Река Квай + Аюттая'
+                                },
+                                {
+                                    alias: 'park_kao_yai',
+                                    name: 'Парк Као Яй'
+                                },
+                            ]
+                        },
+                        {
+                            items: [
+                                {
+                                    alias: 'secrets_of_siam',
+                                    name: 'Тайны Сиама'
+                                },
+                                {
+                                    alias: 'amazing_thailand',
+                                    name: 'Изумительный Таиланд'
+                                },
+                                {
+                                    alias: 'wat_yang_and_karen',
+                                    name: 'Ват Ян и Карены'
+                                },
+                                {
+                                    alias: 'koh_sichang',
+                                    name: 'Остров Удачи - Ко Сичанг'
+                                },
+                                {
+                                    alias: 'magic_of_the_east',
+                                    name: 'Магия Востока'
+                                },
+                                {
+                                    alias: 'evening_in_old_siam',
+                                    name: 'Вечер в старом Сиаме'
+                                },
+                                {
+                                    alias: 'expedition_2',
+                                    name: 'Экспедиция 2 дня'
+                                },
+                                {
+                                    alias: 'lost_world',
+                                    name: 'Затерянный мир'
+                                },
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            name: 'Трансфер',
+            alias: 'transfer',
+            icon: {
+                type: 'mixin',
+                content: ['transfer', [24, 13]]
+            },
+            sub1: [
+                {
+                    alias: 'tillmanburgh',
+                    sub: true,
+                    name: 'Tillmanburgh'
+                },
+                {
+                    alias: 'lake_russelport',
+                    name: 'Lake Russelport'
+                },
+                {
+                    alias: 'west_cleora',
+                    name: 'West Cleora'
+                },
+                {
+                    alias: 'east_donato',
+                    name: 'East Donato'
+                },
+                {
+                    alias: 'schmittberg',
+                    name: 'Schmittberg'
+                },
+                {
+                    alias: 'lake_leta',
+                    name: 'Lake Leta'
+                },
+            ],
+            sub2: [
+                {
+                    alias: 'tillmanburgh',
+                    content: [
+                        {
+                            header: 'Lost In Lagos Portugal',
+                            items: [
+                                {
+                                    alias: '#',
+                                    name: 'Lost In Lagos Portugal'
+                                },
+                                {
+                                    alias: '#',
+                                    name: 'Traveling To Barcelona'
+                                },
+                                {
+                                    alias: '#',
+                                    name: 'Choosing A Static Caravan'
+                                },
+                                {
+                                    alias: '#',
+                                    name: 'Global Travel And Vacations Luxury Travel'
+                                },
+                                {
+                                    alias: '#',
+                                    name: 'Les Houches The Hidden'
+                                },
+                                {
+                                    alias: '#',
+                                    name: 'Addiction When '
+                                },
+                                {
+                                    alias: '#',
+                                    name: 'Global Resorts'
+                                },
+                            ]
+                        },
+                        {
+                            header: 'Transfers to Islands',
+                            items: [
+                                {
+                                    alias: '#',
+                                    name: 'Pattaya ↔ Koh Samet'
+                                },
+                                {
+                                    alias: '#',
+                                    name: 'Pattaya ↔ Koh Chang'
+                                },
+                                {
+                                    alias: '#',
+                                    name: 'Pattaya ↔ Koh Mak'
+                                },
+                                {
+                                    alias: '#',
+                                    name: 'Pattaya ↔ Koh Kood'
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            name: 'Шоппинг',
+            alias: 'shopping',
+            icon: {
+                type: 'class',
+                content: 'icon-wallet'
+            }
+        },
+        {
+            name: 'Спа',
+            alias: 'spa',
+            icon: {
+                type: 'mixin',
+                content: ['spa', [24, 19]]
+            }
+        },
+        {
+            name: 'Другие Услуги',
+            alias: '#',
+            icon: {
+                type: 'class',
+                content: 'icon-list'
+            }
+        }
+    ]
 .lmenu
     ul.menu.vertical.lmenu_lvl_one
         li
@@ -6,39 +259,88 @@
                     i.icon-screen-desktop
                 span.lmenu_label
                     | Главная
-        li
+        each category in categories
+            li
+                a&attributes({
+                    'href': `/${category.alias}.html`, 
+                    'class': type==category.alias ? 'active' : false, 
+                    'data-menu': category.hasOwnProperty('sub1') ? `lmenu_${category.alias}` : false
+                })
+                    span.lmenu_icon
+                        case category.icon.type
+                            when 'mixin'
+                                +icon(...category.icon.content)
+                            when 'class'
+                                i&attributes({'class': category.icon.content})
+                    span.lmenu_label
+                        =category.name
+
+    .lmenu_lvl_two
+        each category in categories
+            if category.hasOwnProperty('sub1')
+                ul.menu.vertical&attributes({'id': `lmenu_${category.alias}`})
+                    each item in category.sub1
+                        li
+                            a&attributes({
+                                'href': (item.alias=='#') ? item.alias : `/${category.alias}/${item.alias}.html`,
+                                'data-menutwo': item.sub ? `lmenutwo_${item.alias}` : false
+                            })
+                                =item.name 
+    .lmenu_lvl_three
+        each category in categories
+            if category.hasOwnProperty('sub2')
+                each level in category.sub2
+                    .lmenu_content&attributes({'id': `lmenutwo_${level.alias}`})
+                        each menu in level.content
+                            ul.menu.vertical
+                                if menu.hasOwnProperty('header')
+                                    li
+                                        span=menu.header
+                                each item in menu.items
+                                    li
+                                        a&attributes({'href': (item.alias=='#') ? item.alias : `/${category.alias}/${level.alias}/${item.alias}.html`})
+                                            =item.name 
+                        .lmenu_more
+                            a(href="#")
+                                | Смотреть все
+                                | 
+                                =category.name
+                                i.icon-arrow-down
+        button.close-button.small(aria-label='Закрыть', type='button', data-close)
+            span(aria-hidden='true') ×
+        //- li
             a(href="/tours.html" data-menu="lmenu_tours" class=type=='tours'?'active':'')
                 span.lmenu_icon
                     +icon('tours', [22, 19])
                 span.lmenu_label
                     | Экскурсии
-        li
+        //- li
             a(href="/transfer.html" data-menu="lmenu_transfer" class=type=='transfer'?'active':'')
                 span.lmenu_icon
                     +icon('transfer', [24, 13])
                 span.lmenu_label
                     | Трансфер
-        li
+        //- li
             a(href="/shopping.html" class=type=='shopping'?'active':'')
                 span.lmenu_icon
                     i.icon-wallet
                 span.lmenu_label
                     | Шоппинг
-        li
+        //- li
             a(href="/spa.html" class=type=='spa'?'active':'')
                 span.lmenu_icon
                     +icon('spa', [24, 19])
 
                 span.lmenu_label
                     | Спа
-        li
+        //- li
             a(href="#")
                 span.lmenu_icon
                     i.icon-list
                 span.lmenu_label
                     | Другие Услуги
     //- data-hover="true" data-hover-pane="true" data-hover-delay="0"
-    .lmenu_lvl_two
+    //- .lmenu_lvl_two
         ul#lmenu_tours.menu.vertical
             li
                 a(href="#" data-menutwo="lmenutwo_interesting") Познавательные
@@ -56,7 +358,7 @@
                 a(href="#") Экстрим
             li 
                 a(href="#") На острова
-        ul#lmenu_countries.menu.vertical
+        //- ul#lmenu_countries.menu.vertical
             li
                 a(href="#") Бангкок
             li 
@@ -69,7 +371,7 @@
                 a(href="#") Чиангмай
             li 
                 a(href="#") Паккрет
-        ul#lmenu_transfer.menu.vertical
+        //- ul#lmenu_transfer.menu.vertical
             li
                 a(href="#") Tillmanburgh
             li 
@@ -82,9 +384,9 @@
                 a(href="#") Schmittberg
             li 
                 a(href="#" data-menutwo="lmenutwo_transfer") Lake Leta
-    .lmenu_lvl_three
-        #lmenutwo_interesting.lmenu_content
-            ul.menu.vertical
+    //- .lmenu_lvl_three
+        //- #lmenutwo_interesting.lmenu_content
+            //- ul.menu.vertical
                 li
                     a(href="#") Аюттая
                 li
@@ -107,7 +409,7 @@
                     a(href="#") Шоппинг в Бангкоке
                 li
                     a(href="#") Парк Као Яй
-            ul.menu.vertical
+            //- ul.menu.vertical
                 li
                     a(href="#") Тайны Сиама
                 li 
@@ -129,7 +431,7 @@
                     | Смотреть все Экскурсии
                     i.icon-arrow-down
         #lmenutwo_transfer.lmenu_content
-            ul.menu.vertical
+            //- ul.menu.vertical
                 li
                     span Lost In Lagos Portugal
                 li 

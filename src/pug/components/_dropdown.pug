@@ -94,3 +94,70 @@ else
 if page == 'profile' && type == 'edit'
     #places_hint.dropdown-pane.tiny.dropdown-pane--hint(data-dropdown data-v-offset="10" data-h-offset="-50" data-close-on-click="true" data-position="bottom" data-alignment="left")
         | Вы можете указать место(а) проживания для удобства оформления заказов.
+
+if type == 'transfer'
+    #searchpane_cats.searchbox_pane(data-dropdown data-close-on-click="true" data-position="bottom")
+        ul.searchbox_pane_content
+            each category in categories
+                li.searchbox_cat
+                    .searchbox_cat_name
+                        input(id=`searchbox_${category.alias}` type="checkbox")
+                        label.searchbox_cat_label(for=`searchbox_${category.alias}`)
+                            =category.name
+                    if category.hasOwnProperty('sub1')
+                        ul.searchbox_cat_subs
+                            each subcat in category.sub1
+                                li.searchbox_cat.searchbox_cat--sub
+                                    input(type="checkbox")&attributes({'id': `searchbox_${category.alias}_${subcat.alias}`})
+                                    label.searchbox_cat_label&attributes({
+                                        'class': 'searchbox_cat_label--sub',
+                                        'for': `searchbox_${category.alias}_${subcat.alias}`
+                                    })
+                                        =subcat.name
+        .searchbox_pane_footer
+            button.button.clear
+                | Сброс
+            button.button(data-close)
+                | Применить
+
+
+    #searchpane_date.searchbox_pane(data-dropdown data-close-on-click="true" data-position="bottom")
+        .searchbox_pane_content
+            | Календарь
+
+    #searchpane_price.searchbox_pane(data-dropdown data-position="bottom")
+        .searchbox_pane_content
+            .searchbox_pane_price
+                span
+                    | ₽
+                    input#price_min(type="number")
+                span
+                    | ₽
+                    input#price_max(type="number")
+
+            .slider(data-slider='', data-start='0' data-end='12500' data-initial-start='0', data-initial-end='12500' data-move-time='0')
+                span.slider-handle(data-slider-handle='', role='slider', tabindex='1' aria-controls="price_min")
+                span.slider-fill(data-slider-fill='')
+                span.slider-handle(data-slider-handle='', role='slider', tabindex='1' aria-controls="price_max")
+            button.button.clear
+                | Сброс
+            button.button(data-close)
+                | OK
+
+    #searchpane_sort.searchbox_pane(data-dropdown data-close-on-click="true" data-position="bottom")
+        ul.menu.vertical
+           li
+                a(href="#")
+                    | Рекомендованые
+           li
+                a.active(href="#")
+                    | Популярные
+           li
+                a(href="#")
+                    | Лучшие отзывы
+           li
+                a(href="#")
+                    | Цена (от низкой к высокой)
+           li
+                a(href="#")
+                    | Недавно добавленые

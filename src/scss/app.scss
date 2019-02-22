@@ -35,7 +35,7 @@
 // @include foundation-progress-element;
 // @include foundation-progress-element;
 // @include foundation-meter-element;
-// @include foundation-slider;
+@include foundation-slider;
 // @include foundation-sticky;
 @include foundation-reveal;
 // @include foundation-switch;
@@ -61,6 +61,7 @@
 @import 'components/button';
 @import 'components/nav';
 @import 'components/lmenu';
+@import 'components/searchbox';
 @import 'components/path';
 @import 'components/filter';
 @import 'components/map';
@@ -73,7 +74,7 @@
 @import 'components/list';
 @import 'components/table';
 @import '../../node_modules/owl.carousel/src/scss/owl.carousel';
-@import 'components/slider';
+@import 'components/carousel';
 @import 'components/contact_us';
 @import 'components/reviews';
 @import 'components/review';
@@ -81,6 +82,7 @@
 @import 'components/form';
 @import 'components/dropdown';
 @import 'components/popup';
+@import 'components/slider';
 
 $flag-icon-css-path: '../assets/img/flags';
 @import '../../node_modules/flag-icon-css/sass/flag-icon';

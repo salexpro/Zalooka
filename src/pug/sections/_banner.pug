@@ -88,3 +88,30 @@ section.banner(class=(page != 'main') ? "banner--section banner--" + type : fals
                                 input(type="text" placeholder="Услуга" name="service")
                             button.button
                                 | Поиск
+
+        if type == 'transfer'
+            form.searchbox(action="")
+                .searchbox_field.searchbox_field--half
+                    label.searchbox_label(for="searchbox_locations")
+                        | Место
+                    input#searchbox_locations(type="text" value="Паттайя, Таиланд" readonly)
+                .select.searchbox_field.searchbox_field--half(data-toggle="searchpane_cats")
+                    label.searchbox_label(for="searchbox_cats")
+                        | Категории
+                    input#searchbox_cats(type="text" placeholder="Выберите одну или несколько категорий" readonly)
+                .select.select--simple.searchbox_field.searchbox_field--quarter(data-toggle="searchpane_date")
+                    label.searchbox_label(for="searchbox_avaliable")
+                        | Даты
+                    input#searchbox_avaliable(type="text" readonly)
+                .select.select--simple.searchbox_field.searchbox_field--quarter(data-toggle="searchpane_price")
+                    label.searchbox_label(for="searchbox_price")
+                        | Цена
+                    input#searchbox_price(type="text" readonly)
+                .searchbox_field.searchbox_field--quarter
+                    input#searchbox_confirm(type="checkbox")
+                    label.searchbox_label(for="searchbox_confirm")
+                        | Автоподтверждение
+                .select.select--simple.searchbox_field.searchbox_field--quarter(data-toggle="searchpane_sort")
+                    label.searchbox_label(for="searchbox_sort")
+                        | Сортировка: 
+                    input#searchbox_sort(type="text" value="Популярные" readonly)

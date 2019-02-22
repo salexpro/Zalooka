@@ -1,0 +1,166 @@
+.searchbox{
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background: $white;
+    border-radius: $global-radius;
+    overflow: hidden;
+    &_field{
+        position: relative;
+        margin: 0;
+        z-index: 1;
+        &--half{
+            width: 50%;
+        }
+        &--quarter{
+            width: 25%;
+        }
+        &.select{
+            input{
+                padding-right: 33px;
+            }
+        }
+        &:not(:last-child):not(:nth-child(2)) {
+            border-right: 1px solid $light-gray;
+        }
+        // &:nth-last-child(-n+4) input{
+        //     box-shadow: none;
+        // }
+    }
+    &_label{
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-46%);
+        color: $dark-gray;
+        z-index: -1;
+        &::before{
+            background-color: $white;
+        }
+    }
+    input{
+        margin: 0;
+        height: 40px;
+        padding: 0 10px;
+        text-align: right;
+        user-select: none;
+        &[readonly]{
+            background: transparent;
+            cursor: default;
+        }
+        &[type="checkbox"] + label{
+            font-size: 1rem;
+            line-height: 1.3;
+            color: $black;
+            padding: 5px 8px;
+            border-radius: $global-radius;
+            // &:hover{
+            //     background-color: rgba($light-gray, 0.5);
+            // }
+        }
+    }
+    select{
+        height: 40px;
+        text-align-last: end;
+        // box-shadow: none;
+        // color: $black;
+    }
+    &_pane{
+        background: $white;
+        z-index: 10;
+        opacity: 0;
+        visibility: hidden;
+        transition: 300ms;
+        box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.12), 0 -1px 2px 0 rgba(0, 0, 0, 0.08);
+        border-radius: $global-radius;
+        max-width: 200px;
+        &.is-open{
+            visibility: visible;
+            opacity: 1;
+        }
+        &#searchpane_cats{
+            max-width: 400px;
+        }
+        &_content{
+            padding: 15px;
+            margin: 0;
+            overflow: auto;
+            max-height: 200px;
+        }
+        &_price{
+            display: flex;
+            justify-content: space-between;
+            input{
+                box-shadow: none !important;
+                height: 1.3rem;
+                width: auto;
+                background: $white;
+                cursor: default;
+                margin: 0;
+                display: inline-block;
+            }
+        }
+        .menu{
+            a{
+                color: $black;
+                transition: 300ms;
+                &:hover{
+                    background: $light-gray;
+                }
+                &.active{
+                    background: $primary-color;
+                    color: $white;
+                }
+            }
+        }
+        &_footer{
+            padding: 10px 15px 10px;
+            background-color: rgba($medium-gray, 0.15);
+            border-top: 1px solid $light-gray;
+            text-align: right;
+        }
+    }
+    &_cat{
+        list-style: none;
+        & + & {
+            margin-top: 10px;
+            border-top: 1px solid $light-gray;
+            padding-top: 10px;
+        }
+        &--sub.searchbox_cat--sub{
+            display: inline-block;
+            vertical-align: top;
+            margin: 0;
+            border: 0;
+            padding: 0;
+        }
+        &_label{
+            // &[for]
+            font-size: 1rem;
+            color: $black;
+            line-height: 1.18;
+            font-weight: 400;
+            // margin-bottom: 5px;
+            // display: inline-flex;
+            padding: 5px;
+            border-radius: $global-radius;
+            &:hover{
+                background-color: rgba($light-gray, 0.5);
+            }
+            &[for]::before{
+                margin-right: 7px;
+                background-color: $white;
+            }
+            &--sub{
+                font-size: 0.9rem;
+                font-weight: 300;
+                line-height: 1.3;
+            }
+        }
+        &_subs{
+            margin-left: 25px;
+        }
+    }
+}

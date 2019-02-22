@@ -158,6 +158,16 @@
 		"sC": 3,
 		"tS": 1
 		},
+	"/node_modules/foundation-sites/dist/js/plugins/foundation.slider.min.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/build/node_modules/foundation-sites/dist/js/plugins/foundation.slider.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
 	"/node_modules/foundation-sites/dist/js/plugins/foundation.tabs.min.js": {
 		"ft": 64,
 		"ma": 1,
@@ -204,6 +214,16 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/build/node_modules/foundation-sites/dist/js/plugins/foundation.util.motion.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/foundation-sites/dist/js/plugins/foundation.util.touch.min.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/build/node_modules/foundation-sites/dist/js/plugins/foundation.util.touch.min.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
@@ -3806,6 +3826,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/src/scss/components/_carousel.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/css/components/_carousel.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/src/scss/components/_checkout.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -4027,17 +4060,30 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"/src/scss/components/_slider.scss": {
-		"aP": 0,
+	"/src/scss/components/_searchbox.scss": {
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
-		"ma": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/css/components/_searchbox.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/src/scss/components/_slider.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
 		"oA": 1,
 		"oAP": "/build/css/components/_slider.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/src/scss/components/_table.scss": {
